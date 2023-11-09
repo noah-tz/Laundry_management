@@ -6,7 +6,7 @@ CREATE TABLE orders (
     order_id real, 
     email_client varchar(30),
     phone_client varchar(30),
-    order_amount real,
+    order_cost real,
     amount_items real,
     order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
     order_notes varchar(40),

@@ -67,7 +67,7 @@ class Messenger:
 
     @staticmethod
     def __is_via_email(email_client: str):
-        result = MysqlDatabase.get_value_from_table("clients", "message_type", email_client, "email_client")
+        result = MysqlDatabase.get_value_from_table("clients", "message_type", "email_client", email_client)
         return result  == "email"
 
     @staticmethod
@@ -75,7 +75,7 @@ class Messenger:
         if Messenger.__is_via_email(email_client):
             Messenger.email_sender.create_and_send_msg(email_client, subject, body)
         else:
-            phone_client = MysqlDatabase.get_value_from_table("clients", "phone_client", email_client, "email_client")
+            phone_client = MysqlDatabase.get_value_from_table("clients", "phone_client", "email_client", email_client)
             Messenger.__sms_sender.send_sms(phone_client, f"{subject}/n{body}")
 
 

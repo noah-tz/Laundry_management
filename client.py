@@ -31,27 +31,6 @@ class Client:
         Client.clients[email] = person
         return person
 
-    def sign_in(self):
-        main_client_window = LaundryGui.making_client_window(self.email)
-        while True:
-            event, value = main_client_window.window.read()
-            if event in [sg.WIN_CLOSED, "close"]:
-                break
-            elif event == '-OK_TAB_ORDER_PICKUP-':
-                self.order_pickup(value['-order number-'])
-            elif event == 'CREATE_IN_TAB_CREATE_ORDER':
-                self.open_order(value)
-        main_client_window.window.close()
-
-    @Logger.log_record
-    def order_pickup(self, order_ID):
-        if order_ID in self.orders.keys():
-            email_client = self.orders[order_ID].email_client
-        else:
-            email_client = MysqlDatabase.get_value_from_table("orders", "email_client", order_ID, "order_id")
-        MysqlDatabase.update("orders", "order_collected", True, "order_id", order_ID)
-        Messenger.thank_you(email_client)
-
     def open_order(self, items: dict) -> Order:
         new_order = Order(self.email, items)
         self.orders[new_order.ID] = new_order

@@ -3221,3 +3221,1725 @@ Successfully
 ='Content-Type: multipart/mixed; boundary="===============5417972415060268772=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1018\n\n--===============5417972415060268772==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============5417972415060268772==--\n')
 2023-11-08 00:12:16,106 - ERROR - Function __calling_the_server failed: (250, b'2.0.0 OK  1699395136 fc13-20020a05600c524d00b004068de50c64sm17279221wmb.46 - gsmtp')
 2023-11-08 00:12:16,106 - ERROR - Function order_ready failed: (250, b'2.0.0 OK  1699395136 fc13-20020a05600c524d00b004068de50c64sm17279221wmb.46 - gsmtp')
+2023-11-08 01:16:25,778 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:16:25,790 - ERROR - Function sign_in_program failed: 1054 (42S22): Unknown column 'order_date' in 'order clause'
+2023-11-08 01:19:49,331 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:19:49,338 - ERROR - Function sign_in_program failed: 1054 (42S22): Unknown column 'your_date_column_name' in 'order clause'
+2023-11-08 01:23:05,759 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:23:17,914 - INFO - Function sign_in_program completed successfully
+2023-11-08 01:23:41,472 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:24:15,137 - INFO - Function sign_in_program completed successfully
+2023-11-08 01:25:10,366 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:25:28,135 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7fc68d875150>=<client.Client object at 0x7fc68d875150>, 1015='1015')
+2023-11-08 01:25:28,180 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fc674458d90>=<messenger.EmailSender object at 0x7fc674458d90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6774648541922122179=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============6774648541922122179==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============6774648541922122179==--
+='Content-Type: multipart/mixed; boundary="===============6774648541922122179=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============6774648541922122179==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============6774648541922122179==--\n')
+2023-11-08 01:25:29,571 - INFO - Function __calling_the_server completed successfully
+2023-11-08 01:25:29,571 - INFO - Function order_pickup completed successfully
+2023-11-08 01:25:29,613 - INFO - Function sign_in_program completed successfully
+2023-11-08 01:35:34,451 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:35:46,370 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7fa706d771d0>=<client.Client object at 0x7fa706d771d0>, 1016='1016')
+2023-11-08 01:35:46,374 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 01:35:46,375 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 01:37:39,595 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:37:52,946 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7eff79a36210>=<client.Client object at 0x7eff79a36210>, 1016='1016')
+2023-11-08 01:37:52,982 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7eff77e48ad0>=<messenger.EmailSender object at 0x7eff77e48ad0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3868219695603092272=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============3868219695603092272==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============3868219695603092272==--
+='Content-Type: multipart/mixed; boundary="===============3868219695603092272=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============3868219695603092272==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============3868219695603092272==--\n')
+2023-11-08 01:37:53,924 - INFO - Function __calling_the_server completed successfully
+2023-11-08 01:37:53,924 - INFO - Function order_pickup completed successfully
+2023-11-08 01:37:53,976 - INFO - Function sign_in_program completed successfully
+2023-11-08 01:38:47,096 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:38:53,507 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7fe6c7281c10>=<client.Client object at 0x7fe6c7281c10>, 1014='1014')
+2023-11-08 01:38:53,511 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 01:38:53,511 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 01:45:56,462 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:45:56,464 - ERROR - Function sign_in_program failed: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com = 'email_client'' at line 1
+2023-11-08 01:47:04,120 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:47:11,056 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f15b67ebfd0>=<client.Client object at 0x7f15b67ebfd0>, 1014='1014')
+2023-11-08 01:47:11,058 - ERROR - Function order_pickup failed: MysqlDatabase.get_value_from_table() missing 1 required positional argument: 'key'
+2023-11-08 01:47:11,058 - ERROR - Function sign_in_program failed: MysqlDatabase.get_value_from_table() missing 1 required positional argument: 'key'
+2023-11-08 01:47:51,597 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:47:57,089 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f5347324790>=<client.Client object at 0x7f5347324790>, 1014='1014')
+2023-11-08 01:47:57,126 - ERROR - Function order_pickup failed: 1054 (42S22): Unknown column 'None' in 'where clause'
+2023-11-08 01:47:57,126 - ERROR - Function sign_in_program failed: 1054 (42S22): Unknown column 'None' in 'where clause'
+2023-11-08 01:53:23,038 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 01:53:40,840 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f6301580590>=<client.Client object at 0x7f6301580590>, 1013='1013')
+2023-11-08 01:53:40,844 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 01:53:40,844 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:07:35,389 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:07:40,770 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f7bfe8b0d50>=<client.Client object at 0x7f7bfe8b0d50>, 1013='1013')
+2023-11-08 02:07:40,774 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 02:07:40,774 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:15:21,599 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:15:26,779 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f706c90be10>=<client.Client object at 0x7f706c90be10>, 1013='1013')
+2023-11-08 02:15:26,783 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 02:15:26,783 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:41:53,353 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:42:09,283 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7fedc03f0790>=<client.Client object at 0x7fedc03f0790>, 1013='1013')
+2023-11-08 02:42:09,287 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 02:42:09,288 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:42:36,220 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:42:54,887 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f3685053690>=<client.Client object at 0x7f3685053690>, 1012='1012')
+2023-11-08 02:42:54,891 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 02:42:54,892 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:44:13,059 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:44:18,675 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7feecdcc3790>=<client.Client object at 0x7feecdcc3790>, 1017='1017')
+2023-11-08 02:44:18,679 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 02:44:18,679 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 02:44:50,609 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:44:57,559 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f0f40bde010>=<order.Order object at 0x7f0f40bde010>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 4, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 4, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 02:44:57,559 - INFO - Function add_items completed successfully
+2023-11-08 02:44:57,559 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f0f40bde010>=<order.Order object at 0x7f0f40bde010>)
+2023-11-08 02:44:57,559 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f0f4104b390>=<washing_machine.RoomWashing object at 0x7f0f4104b390>, <order.Order object at 0x7f0f40bde010>=<order.Order object at 0x7f0f40bde010>)
+2023-11-08 02:44:57,560 - INFO - Function start_washing completed successfully
+2023-11-08 02:44:57,562 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0f4105cbd0>=<messenger.EmailSender object at 0x7f0f4105cbd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3144980862882295558=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1018
+
+--===============3144980862882295558==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 4.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 1 hours
+--===============3144980862882295558==--
+='Content-Type: multipart/mixed; boundary="===============3144980862882295558=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1018\n\n--===============3144980862882295558==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 4.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 1 hours\n--===============3144980862882295558==--\n')
+2023-11-08 02:44:57,600 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f0f5a695010>=<washing_machine.WashingMachine object at 0x7f0f5a695010>, <order.Order object at 0x7f0f40bde010>=<order.Order object at 0x7f0f40bde010>)
+2023-11-08 02:44:57,605 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0f4105cbd0>=<messenger.EmailSender object at 0x7f0f4105cbd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5046217721682327596=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1018
+
+--===============5046217721682327596==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============5046217721682327596==--
+='Content-Type: multipart/mixed; boundary="===============5046217721682327596=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1018\n\n--===============5046217721682327596==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============5046217721682327596==--\n')
+2023-11-08 02:44:58,916 - ERROR - Function __calling_the_server failed: (250, b'2.0.0 OK  1699404298 bg13-20020a05600c3c8d00b0040644e699a0sm17353331wmb.45 - gsmtp')
+2023-11-08 02:44:58,917 - ERROR - Function order_ready failed: (250, b'2.0.0 OK  1699404298 bg13-20020a05600c3c8d00b0040644e699a0sm17353331wmb.45 - gsmtp')
+2023-11-08 02:46:01,504 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:46:20,670 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fbc80622310>=<order.Order object at 0x7fbc80622310>, {'-shirt-': 0, '-pants-': 5, '-tank top-': 6, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 8, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 5, '-tank top-': 6, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 8, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 02:46:20,671 - INFO - Function add_items completed successfully
+2023-11-08 02:46:20,671 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fbc80622310>=<order.Order object at 0x7fbc80622310>)
+2023-11-08 02:46:20,672 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fbc80aa6d90>=<washing_machine.RoomWashing object at 0x7fbc80aa6d90>, <order.Order object at 0x7fbc80622310>=<order.Order object at 0x7fbc80622310>)
+2023-11-08 02:46:20,673 - INFO - Function start_washing completed successfully
+2023-11-08 02:46:20,678 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fbc80ab8590>=<messenger.EmailSender object at 0x7fbc80ab8590>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8084161278789999791=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1018
+
+--===============8084161278789999791==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 5.
+tank top: 6.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 9.
+sweater: 9.
+curtain: 9.
+tablecloth: 8.
+
+total order cost 40
+Your order will be ready in 299 hours
+--===============8084161278789999791==--
+='Content-Type: multipart/mixed; boundary="===============8084161278789999791=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1018\n\n--===============8084161278789999791==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 5.\ntank top: 6.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 9.\nsweater: 9.\ncurtain: 9.\ntablecloth: 8.\n\ntotal order cost 40\nYour order will be ready in 299 hours\n--===============8084161278789999791==--\n')
+2023-11-08 02:46:21,555 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:46:21,555 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7fbc80622310>=<order.Order object at 0x7fbc80622310>)
+2023-11-08 02:46:21,597 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 02:46:24,665 - INFO - Function operating_machine completed successfully
+2023-11-08 02:46:30,663 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7fbc8092ecd0>=<washing_machine.WashingMachine object at 0x7fbc8092ecd0>, <order.Order object at 0x7fbc80622310>=<order.Order object at 0x7fbc80622310>)
+2023-11-08 02:46:30,667 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fbc80ab8590>=<messenger.EmailSender object at 0x7fbc80ab8590>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0376077509327631398=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1018
+
+--===============0376077509327631398==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0376077509327631398==--
+='Content-Type: multipart/mixed; boundary="===============0376077509327631398=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1018\n\n--===============0376077509327631398==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0376077509327631398==--\n')
+2023-11-08 02:46:31,693 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:46:31,693 - INFO - Function order_ready completed successfully
+2023-11-08 02:50:27,808 - INFO - Function sign_in_program completed successfully
+2023-11-08 02:51:32,775 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:51:49,125 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f519d24bc90>=<order.Order object at 0x7f519d24bc90>, {'-shirt-': 9, '-pants-': 7, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 9, '-hat-': 0, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 9, '-pants-': 7, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 9, '-hat-': 0, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 02:51:49,125 - INFO - Function add_items completed successfully
+2023-11-08 02:51:49,126 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f519d24bc90>=<order.Order object at 0x7f519d24bc90>)
+2023-11-08 02:51:49,126 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f518474aad0>=<washing_machine.RoomWashing object at 0x7f518474aad0>, <order.Order object at 0x7f519d24bc90>=<order.Order object at 0x7f519d24bc90>)
+2023-11-08 02:51:49,127 - INFO - Function start_washing completed successfully
+2023-11-08 02:51:49,131 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f518475c350>=<messenger.EmailSender object at 0x7f518475c350>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7498029811918154448=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1019
+
+--===============7498029811918154448==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 9.
+pants: 7.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 9.
+hat: 0.
+sweater: 9.
+curtain: 9.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 269 hours
+--===============7498029811918154448==--
+='Content-Type: multipart/mixed; boundary="===============7498029811918154448=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1019\n\n--===============7498029811918154448==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 9.\npants: 7.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 9.\nhat: 0.\nsweater: 9.\ncurtain: 9.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 269 hours\n--===============7498029811918154448==--\n')
+2023-11-08 02:51:50,060 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:51:50,060 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f519d24bc90>=<order.Order object at 0x7f519d24bc90>)
+2023-11-08 02:51:50,093 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 02:51:53,171 - INFO - Function operating_machine completed successfully
+2023-11-08 02:51:58,107 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f5185518990>=<washing_machine.WashingMachine object at 0x7f5185518990>, <order.Order object at 0x7f519d24bc90>=<order.Order object at 0x7f519d24bc90>)
+2023-11-08 02:51:58,111 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f518475c350>=<messenger.EmailSender object at 0x7f518475c350>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6239325077254006366=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1019
+
+--===============6239325077254006366==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6239325077254006366==--
+='Content-Type: multipart/mixed; boundary="===============6239325077254006366=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1019\n\n--===============6239325077254006366==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6239325077254006366==--\n')
+2023-11-08 02:51:58,969 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:51:58,969 - INFO - Function order_ready completed successfully
+2023-11-08 02:52:28,673 - INFO - Function sign_in_program completed successfully
+2023-11-08 02:53:26,095 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:53:42,811 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f75625b1a10>=<order.Order object at 0x7f75625b1a10>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 6, '-underwear-': 9, '-socks-': 9, '-coat-': 0, '-hat-': 9, '-sweater-': 0, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 6, '-underwear-': 9, '-socks-': 9, '-coat-': 0, '-hat-': 9, '-sweater-': 0, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 02:53:42,811 - INFO - Function add_items completed successfully
+2023-11-08 02:53:42,811 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f75625b1a10>=<order.Order object at 0x7f75625b1a10>)
+2023-11-08 02:53:42,812 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f756129ae90>=<washing_machine.RoomWashing object at 0x7f756129ae90>, <order.Order object at 0x7f75625b1a10>=<order.Order object at 0x7f75625b1a10>)
+2023-11-08 02:53:42,813 - INFO - Function start_washing completed successfully
+2023-11-08 02:53:42,818 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f75612ac7d0>=<messenger.EmailSender object at 0x7f75612ac7d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2639335116642801941=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1020
+
+--===============2639335116642801941==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 6.
+underwear: 9.
+socks: 9.
+coat: 0.
+hat: 9.
+sweater: 0.
+curtain: 9.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 158 hours
+--===============2639335116642801941==--
+='Content-Type: multipart/mixed; boundary="===============2639335116642801941=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1020\n\n--===============2639335116642801941==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 6.\nunderwear: 9.\nsocks: 9.\ncoat: 0.\nhat: 9.\nsweater: 0.\ncurtain: 9.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 158 hours\n--===============2639335116642801941==--\n')
+2023-11-08 02:53:43,829 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:53:43,829 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f75625b1a10>=<order.Order object at 0x7f75625b1a10>)
+2023-11-08 02:53:43,862 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 02:53:46,931 - INFO - Function operating_machine completed successfully
+2023-11-08 02:53:48,083 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f7560f5fed0>=<washing_machine.WashingMachine object at 0x7f7560f5fed0>, <order.Order object at 0x7f75625b1a10>=<order.Order object at 0x7f75625b1a10>)
+2023-11-08 02:53:48,084 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f75612ac7d0>=<messenger.EmailSender object at 0x7f75612ac7d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2729716188238420042=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1020
+
+--===============2729716188238420042==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============2729716188238420042==--
+='Content-Type: multipart/mixed; boundary="===============2729716188238420042=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1020\n\n--===============2729716188238420042==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============2729716188238420042==--\n')
+2023-11-08 02:53:49,051 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:53:49,051 - INFO - Function order_ready completed successfully
+2023-11-08 02:57:44,126 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 02:58:00,415 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f652beaabd0>=<order.Order object at 0x7f652beaabd0>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 8, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 8, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 02:58:00,415 - INFO - Function add_items completed successfully
+2023-11-08 02:58:00,415 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f652beaabd0>=<order.Order object at 0x7f652beaabd0>)
+2023-11-08 02:58:00,415 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f6545a06f50>=<washing_machine.RoomWashing object at 0x7f6545a06f50>, <order.Order object at 0x7f652beaabd0>=<order.Order object at 0x7f652beaabd0>)
+2023-11-08 02:58:00,416 - INFO - Function start_washing completed successfully
+2023-11-08 02:58:00,418 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f652c331050>=<messenger.EmailSender object at 0x7f652c331050>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3999562626858342130=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1021
+
+--===============3999562626858342130==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 8.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 9.
+sweater: 9.
+curtain: 9.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 190 hours
+--===============3999562626858342130==--
+='Content-Type: multipart/mixed; boundary="===============3999562626858342130=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1021\n\n--===============3999562626858342130==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 8.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 9.\nsweater: 9.\ncurtain: 9.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 190 hours\n--===============3999562626858342130==--\n')
+2023-11-08 02:58:01,313 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:58:01,313 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f652beaabd0>=<order.Order object at 0x7f652beaabd0>)
+2023-11-08 02:58:01,369 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 02:58:03,602 - INFO - Function operating_machine completed successfully
+2023-11-08 02:58:06,753 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f652c1c2e50>=<washing_machine.WashingMachine object at 0x7f652c1c2e50>, <order.Order object at 0x7f652beaabd0>=<order.Order object at 0x7f652beaabd0>)
+2023-11-08 02:58:06,757 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f652c331050>=<messenger.EmailSender object at 0x7f652c331050>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7159978629039300081=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1021
+
+--===============7159978629039300081==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============7159978629039300081==--
+='Content-Type: multipart/mixed; boundary="===============7159978629039300081=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1021\n\n--===============7159978629039300081==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============7159978629039300081==--\n')
+2023-11-08 02:58:07,718 - INFO - Function __calling_the_server completed successfully
+2023-11-08 02:58:07,718 - INFO - Function order_ready completed successfully
+2023-11-08 02:58:23,016 - INFO - Function sign_in_program completed successfully
+2023-11-08 03:42:43,444 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:43:15,448 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f6fb82c5c10>=<order.Order object at 0x7f6fb82c5c10>, {'-shirt-': 0, '-pants-': 8, '-tank top-': 0, '-underwear-': 9, '-socks-': 9, '-coat-': 9, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 9, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 8, '-tank top-': 0, '-underwear-': 9, '-socks-': 9, '-coat-': 9, '-hat-': 9, '-sweater-': 9, '-curtain-': 9, '-tablecloth-': 9, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:43:15,449 - INFO - Function add_items completed successfully
+2023-11-08 03:43:15,449 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f6fb82c5c10>=<order.Order object at 0x7f6fb82c5c10>)
+2023-11-08 03:43:15,449 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f6fb872f3d0>=<washing_machine.RoomWashing object at 0x7f6fb872f3d0>, <order.Order object at 0x7f6fb82c5c10>=<order.Order object at 0x7f6fb82c5c10>)
+2023-11-08 03:43:15,451 - INFO - Function start_washing completed successfully
+2023-11-08 03:43:15,456 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f6fb8742c90>=<messenger.EmailSender object at 0x7f6fb8742c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1035847289465337082=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1022
+
+--===============1035847289465337082==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 8.
+tank top: 0.
+underwear: 9.
+socks: 9.
+coat: 9.
+hat: 9.
+sweater: 9.
+curtain: 9.
+tablecloth: 9.
+
+total order cost 40
+Your order will be ready in 370 hours
+--===============1035847289465337082==--
+='Content-Type: multipart/mixed; boundary="===============1035847289465337082=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1022\n\n--===============1035847289465337082==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 8.\ntank top: 0.\nunderwear: 9.\nsocks: 9.\ncoat: 9.\nhat: 9.\nsweater: 9.\ncurtain: 9.\ntablecloth: 9.\n\ntotal order cost 40\nYour order will be ready in 370 hours\n--===============1035847289465337082==--\n')
+2023-11-08 03:43:16,469 - INFO - Function __calling_the_server completed successfully
+2023-11-08 03:43:16,469 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f6fb82c5c10>=<order.Order object at 0x7f6fb82c5c10>)
+2023-11-08 03:43:16,513 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 03:43:19,722 - INFO - Function operating_machine completed successfully
+2023-11-08 03:43:19,780 - INFO - Function sign_in_program completed successfully
+2023-11-08 03:43:27,801 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f6fb85b7d90>=<washing_machine.WashingMachine object at 0x7f6fb85b7d90>, <order.Order object at 0x7f6fb82c5c10>=<order.Order object at 0x7f6fb82c5c10>)
+2023-11-08 03:43:27,806 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f6fb8742c90>=<messenger.EmailSender object at 0x7f6fb8742c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7018983960697381776=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1022
+
+--===============7018983960697381776==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============7018983960697381776==--
+='Content-Type: multipart/mixed; boundary="===============7018983960697381776=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1022\n\n--===============7018983960697381776==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============7018983960697381776==--\n')
+2023-11-08 03:43:28,658 - INFO - Function __calling_the_server completed successfully
+2023-11-08 03:43:28,658 - INFO - Function order_ready completed successfully
+2023-11-08 03:44:07,109 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:44:12,679 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fa5e98e6110>=<order.Order object at 0x7fa5e98e6110>, {'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:44:12,680 - INFO - Function add_items completed successfully
+2023-11-08 03:44:12,680 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fa5e98e6110>=<order.Order object at 0x7fa5e98e6110>)
+2023-11-08 03:44:12,680 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fa5e7ca6f90>=<washing_machine.RoomWashing object at 0x7fa5e7ca6f90>, <order.Order object at 0x7fa5e98e6110>=<order.Order object at 0x7fa5e98e6110>)
+2023-11-08 03:44:12,682 - INFO - Function start_washing completed successfully
+2023-11-08 03:44:12,687 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa5e7cb8850>=<messenger.EmailSender object at 0x7fa5e7cb8850>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1378392854200049833=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============1378392854200049833==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 4.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 8 hours
+--===============1378392854200049833==--
+='Content-Type: multipart/mixed; boundary="===============1378392854200049833=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============1378392854200049833==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 4.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 8 hours\n--===============1378392854200049833==--\n')
+2023-11-08 03:44:12,975 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7fa5e7b2fbd0>=<washing_machine.WashingMachine object at 0x7fa5e7b2fbd0>, <order.Order object at 0x7fa5e98e6110>=<order.Order object at 0x7fa5e98e6110>)
+2023-11-08 03:44:12,980 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa5e7cb8850>=<messenger.EmailSender object at 0x7fa5e7cb8850>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0206532905716175962=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============0206532905716175962==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0206532905716175962==--
+='Content-Type: multipart/mixed; boundary="===============0206532905716175962=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============0206532905716175962==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0206532905716175962==--\n')
+2023-11-08 03:44:13,816 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b16-20020adfee90000000b0032da4c98ab2sm3640335wro.35 - gsmtp')
+2023-11-08 03:44:13,816 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b16-20020adfee90000000b0032da4c98ab2sm3640335wro.35 - gsmtp')
+2023-11-08 03:44:13,817 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b16-20020adfee90000000b0032da4c98ab2sm3640335wro.35 - gsmtp')
+2023-11-08 03:46:44,397 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:46:50,152 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f5f408a4290>=<order.Order object at 0x7f5f408a4290>, {'-shirt-': 2, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 2, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:46:50,153 - INFO - Function add_items completed successfully
+2023-11-08 03:46:50,153 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f5f408a4290>=<order.Order object at 0x7f5f408a4290>)
+2023-11-08 03:46:50,153 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f5f57dce110>=<washing_machine.RoomWashing object at 0x7f5f57dce110>, <order.Order object at 0x7f5f408a4290>=<order.Order object at 0x7f5f408a4290>)
+2023-11-08 03:46:50,155 - INFO - Function start_washing completed successfully
+2023-11-08 03:46:50,160 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f5f3e66f790>=<messenger.EmailSender object at 0x7f5f3e66f790>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5631160497849276690=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============5631160497849276690==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 2.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 4 hours
+--===============5631160497849276690==--
+='Content-Type: multipart/mixed; boundary="===============5631160497849276690=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============5631160497849276690==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 2.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 4 hours\n--===============5631160497849276690==--\n')
+2023-11-08 03:46:50,302 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f5f3e4e2f10>=<washing_machine.WashingMachine object at 0x7f5f3e4e2f10>, <order.Order object at 0x7f5f408a4290>=<order.Order object at 0x7f5f408a4290>)
+2023-11-08 03:46:50,306 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f5f3e66f790>=<messenger.EmailSender object at 0x7f5f3e66f790>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0592481764454816244=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============0592481764454816244==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0592481764454816244==--
+='Content-Type: multipart/mixed; boundary="===============0592481764454816244=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============0592481764454816244==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0592481764454816244==--\n')
+2023-11-08 03:46:51,415 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n17-20020a5d6611000000b003142e438e8csm3645311wru.26 - gsmtp')
+2023-11-08 03:46:51,416 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n17-20020a5d6611000000b003142e438e8csm3645311wru.26 - gsmtp')
+2023-11-08 03:46:51,416 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n17-20020a5d6611000000b003142e438e8csm3645311wru.26 - gsmtp')
+2023-11-08 03:48:02,250 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:48:08,743 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fc02ff66b90>=<order.Order object at 0x7fc02ff66b90>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:48:08,744 - INFO - Function add_items completed successfully
+2023-11-08 03:48:08,744 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fc02ff66b90>=<order.Order object at 0x7fc02ff66b90>)
+2023-11-08 03:48:08,744 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fc049bce110>=<washing_machine.RoomWashing object at 0x7fc049bce110>, <order.Order object at 0x7fc02ff66b90>=<order.Order object at 0x7fc02ff66b90>)
+2023-11-08 03:48:08,746 - INFO - Function start_washing completed successfully
+2023-11-08 03:48:08,751 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fc0303f5050>=<messenger.EmailSender object at 0x7fc0303f5050>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============9111642951862343001=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============9111642951862343001==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============9111642951862343001==--
+='Content-Type: multipart/mixed; boundary="===============9111642951862343001=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============9111642951862343001==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============9111642951862343001==--\n')
+2023-11-08 03:48:08,966 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7fc049aa6990>=<washing_machine.WashingMachine object at 0x7fc049aa6990>, <order.Order object at 0x7fc02ff66b90>=<order.Order object at 0x7fc02ff66b90>)
+2023-11-08 03:48:08,971 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fc0303f5050>=<messenger.EmailSender object at 0x7fc0303f5050>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6668448089490517741=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============6668448089490517741==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6668448089490517741==--
+='Content-Type: multipart/mixed; boundary="===============6668448089490517741=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============6668448089490517741==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6668448089490517741==--\n')
+2023-11-08 03:48:10,068 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. k2-20020a05600c168200b00405718cbeadsm197985wmn.1 - gsmtp')
+2023-11-08 03:48:10,069 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. k2-20020a05600c168200b00405718cbeadsm197985wmn.1 - gsmtp')
+2023-11-08 03:48:10,069 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. k2-20020a05600c168200b00405718cbeadsm197985wmn.1 - gsmtp')
+2023-11-08 03:51:55,625 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:52:00,213 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f0c8dc12550>=<order.Order object at 0x7f0c8dc12550>, {'-shirt-': 2, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 2, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:52:00,213 - INFO - Function add_items completed successfully
+2023-11-08 03:52:00,214 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f0c8dc12550>=<order.Order object at 0x7f0c8dc12550>)
+2023-11-08 03:52:00,214 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f0ca775ef50>=<washing_machine.RoomWashing object at 0x7f0ca775ef50>, <order.Order object at 0x7f0c8dc12550>=<order.Order object at 0x7f0c8dc12550>)
+2023-11-08 03:52:00,215 - INFO - Function start_washing completed successfully
+2023-11-08 03:52:00,219 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0c8e095790>=<messenger.EmailSender object at 0x7f0c8e095790>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3173782481517318638=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============3173782481517318638==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 2.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 4 hours
+--===============3173782481517318638==--
+='Content-Type: multipart/mixed; boundary="===============3173782481517318638=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============3173782481517318638==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 2.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 4 hours\n--===============3173782481517318638==--\n')
+2023-11-08 03:52:00,362 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f0ca774a9d0>=<washing_machine.WashingMachine object at 0x7f0ca774a9d0>, <order.Order object at 0x7f0c8dc12550>=<order.Order object at 0x7f0c8dc12550>)
+2023-11-08 03:52:00,366 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0c8e095790>=<messenger.EmailSender object at 0x7f0c8e095790>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5703871605936838705=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============5703871605936838705==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============5703871605936838705==--
+='Content-Type: multipart/mixed; boundary="===============5703871605936838705=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============5703871605936838705==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============5703871605936838705==--\n')
+2023-11-08 03:52:01,392 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n11-20020a5d4c4b000000b0032f7d1e2c7csm3619705wrt.95 - gsmtp')
+2023-11-08 03:52:01,392 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n11-20020a5d4c4b000000b0032f7d1e2c7csm3619705wrt.95 - gsmtp')
+2023-11-08 03:52:01,393 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. n11-20020a5d4c4b000000b0032f7d1e2c7csm3619705wrt.95 - gsmtp')
+2023-11-08 03:52:49,842 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:52:55,015 - INFO - Calling function: Order.add_items(<order.Order object at 0x7efc029ddd90>=<order.Order object at 0x7efc029ddd90>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:52:55,015 - INFO - Function add_items completed successfully
+2023-11-08 03:52:55,015 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7efc029ddd90>=<order.Order object at 0x7efc029ddd90>)
+2023-11-08 03:52:55,016 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7efc02e4eb90>=<washing_machine.RoomWashing object at 0x7efc02e4eb90>, <order.Order object at 0x7efc029ddd90>=<order.Order object at 0x7efc029ddd90>)
+2023-11-08 03:52:55,017 - INFO - Function start_washing completed successfully
+2023-11-08 03:52:55,021 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7efc02e4f950>=<messenger.EmailSender object at 0x7efc02e4f950>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8934326891757861630=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============8934326891757861630==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============8934326891757861630==--
+='Content-Type: multipart/mixed; boundary="===============8934326891757861630=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============8934326891757861630==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============8934326891757861630==--\n')
+2023-11-08 03:52:55,238 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7efc02cdbb50>=<washing_machine.WashingMachine object at 0x7efc02cdbb50>, <order.Order object at 0x7efc029ddd90>=<order.Order object at 0x7efc029ddd90>)
+2023-11-08 03:52:55,242 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7efc02e4f950>=<messenger.EmailSender object at 0x7efc02e4f950>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8617518109968112547=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============8617518109968112547==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============8617518109968112547==--
+='Content-Type: multipart/mixed; boundary="===============8617518109968112547=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============8617518109968112547==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============8617518109968112547==--\n')
+2023-11-08 03:52:56,066 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. l2-20020a5d4bc2000000b0032da319a27asm3638397wrt.9 - gsmtp')
+2023-11-08 03:52:56,066 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. l2-20020a5d4bc2000000b0032da319a27asm3638397wrt.9 - gsmtp')
+2023-11-08 03:52:56,066 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. l2-20020a5d4bc2000000b0032da319a27asm3638397wrt.9 - gsmtp')
+2023-11-08 03:53:45,870 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.cm='t0527184022@gmail.cm', 1='1')
+2023-11-08 03:53:51,825 - INFO - Function sign_in_program completed successfully
+2023-11-08 03:54:05,193 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:54:09,912 - INFO - Calling function: Order.add_items(<order.Order object at 0x7ffafcd8d390>=<order.Order object at 0x7ffafcd8d390>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:54:09,912 - INFO - Function add_items completed successfully
+2023-11-08 03:54:09,913 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7ffafcd8d390>=<order.Order object at 0x7ffafcd8d390>)
+2023-11-08 03:54:09,913 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7ffae7fab310>=<washing_machine.RoomWashing object at 0x7ffae7fab310>, <order.Order object at 0x7ffafcd8d390>=<order.Order object at 0x7ffafcd8d390>)
+2023-11-08 03:54:09,914 - INFO - Function start_washing completed successfully
+2023-11-08 03:54:09,919 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7ffae7fabfd0>=<messenger.EmailSender object at 0x7ffae7fabfd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6488749647670340356=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============6488749647670340356==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============6488749647670340356==--
+='Content-Type: multipart/mixed; boundary="===============6488749647670340356=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============6488749647670340356==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============6488749647670340356==--\n')
+2023-11-08 03:54:10,134 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7ffb01655010>=<washing_machine.WashingMachine object at 0x7ffb01655010>, <order.Order object at 0x7ffafcd8d390>=<order.Order object at 0x7ffafcd8d390>)
+2023-11-08 03:54:10,139 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7ffae7fabfd0>=<messenger.EmailSender object at 0x7ffae7fabfd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6263246771663820390=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============6263246771663820390==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6263246771663820390==--
+='Content-Type: multipart/mixed; boundary="===============6263246771663820390=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============6263246771663820390==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6263246771663820390==--\n')
+2023-11-08 03:54:11,129 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. g1-20020a5d46c1000000b0032ddf2804ccsm3616405wrs.83 - gsmtp')
+2023-11-08 03:54:11,130 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. g1-20020a5d46c1000000b0032ddf2804ccsm3616405wrs.83 - gsmtp')
+2023-11-08 03:54:11,130 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. g1-20020a5d46c1000000b0032ddf2804ccsm3616405wrs.83 - gsmtp')
+2023-11-08 03:55:32,051 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:55:37,062 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fee12d93210>=<order.Order object at 0x7fee12d93210>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:55:37,062 - INFO - Function add_items completed successfully
+2023-11-08 03:55:37,063 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fee12d93210>=<order.Order object at 0x7fee12d93210>)
+2023-11-08 03:55:37,063 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fee1122c090>=<washing_machine.RoomWashing object at 0x7fee1122c090>, <order.Order object at 0x7fee12d93210>=<order.Order object at 0x7fee12d93210>)
+2023-11-08 03:55:37,064 - INFO - Function start_washing completed successfully
+2023-11-08 03:55:37,070 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fee1065fd50>=<messenger.EmailSender object at 0x7fee1065fd50>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5798342976805090292=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============5798342976805090292==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============5798342976805090292==--
+='Content-Type: multipart/mixed; boundary="===============5798342976805090292=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============5798342976805090292==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============5798342976805090292==--\n')
+2023-11-08 03:55:37,285 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7fee29c95090>=<washing_machine.WashingMachine object at 0x7fee29c95090>, <order.Order object at 0x7fee12d93210>=<order.Order object at 0x7fee12d93210>)
+2023-11-08 03:55:37,289 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fee1065fd50>=<messenger.EmailSender object at 0x7fee1065fd50>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2020225093015537585=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============2020225093015537585==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============2020225093015537585==--
+='Content-Type: multipart/mixed; boundary="===============2020225093015537585=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============2020225093015537585==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============2020225093015537585==--\n')
+2023-11-08 03:55:38,280 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. z8-20020adfe548000000b003143c9beeaesm3618771wrm.44 - gsmtp')
+2023-11-08 03:55:38,281 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. z8-20020adfe548000000b003143c9beeaesm3618771wrm.44 - gsmtp')
+2023-11-08 03:55:38,281 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. z8-20020adfe548000000b003143c9beeaesm3618771wrm.44 - gsmtp')
+2023-11-08 03:57:26,206 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 03:57:31,737 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f082a9da250>=<order.Order object at 0x7f082a9da250>, {'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 03:57:31,737 - INFO - Function add_items completed successfully
+2023-11-08 03:57:31,738 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f082a9da250>=<order.Order object at 0x7f082a9da250>)
+2023-11-08 03:57:31,738 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f082d53c590>=<washing_machine.RoomWashing object at 0x7f082d53c590>, <order.Order object at 0x7f082a9da250>=<order.Order object at 0x7f082a9da250>)
+2023-11-08 03:57:31,739 - INFO - Function start_washing completed successfully
+2023-11-08 03:57:31,744 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f082ae73090>=<messenger.EmailSender object at 0x7f082ae73090>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2837758388126378778=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============2837758388126378778==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 4.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 8 hours
+--===============2837758388126378778==--
+='Content-Type: multipart/mixed; boundary="===============2837758388126378778=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============2837758388126378778==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 4.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 8 hours\n--===============2837758388126378778==--\n')
+2023-11-08 03:57:32,034 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f082ae53450>=<washing_machine.WashingMachine object at 0x7f082ae53450>, <order.Order object at 0x7f082a9da250>=<order.Order object at 0x7f082a9da250>)
+2023-11-08 03:57:32,039 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f082ae73090>=<messenger.EmailSender object at 0x7f082ae73090>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1829198055988479604=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1023
+
+--===============1829198055988479604==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============1829198055988479604==--
+='Content-Type: multipart/mixed; boundary="===============1829198055988479604=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1023\n\n--===============1829198055988479604==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============1829198055988479604==--\n')
+2023-11-08 03:57:32,857 - ERROR - Function __calling_the_server failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b18-20020a5d6352000000b0032f933556b8sm3655974wrw.7 - gsmtp')
+2023-11-08 03:57:32,858 - ERROR - Function operating_machine failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b18-20020a5d6352000000b0032f933556b8sm3655974wrw.7 - gsmtp')
+2023-11-08 03:57:32,858 - ERROR - Function sign_in_program failed: (503, b'5.5.1 MAIL first. Please visit\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications for more information. b18-20020a5d6352000000b0032f933556b8sm3655974wrw.7 - gsmtp')
+2023-11-08 04:01:16,645 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:01:21,714 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f008527de10>=<order.Order object at 0x7f008527de10>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:01:21,715 - INFO - Function add_items completed successfully
+2023-11-08 04:01:21,715 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f008527de10>=<order.Order object at 0x7f008527de10>)
+2023-11-08 04:01:21,715 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f00862cc090>=<washing_machine.RoomWashing object at 0x7f00862cc090>, <order.Order object at 0x7f008527de10>=<order.Order object at 0x7f008527de10>)
+2023-11-08 04:01:21,717 - INFO - Function start_washing completed successfully
+2023-11-08 04:01:21,722 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f00856eb690>=<messenger.EmailSender object at 0x7f00856eb690>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0262455539923360413=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1023
+
+--===============0262455539923360413==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============0262455539923360413==--
+='Content-Type: multipart/mixed; boundary="===============0262455539923360413=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1023\n\n--===============0262455539923360413==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============0262455539923360413==--\n')
+2023-11-08 04:01:22,750 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:01:22,751 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f008527de10>=<order.Order object at 0x7f008527de10>)
+2023-11-08 04:01:22,783 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:01:25,388 - INFO - Function operating_machine completed successfully
+2023-11-08 04:01:25,447 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:03:13,069 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:03:17,600 - INFO - Calling function: Order.add_items(<order.Order object at 0x7faeadb3a450>=<order.Order object at 0x7faeadb3a450>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:03:17,601 - INFO - Function add_items completed successfully
+2023-11-08 04:03:17,601 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7faeadb3a450>=<order.Order object at 0x7faeadb3a450>)
+2023-11-08 04:03:17,602 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7faeadfbf350>=<washing_machine.RoomWashing object at 0x7faeadfbf350>, <order.Order object at 0x7faeadb3a450>=<order.Order object at 0x7faeadb3a450>)
+2023-11-08 04:03:17,602 - INFO - Function start_washing completed successfully
+2023-11-08 04:03:17,604 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7faeadfd2d10>=<messenger.EmailSender object at 0x7faeadfd2d10>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7136008144862379060=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1024
+
+--===============7136008144862379060==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============7136008144862379060==--
+='Content-Type: multipart/mixed; boundary="===============7136008144862379060=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1024\n\n--===============7136008144862379060==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============7136008144862379060==--\n')
+2023-11-08 04:03:18,465 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:03:18,465 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7faeadb3a450>=<order.Order object at 0x7faeadb3a450>)
+2023-11-08 04:03:18,495 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:03:21,877 - INFO - Function operating_machine completed successfully
+2023-11-08 04:03:21,938 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:03:27,603 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7faeade46e10>=<washing_machine.WashingMachine object at 0x7faeade46e10>, <order.Order object at 0x7faeadb3a450>=<order.Order object at 0x7faeadb3a450>)
+2023-11-08 04:03:27,608 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7faeadfd2d10>=<messenger.EmailSender object at 0x7faeadfd2d10>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0278274170105767071=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1024
+
+--===============0278274170105767071==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0278274170105767071==--
+='Content-Type: multipart/mixed; boundary="===============0278274170105767071=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1024\n\n--===============0278274170105767071==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0278274170105767071==--\n')
+2023-11-08 04:03:28,602 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:03:28,602 - INFO - Function order_ready completed successfully
+2023-11-08 04:04:41,413 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:04:48,945 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fa99abd2610>=<order.Order object at 0x7fa99abd2610>, {'-shirt-': 0, '-pants-': 2, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 2, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:04:48,946 - INFO - Function add_items completed successfully
+2023-11-08 04:04:48,946 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fa99abd2610>=<order.Order object at 0x7fa99abd2610>)
+2023-11-08 04:04:48,946 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fa99b04b010>=<washing_machine.RoomWashing object at 0x7fa99b04b010>, <order.Order object at 0x7fa99abd2610>=<order.Order object at 0x7fa99abd2610>)
+2023-11-08 04:04:48,948 - INFO - Function start_washing completed successfully
+2023-11-08 04:04:48,953 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa99b05e990>=<messenger.EmailSender object at 0x7fa99b05e990>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5112235015833462679=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1025
+
+--===============5112235015833462679==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 2.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============5112235015833462679==--
+='Content-Type: multipart/mixed; boundary="===============5112235015833462679=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1025\n\n--===============5112235015833462679==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 2.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============5112235015833462679==--\n')
+2023-11-08 04:04:49,807 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:04:49,807 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7fa99abd2610>=<order.Order object at 0x7fa99abd2610>)
+2023-11-08 04:04:49,862 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:04:51,986 - INFO - Function operating_machine completed successfully
+2023-11-08 04:04:52,048 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:04:58,948 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7fa99aedb550>=<washing_machine.WashingMachine object at 0x7fa99aedb550>, <order.Order object at 0x7fa99abd2610>=<order.Order object at 0x7fa99abd2610>)
+2023-11-08 04:04:58,953 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa99b05e990>=<messenger.EmailSender object at 0x7fa99b05e990>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1121830113024202230=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1025
+
+--===============1121830113024202230==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============1121830113024202230==--
+='Content-Type: multipart/mixed; boundary="===============1121830113024202230=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1025\n\n--===============1121830113024202230==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============1121830113024202230==--\n')
+2023-11-08 04:04:59,842 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:04:59,843 - INFO - Function order_ready completed successfully
+2023-11-08 04:05:49,158 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:05:55,005 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f2454770c90>=<order.Order object at 0x7f2454770c90>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:05:55,005 - INFO - Function add_items completed successfully
+2023-11-08 04:05:55,006 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f2454770c90>=<order.Order object at 0x7f2454770c90>)
+2023-11-08 04:05:55,006 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f243c5ff310>=<washing_machine.RoomWashing object at 0x7f243c5ff310>, <order.Order object at 0x7f2454770c90>=<order.Order object at 0x7f2454770c90>)
+2023-11-08 04:05:55,007 - INFO - Function start_washing completed successfully
+2023-11-08 04:05:55,012 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2365545644803892159=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1026
+
+--===============2365545644803892159==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 6 hours
+--===============2365545644803892159==--
+='Content-Type: multipart/mixed; boundary="===============2365545644803892159=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1026\n\n--===============2365545644803892159==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 6 hours\n--===============2365545644803892159==--\n')
+2023-11-08 04:05:56,061 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:05:56,061 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f2454770c90>=<order.Order object at 0x7f2454770c90>)
+2023-11-08 04:05:56,094 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:05:58,038 - INFO - Function operating_machine completed successfully
+2023-11-08 04:05:58,096 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:06:09,909 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:06:14,614 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f243adadd90>=<order.Order object at 0x7f243adadd90>, {'-shirt-': 0, '-pants-': 5, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 5, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:06:14,614 - INFO - Function add_items completed successfully
+2023-11-08 04:06:14,614 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f243adadd90>=<order.Order object at 0x7f243adadd90>)
+2023-11-08 04:06:14,615 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f243c5ff310>=<washing_machine.RoomWashing object at 0x7f243c5ff310>, <order.Order object at 0x7f243adadd90>=<order.Order object at 0x7f243adadd90>)
+2023-11-08 04:06:14,617 - INFO - Function start_washing completed successfully
+2023-11-08 04:06:14,621 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5474501201333232922=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1027
+
+--===============5474501201333232922==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 5.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 15 hours
+--===============5474501201333232922==--
+='Content-Type: multipart/mixed; boundary="===============5474501201333232922=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1027\n\n--===============5474501201333232922==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 5.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 15 hours\n--===============5474501201333232922==--\n')
+2023-11-08 04:06:15,415 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:06:15,416 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f243adadd90>=<order.Order object at 0x7f243adadd90>)
+2023-11-08 04:06:15,465 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:06:18,468 - INFO - Function operating_machine completed successfully
+2023-11-08 04:06:18,529 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:06:33,476 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:06:40,272 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f243adbe350>=<order.Order object at 0x7f243adbe350>, {'-shirt-': 1, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 1, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-08 04:06:40,272 - INFO - Function add_items completed successfully
+2023-11-08 04:06:40,273 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f243adbe350>=<order.Order object at 0x7f243adbe350>)
+2023-11-08 04:06:40,273 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f243c5ff310>=<washing_machine.RoomWashing object at 0x7f243c5ff310>, <order.Order object at 0x7f243adbe350>=<order.Order object at 0x7f243adbe350>)
+2023-11-08 04:06:40,274 - INFO - Function start_washing completed successfully
+2023-11-08 04:06:40,278 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0350890322279535899=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1028
+
+--===============0350890322279535899==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 1.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 2 hours
+--===============0350890322279535899==--
+='Content-Type: multipart/mixed; boundary="===============0350890322279535899=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1028\n\n--===============0350890322279535899==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 1.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 2 hours\n--===============0350890322279535899==--\n')
+2023-11-08 04:06:41,301 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:06:41,302 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f243adbe350>=<order.Order object at 0x7f243adbe350>)
+2023-11-08 04:06:41,342 - INFO - Function __insert_to_sql completed successfully
+2023-11-08 04:06:43,472 - INFO - Function operating_machine completed successfully
+2023-11-08 04:06:43,540 - INFO - Function sign_in_program completed successfully
+2023-11-08 04:07:35,007 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f243c48f890>=<washing_machine.WashingMachine object at 0x7f243c48f890>, <order.Order object at 0x7f2454770c90>=<order.Order object at 0x7f2454770c90>)
+2023-11-08 04:07:35,012 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4402169268154455270=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1026
+
+--===============4402169268154455270==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============4402169268154455270==--
+='Content-Type: multipart/mixed; boundary="===============4402169268154455270=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1026\n\n--===============4402169268154455270==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============4402169268154455270==--\n')
+2023-11-08 04:07:36,071 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:07:36,071 - INFO - Function order_ready completed successfully
+2023-11-08 04:07:54,618 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f2455c95010>=<washing_machine.WashingMachine object at 0x7f2455c95010>, <order.Order object at 0x7f243adadd90>=<order.Order object at 0x7f243adadd90>)
+2023-11-08 04:07:54,622 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6935346771767451926=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1027
+
+--===============6935346771767451926==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6935346771767451926==--
+='Content-Type: multipart/mixed; boundary="===============6935346771767451926=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1027\n\n--===============6935346771767451926==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6935346771767451926==--\n')
+2023-11-08 04:07:55,665 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:07:55,665 - INFO - Function order_ready completed successfully
+2023-11-08 04:08:20,274 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f2455c965d0>=<washing_machine.WashingMachine object at 0x7f2455c965d0>, <order.Order object at 0x7f243adbe350>=<order.Order object at 0x7f243adbe350>)
+2023-11-08 04:08:20,279 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f243c612c90>=<messenger.EmailSender object at 0x7f243c612c90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7185565938047818629=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1028
+
+--===============7185565938047818629==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============7185565938047818629==--
+='Content-Type: multipart/mixed; boundary="===============7185565938047818629=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1028\n\n--===============7185565938047818629==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============7185565938047818629==--\n')
+2023-11-08 04:08:21,369 - INFO - Function __calling_the_server completed successfully
+2023-11-08 04:08:21,369 - INFO - Function order_ready completed successfully
+2023-11-08 04:08:56,987 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:09:03,736 - INFO - Calling function: Client.order_pickup(<client.Client object at 0x7f3f2b810b10>=<client.Client object at 0x7f3f2b810b10>, 1028='1028')
+2023-11-08 04:09:03,741 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:09:03,741 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 04:20:12,675 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:20:25,362 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:20:25,363 - ERROR - Function order_pickup failed: Order.order_pickup() missing 1 required positional argument: 'email_client'
+2023-11-08 04:20:25,363 - ERROR - Function sign_in_program failed: Order.order_pickup() missing 1 required positional argument: 'email_client'
+2023-11-08 04:21:25,639 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:21:32,123 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:21:32,126 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:21:32,126 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 04:23:26,123 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:23:31,078 - INFO - Calling function: Order.order_pickup(1='1', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:23:31,079 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:23:31,079 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 04:29:04,309 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:29:11,129 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:29:11,132 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:29:11,132 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 04:30:11,270 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:30:22,666 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:30:22,669 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:30:22,669 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 04:40:00,199 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 04:40:07,092 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 04:40:07,093 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 04:40:07,094 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 05:04:24,419 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 05:04:30,707 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 05:04:30,709 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 05:04:30,709 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 05:07:09,149 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 05:07:15,063 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 05:07:15,066 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 05:07:15,066 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 05:09:03,783 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 05:09:13,557 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 05:09:13,560 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 05:09:13,560 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 05:20:29,296 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 05:20:38,268 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 05:20:38,270 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 05:20:38,271 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 05:28:01,695 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 05:28:10,633 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 05:28:10,636 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 05:28:10,636 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:13:41,491 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:13:47,380 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:13:47,383 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:13:47,383 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:17:10,589 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:17:16,581 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:17:16,584 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:17:16,584 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:18:29,245 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmai.com='t0527184022@gmai.com', 1='1')
+2023-11-08 06:18:33,210 - INFO - Function sign_in_program completed successfully
+2023-11-08 06:18:47,409 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:18:54,782 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:18:54,785 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:18:54,785 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:25:02,758 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:25:09,025 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:25:09,028 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:25:09,028 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:30:58,056 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:30:58,059 - ERROR - Function sign_in_program failed: type object 'MysqlDatabase' has no attribute 'get_value_from_table'
+2023-11-08 06:31:28,027 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:31:33,617 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:31:33,620 - INFO - Calling function: MysqlDatabase.update(orders='orders', order_collected='order_collected', True=True, order_id='order_id', 1028='1028')
+2023-11-08 06:31:33,620 - ERROR - Function update failed: Unread result found
+2023-11-08 06:31:33,621 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:31:33,621 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:34:49,606 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:34:54,991 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:34:54,993 - ERROR - Function order_pickup failed: 'CMySQLCursor' object is not callable
+2023-11-08 06:34:54,994 - ERROR - Function sign_in_program failed: 'CMySQLCursor' object is not callable
+2023-11-08 06:39:17,676 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:39:25,280 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:39:25,283 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:39:25,283 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 06:41:19,845 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', ='')
+2023-11-08 06:41:21,949 - INFO - Function sign_in_program completed successfully
+2023-11-08 06:42:11,483 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 06:42:45,066 - INFO - Calling function: Order.order_pickup(1026='1026', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 06:42:45,068 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 06:42:45,068 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 07:00:02,994 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 07:00:09,037 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 07:00:09,040 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 07:00:09,040 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 20:41:18,768 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 20:41:38,106 - INFO - Calling function: Order.order_pickup(1027='1027', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 20:41:38,109 - ERROR - Function order_pickup failed: Unread result found
+2023-11-08 20:41:38,109 - ERROR - Function sign_in_program failed: Unread result found
+2023-11-08 21:26:28,467 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 21:26:35,850 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 21:26:35,913 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3d4421d650>=<messenger.EmailSender object at 0x7f3d4421d650>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4683661892966413659=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============4683661892966413659==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============4683661892966413659==--
+='Content-Type: multipart/mixed; boundary="===============4683661892966413659=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============4683661892966413659==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============4683661892966413659==--\n')
+2023-11-08 21:26:37,437 - INFO - Function __calling_the_server completed successfully
+2023-11-08 21:26:37,438 - INFO - Function order_pickup completed successfully
+2023-11-08 21:26:37,517 - INFO - Function sign_in_program completed successfully
+2023-11-08 21:26:55,234 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 21:27:01,821 - INFO - Calling function: Order.order_pickup(1027='1027', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 21:27:01,860 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3d4421d650>=<messenger.EmailSender object at 0x7f3d4421d650>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6399206274802996815=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============6399206274802996815==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============6399206274802996815==--
+='Content-Type: multipart/mixed; boundary="===============6399206274802996815=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============6399206274802996815==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============6399206274802996815==--\n')
+2023-11-08 21:27:02,832 - INFO - Function __calling_the_server completed successfully
+2023-11-08 21:27:02,833 - INFO - Function order_pickup completed successfully
+2023-11-08 21:27:02,907 - INFO - Function sign_in_program completed successfully
+2023-11-08 21:27:32,706 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 21:27:38,983 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 21:27:39,041 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3d4421d650>=<messenger.EmailSender object at 0x7f3d4421d650>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7488381057532215195=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============7488381057532215195==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============7488381057532215195==--
+='Content-Type: multipart/mixed; boundary="===============7488381057532215195=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============7488381057532215195==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============7488381057532215195==--\n')
+2023-11-08 21:27:40,210 - INFO - Function __calling_the_server completed successfully
+2023-11-08 21:27:40,210 - INFO - Function order_pickup completed successfully
+2023-11-08 21:27:40,314 - INFO - Function sign_in_program completed successfully
+2023-11-08 21:29:27,065 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 21:29:36,287 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 21:29:36,344 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f8e3ee64110>=<messenger.EmailSender object at 0x7f8e3ee64110>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4081584551939210791=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============4081584551939210791==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============4081584551939210791==--
+='Content-Type: multipart/mixed; boundary="===============4081584551939210791=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============4081584551939210791==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============4081584551939210791==--\n')
+2023-11-08 21:29:37,460 - INFO - Function __calling_the_server completed successfully
+2023-11-08 21:29:37,460 - INFO - Function order_pickup completed successfully
+2023-11-08 21:29:37,568 - INFO - Function sign_in_program completed successfully
+2023-11-08 21:30:21,390 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 21:30:31,117 - INFO - Calling function: Order.order_pickup(1,028='1,028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 21:30:31,123 - ERROR - Function order_pickup failed: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',028' at line 1
+2023-11-08 21:30:31,123 - ERROR - Function sign_in_program failed: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',028' at line 1
+2023-11-08 22:35:00,734 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 22:35:07,418 - INFO - Calling function: Order.order_pickup(1028='1028', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 22:35:10,869 - INFO - Function order_pickup completed successfully
+2023-11-08 22:35:10,945 - INFO - Function sign_in_program completed successfully
+2023-11-08 22:35:24,835 - INFO - Calling function: MainCommunicator.sign_in_program(t0517184022@gmail.com='t0517184022@gmail.com', 1='1')
+2023-11-08 22:35:29,973 - INFO - Function sign_in_program completed successfully
+2023-11-08 22:35:43,897 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-08 22:35:49,000 - INFO - Calling function: Order.order_pickup(1020='1020', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-08 22:35:49,057 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fad089a44d0>=<messenger.EmailSender object at 0x7fad089a44d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1077297745517558403=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============1077297745517558403==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============1077297745517558403==--
+='Content-Type: multipart/mixed; boundary="===============1077297745517558403=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============1077297745517558403==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============1077297745517558403==--\n')
+2023-11-08 22:35:50,360 - INFO - Function __calling_the_server completed successfully
+2023-11-08 22:35:50,360 - INFO - Function order_pickup completed successfully
+2023-11-08 22:35:50,462 - INFO - Function sign_in_program completed successfully
+2023-11-09 16:12:12,283 - INFO - Calling function: MysqlDatabase.drop_database()
+2023-11-09 16:12:12,380 - INFO - Function drop_database completed successfully
+2023-11-09 16:14:49,291 - INFO - Calling function: MysqlDatabase.drop_database()
+2023-11-09 16:14:49,349 - INFO - Function drop_database completed successfully
+2023-11-09 16:17:58,398 - INFO - Calling function: MysqlDatabase.drop_database()
+2023-11-09 16:17:58,435 - INFO - Function drop_database completed successfully
+2023-11-09 16:19:44,460 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 16:19:46,205 - INFO - Function sign_in_program completed successfully
+2023-11-09 16:19:58,439 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 16:20:01,201 - INFO - Function sign_in_program completed successfully
+2023-11-09 16:20:38,539 - INFO - Calling function: MysqlDatabase.drop_database()
+2023-11-09 16:20:38,583 - INFO - Function drop_database completed successfully
+2023-11-09 16:21:25,880 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 16:21:33,037 - INFO - Calling function: Order.order_pickup(1000='1000', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-09 16:21:33,041 - ERROR - Function order_pickup failed: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1
+2023-11-09 16:21:33,041 - ERROR - Function sign_in_program failed: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1
+2023-11-09 16:24:46,460 - INFO - Calling function: MysqlDatabase.drop_database()
+2023-11-09 16:24:46,501 - INFO - Function drop_database completed successfully
+2023-11-09 16:29:20,381 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 16:29:25,739 - INFO - Calling function: Order.order_pickup(<order.Order object at 0x7f035387d450>=<order.Order object at 0x7f035387d450>, 1000='1000', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-09 16:29:25,740 - ERROR - Function order_pickup failed: Order.order_pickup() takes 2 positional arguments but 3 were given
+2023-11-09 16:29:25,740 - ERROR - Function sign_in_program failed: Order.order_pickup() takes 2 positional arguments but 3 were given
+2023-11-09 16:30:18,311 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 16:30:23,897 - INFO - Calling function: Order.order_pickup(<order.Order object at 0x7facdcfc7810>=<order.Order object at 0x7facdcfc7810>, 1000='1000')
+2023-11-09 16:30:44,224 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7facc3515190>=<messenger.EmailSender object at 0x7facc3515190>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0364467371061272256=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============0364467371061272256==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============0364467371061272256==--
+='Content-Type: multipart/mixed; boundary="===============0364467371061272256=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============0364467371061272256==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============0364467371061272256==--\n')
+2023-11-09 16:30:45,491 - INFO - Function __calling_the_server completed successfully
+2023-11-09 16:30:45,491 - INFO - Function order_pickup completed successfully
+2023-11-09 16:30:45,565 - INFO - Function sign_in_program completed successfully
+2023-11-09 17:06:44,244 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:06:56,877 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f5cb52e0f90>=<order.Order object at 0x7f5cb52e0f90>, {'-shirt-': 4, '-pants-': 3, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 3, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 4, '-pants-': 3, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 3, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:06:56,877 - INFO - Function add_items completed successfully
+2023-11-09 17:06:56,878 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f5cb52e0f90>=<order.Order object at 0x7f5cb52e0f90>)
+2023-11-09 17:06:56,878 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f5cb4223a10>=<washing_machine.RoomWashing object at 0x7f5cb4223a10>, <order.Order object at 0x7f5cb52e0f90>=<order.Order object at 0x7f5cb52e0f90>)
+2023-11-09 17:06:56,879 - INFO - Function start_washing completed successfully
+2023-11-09 17:06:56,880 - ERROR - Function operating_machine failed: 'Order' object has no attribute 'calculate_amount'
+2023-11-09 17:06:56,880 - ERROR - Function sign_in_program failed: 'Order' object has no attribute 'calculate_amount'
+2023-11-09 17:07:06,880 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f5cb40af750>=<washing_machine.WashingMachine object at 0x7f5cb40af750>, <order.Order object at 0x7f5cb52e0f90>=<order.Order object at 0x7f5cb52e0f90>)
+2023-11-09 17:07:06,886 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f5cb42391d0>=<messenger.EmailSender object at 0x7f5cb42391d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6202175021028741572=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1001
+
+--===============6202175021028741572==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6202175021028741572==--
+='Content-Type: multipart/mixed; boundary="===============6202175021028741572=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1001\n\n--===============6202175021028741572==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6202175021028741572==--\n')
+2023-11-09 17:07:08,040 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:07:08,040 - INFO - Function order_ready completed successfully
+2023-11-09 17:08:13,137 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:08:36,215 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f0a9d1c3510>=<order.Order object at 0x7f0a9d1c3510>, {'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 7, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 3, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 7, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:08:36,216 - INFO - Function add_items completed successfully
+2023-11-09 17:08:36,216 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f0a9d1c3510>=<order.Order object at 0x7f0a9d1c3510>)
+2023-11-09 17:08:36,216 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f0a9d145010>=<washing_machine.RoomWashing object at 0x7f0a9d145010>, <order.Order object at 0x7f0a9d1c3510>=<order.Order object at 0x7f0a9d1c3510>)
+2023-11-09 17:08:36,217 - INFO - Function start_washing completed successfully
+2023-11-09 17:08:36,222 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0a9a9f0a10>=<messenger.EmailSender object at 0x7f0a9a9f0a10>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1877738457764060339=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1001
+
+--===============1877738457764060339==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 7.
+tablecloth: 0.
+
+total order cost 870
+Your order will be ready in 17 hours
+--===============1877738457764060339==--
+='Content-Type: multipart/mixed; boundary="===============1877738457764060339=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1001\n\n--===============1877738457764060339==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 7.\ntablecloth: 0.\n\ntotal order cost 870\nYour order will be ready in 17 hours\n--===============1877738457764060339==--\n')
+2023-11-09 17:08:37,230 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:08:37,231 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f0a9d1c3510>=<order.Order object at 0x7f0a9d1c3510>)
+2023-11-09 17:08:37,231 - ERROR - Function __insert_to_sql failed: 'Order' object has no attribute 'amount'
+2023-11-09 17:08:37,231 - ERROR - Function operating_machine failed: 'Order' object has no attribute 'amount'
+2023-11-09 17:08:37,231 - ERROR - Function sign_in_program failed: 'Order' object has no attribute 'amount'
+2023-11-09 17:08:46,218 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f0a9a866f90>=<washing_machine.WashingMachine object at 0x7f0a9a866f90>, <order.Order object at 0x7f0a9d1c3510>=<order.Order object at 0x7f0a9d1c3510>)
+2023-11-09 17:08:46,223 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f0a9a9f0a10>=<messenger.EmailSender object at 0x7f0a9a9f0a10>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4160157335724629290=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1001
+
+--===============4160157335724629290==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============4160157335724629290==--
+='Content-Type: multipart/mixed; boundary="===============4160157335724629290=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1001\n\n--===============4160157335724629290==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============4160157335724629290==--\n')
+2023-11-09 17:08:47,470 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:08:47,471 - INFO - Function order_ready completed successfully
+2023-11-09 17:10:09,622 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:10:18,035 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f6444595310>=<order.Order object at 0x7f6444595310>, {'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 6, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 6, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:10:18,035 - INFO - Function add_items completed successfully
+2023-11-09 17:10:18,036 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f6444595310>=<order.Order object at 0x7f6444595310>)
+2023-11-09 17:10:18,036 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f6444a033d0>=<washing_machine.RoomWashing object at 0x7f6444a033d0>, <order.Order object at 0x7f6444595310>=<order.Order object at 0x7f6444595310>)
+2023-11-09 17:10:18,037 - INFO - Function start_washing completed successfully
+2023-11-09 17:10:18,042 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f6444a14bd0>=<messenger.EmailSender object at 0x7f6444a14bd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5527866838134544796=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1001
+
+--===============5527866838134544796==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 4.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 6.
+tablecloth: 0.
+
+total order cost 760
+Your order will be ready in 15 hours
+--===============5527866838134544796==--
+='Content-Type: multipart/mixed; boundary="===============5527866838134544796=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1001\n\n--===============5527866838134544796==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 4.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 6.\ntablecloth: 0.\n\ntotal order cost 760\nYour order will be ready in 15 hours\n--===============5527866838134544796==--\n')
+2023-11-09 17:10:19,017 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:10:19,017 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f6444595310>=<order.Order object at 0x7f6444595310>)
+2023-11-09 17:10:19,048 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 17:10:28,037 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f644488f110>=<washing_machine.WashingMachine object at 0x7f644488f110>, <order.Order object at 0x7f6444595310>=<order.Order object at 0x7f6444595310>)
+2023-11-09 17:10:28,042 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f6444a14bd0>=<messenger.EmailSender object at 0x7f6444a14bd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8595656102022766560=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1001
+
+--===============8595656102022766560==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============8595656102022766560==--
+='Content-Type: multipart/mixed; boundary="===============8595656102022766560=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1001\n\n--===============8595656102022766560==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============8595656102022766560==--\n')
+2023-11-09 17:10:29,021 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:10:29,021 - INFO - Function order_ready completed successfully
+2023-11-09 17:10:37,918 - INFO - Function operating_machine completed successfully
+2023-11-09 17:10:38,009 - INFO - Function sign_in_program completed successfully
+2023-11-09 17:25:28,369 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:25:53,449 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fb89fd591d0>=<order.Order object at 0x7fb89fd591d0>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 6, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 6, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:25:53,449 - INFO - Function add_items completed successfully
+2023-11-09 17:25:53,450 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fb89fd591d0>=<order.Order object at 0x7fb89fd591d0>)
+2023-11-09 17:25:53,450 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fb8a01c6e90>=<washing_machine.RoomWashing object at 0x7fb8a01c6e90>, <order.Order object at 0x7fb89fd591d0>=<order.Order object at 0x7fb89fd591d0>)
+2023-11-09 17:25:53,451 - INFO - Function start_washing completed successfully
+2023-11-09 17:25:53,456 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fb8a01d8690>=<messenger.EmailSender object at 0x7fb8a01d8690>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5826297961612304558=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1002
+
+--===============5826297961612304558==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 6.
+tablecloth: 0.
+
+total order cost 720
+Your order will be ready in 15 hours
+--===============5826297961612304558==--
+='Content-Type: multipart/mixed; boundary="===============5826297961612304558=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1002\n\n--===============5826297961612304558==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 6.\ntablecloth: 0.\n\ntotal order cost 720\nYour order will be ready in 15 hours\n--===============5826297961612304558==--\n')
+2023-11-09 17:25:54,468 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:25:54,469 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7fb89fd591d0>=<order.Order object at 0x7fb89fd591d0>)
+2023-11-09 17:25:54,520 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 17:26:03,106 - INFO - Function operating_machine completed successfully
+2023-11-09 17:26:03,203 - INFO - Function sign_in_program completed successfully
+2023-11-09 17:26:37,128 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:26:43,334 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f88f4895090>=<order.Order object at 0x7f88f4895090>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:26:43,334 - INFO - Function add_items completed successfully
+2023-11-09 17:26:43,335 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f88f4895090>=<order.Order object at 0x7f88f4895090>)
+2023-11-09 17:26:43,335 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f88f4d0ea10>=<washing_machine.RoomWashing object at 0x7f88f4d0ea10>, <order.Order object at 0x7f88f4895090>=<order.Order object at 0x7f88f4895090>)
+2023-11-09 17:26:43,336 - INFO - Function start_washing completed successfully
+2023-11-09 17:26:43,341 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f88f4d201d0>=<messenger.EmailSender object at 0x7f88f4d201d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0112665708041725968=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1003
+
+--===============0112665708041725968==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 1.
+tablecloth: 0.
+
+total order cost 120
+Your order will be ready in 2 hours
+--===============0112665708041725968==--
+='Content-Type: multipart/mixed; boundary="===============0112665708041725968=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1003\n\n--===============0112665708041725968==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 1.\ntablecloth: 0.\n\ntotal order cost 120\nYour order will be ready in 2 hours\n--===============0112665708041725968==--\n')
+2023-11-09 17:26:44,322 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:26:44,322 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f88f4895090>=<order.Order object at 0x7f88f4895090>)
+2023-11-09 17:26:44,352 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 17:31:43,336 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f88f4b93950>=<washing_machine.WashingMachine object at 0x7f88f4b93950>, <order.Order object at 0x7f88f4895090>=<order.Order object at 0x7f88f4895090>)
+2023-11-09 17:31:43,338 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f88f4d201d0>=<messenger.EmailSender object at 0x7f88f4d201d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4921847126235639175=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1003
+
+--===============4921847126235639175==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============4921847126235639175==--
+='Content-Type: multipart/mixed; boundary="===============4921847126235639175=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1003\n\n--===============4921847126235639175==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============4921847126235639175==--\n')
+2023-11-09 17:31:44,257 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:31:44,258 - INFO - Function order_ready completed successfully
+2023-11-09 17:44:56,847 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:45:04,407 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fdf9ac32310>=<order.Order object at 0x7fdf9ac32310>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:45:04,407 - INFO - Function add_items completed successfully
+2023-11-09 17:45:04,408 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7fdf9ac32310>=<order.Order object at 0x7fdf9ac32310>)
+2023-11-09 17:45:04,408 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7fdf9d38cad0>=<washing_machine.RoomWashing object at 0x7fdf9d38cad0>, <order.Order object at 0x7fdf9ac32310>=<order.Order object at 0x7fdf9ac32310>)
+2023-11-09 17:45:04,410 - INFO - Function start_washing completed successfully
+2023-11-09 17:45:04,417 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fdf9b0c7750>=<messenger.EmailSender object at 0x7fdf9b0c7750>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6181090375245873282=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1004
+
+--===============6181090375245873282==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 1.
+tablecloth: 0.
+
+total order cost 120
+Your order will be ready in 2 hours
+--===============6181090375245873282==--
+='Content-Type: multipart/mixed; boundary="===============6181090375245873282=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1004\n\n--===============6181090375245873282==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 1.\ntablecloth: 0.\n\ntotal order cost 120\nYour order will be ready in 2 hours\n--===============6181090375245873282==--\n')
+2023-11-09 17:45:05,412 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:45:05,412 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7fdf9ac32310>=<order.Order object at 0x7fdf9ac32310>)
+2023-11-09 17:45:05,441 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 17:45:15,619 - INFO - Function operating_machine completed successfully
+2023-11-09 17:45:15,705 - INFO - Function sign_in_program completed successfully
+2023-11-09 17:57:21,263 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 17:57:26,186 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f83a9691850>=<order.Order object at 0x7f83a9691850>, {'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 0, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 1, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-09 17:57:26,187 - INFO - Function add_items completed successfully
+2023-11-09 17:57:26,187 - INFO - Calling function: MainCommunicator.operating_machine(<order.Order object at 0x7f83a9691850>=<order.Order object at 0x7f83a9691850>)
+2023-11-09 17:57:26,188 - INFO - Calling function: RoomWashing.start_washing(<washing_machine.RoomWashing object at 0x7f83a9b077d0>=<washing_machine.RoomWashing object at 0x7f83a9b077d0>, <order.Order object at 0x7f83a9691850>=<order.Order object at 0x7f83a9691850>)
+2023-11-09 17:57:26,189 - INFO - Function start_washing completed successfully
+2023-11-09 17:57:26,190 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f83a9b1b110>=<messenger.EmailSender object at 0x7f83a9b1b110>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7773703439646413891=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1005
+
+--===============7773703439646413891==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 1.
+tablecloth: 0.
+
+total order cost 120
+Your order will be ready in 2 hours
+--===============7773703439646413891==--
+='Content-Type: multipart/mixed; boundary="===============7773703439646413891=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1005\n\n--===============7773703439646413891==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 1.\ntablecloth: 0.\n\ntotal order cost 120\nYour order will be ready in 2 hours\n--===============7773703439646413891==--\n')
+2023-11-09 17:57:27,038 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:57:27,039 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f83a9691850>=<order.Order object at 0x7f83a9691850>)
+2023-11-09 17:57:27,088 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 17:57:48,753 - INFO - Function operating_machine completed successfully
+2023-11-09 17:57:48,842 - INFO - Function sign_in_program completed successfully
+2023-11-09 17:59:56,189 - INFO - Calling function: WashingMachine.order_ready(<washing_machine.WashingMachine object at 0x7f83c0787950>=<washing_machine.WashingMachine object at 0x7f83c0787950>, <order.Order object at 0x7f83a9691850>=<order.Order object at 0x7f83a9691850>)
+2023-11-09 17:59:56,194 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f83a9b1b110>=<messenger.EmailSender object at 0x7f83a9b1b110>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4841310816198717642=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1005
+
+--===============4841310816198717642==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============4841310816198717642==--
+='Content-Type: multipart/mixed; boundary="===============4841310816198717642=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1005\n\n--===============4841310816198717642==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============4841310816198717642==--\n')
+2023-11-09 17:59:57,229 - INFO - Function __calling_the_server completed successfully
+2023-11-09 17:59:57,230 - INFO - Function order_ready completed successfully
+2023-11-09 18:23:39,542 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-09 18:23:44,996 - INFO - Calling function: Order.order_pickup(1005='1005', t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-09 18:24:11,863 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f81b2f68d90>=<messenger.EmailSender object at 0x7f81b2f68d90>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1481674902083943980=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============1481674902083943980==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============1481674902083943980==--
+='Content-Type: multipart/mixed; boundary="===============1481674902083943980=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============1481674902083943980==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============1481674902083943980==--\n')
+2023-11-09 18:24:12,970 - INFO - Function __calling_the_server completed successfully
+2023-11-09 18:24:12,970 - INFO - Function order_pickup completed successfully
+2023-11-09 18:24:13,055 - INFO - Function sign_in_program completed successfully

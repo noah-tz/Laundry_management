@@ -39,7 +39,7 @@ class MainCommunicator:
     @staticmethod
     def sign_in_program(email: str, password: str):
         if MysqlDatabase.check_client_existence(email):
-            if password == MysqlDatabase.get_value_from_table("clients", "password_client", email, "email_client"):
+            if password == MysqlDatabase.get_value_from_table("clients", "password_client", "email_client", email):
                 client = Client.create_object_client(email)
                 MainCommunicator.sign_in_client(client)
             else:
@@ -55,11 +55,13 @@ class MainCommunicator:
             if event in [sg.WIN_CLOSED, "close"]:
                 break
             elif event == '-OK_TAB_ORDER_PICKUP-':
-                client.order_pickup(value['-order number-'])
+                Order.order_pickup(value['-order number-'], client.email)
+                break
             elif event == 'CREATE_IN_TAB_CREATE_ORDER':
                 new_order = client.open_order(value)
                 if not MainCommunicator.operating_machine(new_order):
                     LaundryGui.popup_window("All laundry rooms are occupied. Please try again later.")
+                break
         main_client_window.window.close()
 
     @Logger.log_record

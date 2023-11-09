@@ -53,7 +53,8 @@ class WashingMachine:
         return True
     
     def washing(self, order: Type[Order]) -> None:
-        time.sleep((order.calculate_time()) / (60 / settings.SECOND_PER_HOUR))
+        time.sleep(max((order.calculate_time() * (60 * 60)) / 60 * settings.MINUTE_PER_HOUR, 10))
+        print("washing is finished")
         self.order_ready(order)
         self.is_active = False
 
@@ -93,14 +94,12 @@ class RoomWashing:
 
 if __name__ == '__main__':
     mysql_database.MysqlDatabase.checks_database()
-    a = Order("t0527184022@gmail.com", {"shirt": 10, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 3, "map": 10})
-    b = Order("t0527184022@gmail.com", {"shirt": 1, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 1, "map": 1})
-    c = RoomWashing(1)
-    c.start_washing(a)
+    a = Order("t0527184022@gmail.com", {"shirt": 0, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 1, "map": 0})
+    b = RoomWashing(1)
+    b.start_washing(a)
     a.order_summary()
-    time.sleep(5)
-    c.start_washing(b)
-    b.order_summary()
+
+    
 
 
 

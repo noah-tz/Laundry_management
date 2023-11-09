@@ -65,7 +65,7 @@ class LaundryGui:
             [sg.Text("Please enter an order number"), sg.InputText(key= '-order number-')],
             [sg.Button("OK", key='-OK_TAB_ORDER_PICKUP-')]
         ]
-        column_headings = ['Order ID', 'Client Email', 'Order Amount', 'Order Entered', 'Stage Finished At', 'Order Notes']
+        column_headings = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
         layout_tab_order_history = [
             [sg.Table(values=MysqlDatabase.get_orders_by_client_email(email_client), headings=column_headings, key='-TABLE-')]
         ]

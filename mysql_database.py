@@ -18,11 +18,12 @@ class SqlOrders:
             order_collected (bool, optional): Whether the order was collected by the customer or not. Default False.
         """
         cursor = MysqlDatabase._mysql_connection.cursor()
-        query = "INSERT INTO orders (order_id, email_client, phone_client, order_amount, amount_items, order_notes, order_collected) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        query = "INSERT INTO orders (order_id, email_client, phone_client, order_cost, amount_items, order_notes, order_collected) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         values = (order_id, email_client, phone_client, order_amount, amount_items, order_notes, False)
         cursor.execute(query, values)
         MysqlDatabase._mysql_connection.commit()
         MysqlDatabase.print_by_pd("orders")
+        
 
     @staticmethod
     def check_order_existence(order_id: str) -> bool:
@@ -41,7 +42,7 @@ class SqlOrders:
     
     @staticmethod
     def get_orders_by_client_email(email_client: str) -> list[tuple]:
-        """Retrieves all orders with the given client email from the 'orders' table.
+        """Retrieves the last 10 orders with the given client email from the 'orders' table.
 
         Args:
             email_client (str): The email address of the client.
@@ -51,8 +52,14 @@ class SqlOrders:
         """
         cursor = MysqlDatabase._mysql_connection.cursor()
         cursor.execute(
-            "SELECT * FROM orders WHERE email_client = %s", (email_client,))
-        return cursor.fetchall()
+            "SELECT * FROM orders WHERE email_client = %s ORDER BY order_entered DESC LIMIT 100",
+            (email_client,)
+        )
+        result = cursor.fetchall()
+        cursor.close()
+        return result
+
+
 
     @staticmethod
     def check_start_ID_orders():
@@ -61,7 +68,7 @@ class SqlOrders:
         Returns:
             int: The start ID for orders.
         """
-        MysqlDatabase.checks_database()
+        # MysqlDatabase.checks_database()
         cursor = MysqlDatabase._mysql_connection.cursor()
         cursor.execute("SELECT MAX(order_id) FROM orders")
         result = cursor.fetchone()
@@ -105,7 +112,9 @@ class SqlClients:
         cursor = MysqlDatabase._mysql_connection.cursor()
         query = "SELECT email_client FROM clients WHERE email_client = %s"
         cursor.execute(query, (email_client,))
-        return bool(cursor.fetchone())
+        result = bool(cursor.fetchone())
+        cursor.close()
+        return result
     
     @staticmethod
     def get_client_password(email_client: str) -> str:
@@ -141,6 +150,7 @@ class SqlClients:
         query = "SELECT name, family_name, city, street, house_number, phone_client, message_type FROM clients WHERE email_client = %s"
         cursor.execute(query, (email_client,))
         result = cursor.fetchone()
+        cursor.close()
         if result is None:
             return ()
         name, family_name, city, street, house_number, phone_client, message_type = result
@@ -200,7 +210,6 @@ class SqlVariables:
         :param variable_name: The name of the variable to update.
         :param new_value: The new value for the variable.
         """
-        MysqlDatabase.checks_database()
         cursor = MysqlDatabase._mysql_connection.cursor()
         update_query = "UPDATE variables SET variable_value = %s WHERE variable_name = %s"
         values = (new_value, variable_name)
@@ -279,7 +288,6 @@ class SqlEquipment:
         
         Returns: None
         """
-        MysqlDatabase.checks_database()
         cursor = MysqlDatabase._mysql_connection.cursor()
         update_query = "UPDATE equipment SET equipment_value = %s WHERE equipment_name = %s"
         values = (new_value, equipment_name)
@@ -315,7 +323,7 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
         main_cursor.execute("SHOW DATABASES")
         databases_names = [name[0] for name in main_cursor]
         if settings.NAME_DATABASE_SQL not in databases_names:
-            with open("/home/noah-tz/Documents/works/advens_python/Laundry_management_system/build_database.sql", "r") as fd:
+            with open("build_database.sql", "r") as fd:
                 sql_instructions = fd.read()
             main_cursor.execute(sql_instructions)
         MysqlDatabase._mysql_connection = mysql.connector.connect(
@@ -337,7 +345,10 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
         cursor.execute(f"SELECT {command} FROM {table_name}")
         for row in cursor:
             print(f"row = {row}")
-        print()
+
+    @staticmethod
+    def execute():
+        pass
 
     @staticmethod
     def column_names(table_name: str) -> list:
@@ -368,7 +379,6 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
         query = f"SELECT * FROM {table_name}"
         database = pd.read_sql(query, MysqlDatabase._mysql_connection)
         print(database)
-        print()
 
     @staticmethod
     def create(table_name: str, row_names: tuple[str], values: tuple[str]) -> None:
@@ -413,18 +423,19 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
             f"UPDATE {table_name} SET {column_name}={to_update} WHERE {column_key}={row_key}")
         MysqlDatabase._mysql_connection.commit()
         MysqlDatabase.print_by_pd(table_name)
+        cursor.close()
 
 
     @staticmethod
-    def get_value_from_table(table_name: str, column_name: str, row_key: str, column_key: str):
+    def get_value_from_table(table_name: str, column_name: str, column_key: str, key: str):
         """
         Retrieves the value from a specific column in a database table, based on the provided row key and column key.
 
         Args:
             table_name (str): Name of the database table.
             column_name (str): Name of the column from which to retrieve the value.
-            row_key (str): Value used to search for a specific row in the table.
             column_key (str): Name of the column used to match the row_key.
+            key (str): Value used to search for a specific row in the table.
 
         Returns:
             str: The value from the specified column and row, or None if no matching row is found.
@@ -434,15 +445,10 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
 
         """
         cursor = MysqlDatabase._mysql_connection.cursor()
-        query = f"SELECT {column_name} FROM {table_name} WHERE {column_key} = '{row_key}'"
+        query = f"SELECT {column_name} FROM {table_name} WHERE {column_key} = '{key}'"
         cursor.execute(query)
-        result = cursor.fetchone()
-        return result[0] if result else None
-
-
-
-
-        
+        results = cursor.fetchall()
+        return results[0][0] if results else None
 
     @Logger.log_record
     @staticmethod
@@ -503,23 +509,38 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
             MysqlDatabase._mysql_connection.commit()
 
 
+
 if __name__ == '__main__':
-    # MysqlDatabase.checks_database()
+    MysqlDatabase.checks_database()
+    """
+    MysqlDatabase.check_client_existence("t0527184022@gmail.com")
+    MysqlDatabase.get_value_from_table("clients", "password_client", "email_client", "t0527184022@gmail.com")
+    MysqlDatabase.get_client_details("t0527184022@gmail.com")
+    MysqlDatabase.get_orders_by_client_email("t0527184022@gmail.com")
+    MysqlDatabase.get_value_from_table('orders', 'order_collected', 'order_id', "1028")
+    MysqlDatabase.update("orders", "order_collected", True, "order_id", 1027)
+    """
+    """
     # MysqlDatabase.delete('orders', 'client_email', 't0527184022@gmail.com')
     # MysqlDatabase.delete('clients', 'client_email', 't0527184022@gmail.com')
     # MysqlDatabase.update("clients", "client_password", "1", "client_email", "'t0527184022@gmail.com'")
-
     # MysqlDatabase.drop_database()
-    # MysqlDatabase.check_start_ID_orders()
-    MysqlDatabase.add_client("noah", "tzitrenboim", "miryamssssss",
-                            "miryam", 4444, "0500000000", "t0527184022@gmail.com", "1", "email")
-    MysqlDatabase.add_order(MysqlDatabase.check_start_ID_orders(),
-                            "t0527184022@gmail.com", "0500000000", 128, 12, None)
+    # MysqlDatabase.checks_database()
+    # MysqlDatabase.add_client("noah", "tzitrenboim", "miryamssssss",
+                            # "miryam", 4444, "0500000000", "t0527184022@gmail.com", "1", "email")
+    # MysqlDatabase.add_order(MysqlDatabase.check_start_ID_orders(), "t0527184022@gmail.com", "0500000000", 128, 12, None)
     # MysqlDatabase.add_order(
     #     MysqlDatabase.check_start_ID_orders(), "teyyycycyyd", 111)
     # print(MysqlDatabase.column_names("clients"))
     # print(MysqlDatabase.column_names("orders"))
-    # print(MysqlDatabase.column_names("variables"))
+    # print(MysqlDatabase.column_names("variables"))"""
+    
+    # sdd equipment
+    MysqlDatabase.add_type_equipment("Washing powder", 20)
+    MysqlDatabase.add_type_equipment("Fabric softener", 20)
+else:
+    MysqlDatabase.checks_database()
+
 
 
 
