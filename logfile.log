@@ -4943,3 +4943,579 @@ Have a wonderful day!
 2023-11-09 18:24:12,970 - INFO - Function __calling_the_server completed successfully
 2023-11-09 18:24:12,970 - INFO - Function order_pickup completed successfully
 2023-11-09 18:24:13,055 - INFO - Function sign_in_program completed successfully
+2023-11-09 19:15:34,335 - INFO - Calling function: Order.add_items(<order.Order object at 0x7ff0eb82c590>=<order.Order object at 0x7ff0eb82c590>, {'shirt': 0, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 1, 'map': 0}={'shirt': 0, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 1, 'map': 0})
+2023-11-09 19:15:34,336 - INFO - Function add_items completed successfully
+2023-11-09 19:15:34,340 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7ff0eafc1590>=<__main__.RoomWashing object at 0x7ff0eafc1590>, <order.Order object at 0x7ff0eb82c590>=<order.Order object at 0x7ff0eb82c590>)
+2023-11-09 19:15:34,340 - INFO - Function start_washing completed successfully
+2023-11-09 19:15:34,341 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7ff0eafc2090>=<messenger.EmailSender object at 0x7ff0eafc2090>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0357203693182394860=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1006
+
+--===============0357203693182394860==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 0.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 1.
+
+total order cost 120
+Your order will be ready in 2 hours
+--===============0357203693182394860==--
+='Content-Type: multipart/mixed; boundary="===============0357203693182394860=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1006\n\n--===============0357203693182394860==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 0.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 1.\n\ntotal order cost 120\nYour order will be ready in 2 hours\n--===============0357203693182394860==--\n')
+2023-11-09 19:15:35,502 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:15:35,502 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7ff0eb82c590>=<order.Order object at 0x7ff0eb82c590>)
+2023-11-09 19:15:35,544 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 19:17:00,659 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f6684035890>=<order.Order object at 0x7f6684035890>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-09 19:17:00,659 - INFO - Function add_items completed successfully
+2023-11-09 19:17:00,662 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7f66823d56d0>=<__main__.RoomWashing object at 0x7f66823d56d0>, <order.Order object at 0x7f6684035890>=<order.Order object at 0x7f6684035890>)
+2023-11-09 19:17:00,663 - INFO - Function start_washing completed successfully
+2023-11-09 19:17:00,664 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f66823d61d0>=<messenger.EmailSender object at 0x7f66823d61d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3475423586340548310=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1007
+
+--===============3475423586340548310==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============3475423586340548310==--
+='Content-Type: multipart/mixed; boundary="===============3475423586340548310=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1007\n\n--===============3475423586340548310==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============3475423586340548310==--\n')
+2023-11-09 19:17:01,665 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:17:01,665 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f6684035890>=<order.Order object at 0x7f6684035890>)
+2023-11-09 19:17:01,704 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 19:17:18,663 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f6682756590>=<__main__.WashingMachine object at 0x7f6682756590>, <order.Order object at 0x7f6684035890>=<order.Order object at 0x7f6684035890>)
+2023-11-09 19:17:18,668 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f66823d61d0>=<messenger.EmailSender object at 0x7f66823d61d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8559386241376812223=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1007
+
+--===============8559386241376812223==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============8559386241376812223==--
+='Content-Type: multipart/mixed; boundary="===============8559386241376812223=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1007\n\n--===============8559386241376812223==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============8559386241376812223==--\n')
+2023-11-09 19:17:19,644 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:17:19,645 - INFO - Function order_ready completed successfully
+2023-11-09 19:17:56,263 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f262f64f590>=<order.Order object at 0x7f262f64f590>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-09 19:17:56,263 - INFO - Function add_items completed successfully
+2023-11-09 19:17:56,267 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7f262f34d790>=<__main__.RoomWashing object at 0x7f262f34d790>, <order.Order object at 0x7f262f64f590>=<order.Order object at 0x7f262f64f590>)
+2023-11-09 19:17:56,267 - INFO - Function start_washing completed successfully
+2023-11-09 19:17:56,269 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f262f34e290>=<messenger.EmailSender object at 0x7f262f34e290>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6856873082560759534=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1008
+
+--===============6856873082560759534==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============6856873082560759534==--
+='Content-Type: multipart/mixed; boundary="===============6856873082560759534=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1008\n\n--===============6856873082560759534==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============6856873082560759534==--\n')
+2023-11-09 19:17:57,226 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:17:57,227 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f262f64f590>=<order.Order object at 0x7f262f64f590>)
+2023-11-09 19:17:57,257 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 19:18:14,268 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f2631010f10>=<__main__.WashingMachine object at 0x7f2631010f10>, <order.Order object at 0x7f262f64f590>=<order.Order object at 0x7f262f64f590>)
+2023-11-09 19:18:14,269 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f262f34e290>=<messenger.EmailSender object at 0x7f262f34e290>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0247720138308721793=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1008
+
+--===============0247720138308721793==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0247720138308721793==--
+='Content-Type: multipart/mixed; boundary="===============0247720138308721793=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1008\n\n--===============0247720138308721793==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0247720138308721793==--\n')
+2023-11-09 19:18:15,342 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:18:15,342 - INFO - Function order_ready completed successfully
+2023-11-09 19:18:15,388 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:18:15,394 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x1ed7820> returned a result with an exception set
+2023-11-09 19:18:15,394 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:18:15,394 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:18:15,395 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:18:15,395 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:18:15,395 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:18:15,395 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:18:15,395 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:18:15,396 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:20:26,398 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f7e2e804c90>=<order.Order object at 0x7f7e2e804c90>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-09 19:20:26,398 - INFO - Function add_items completed successfully
+2023-11-09 19:20:26,401 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7f7e2dfbd1d0>=<__main__.RoomWashing object at 0x7f7e2dfbd1d0>, <order.Order object at 0x7f7e2e804c90>=<order.Order object at 0x7f7e2e804c90>)
+2023-11-09 19:20:26,402 - INFO - Function start_washing completed successfully
+2023-11-09 19:20:26,403 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f7e2e2befd0>=<messenger.EmailSender object at 0x7f7e2e2befd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0322249595230589782=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1009
+
+--===============0322249595230589782==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============0322249595230589782==--
+='Content-Type: multipart/mixed; boundary="===============0322249595230589782=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1009\n\n--===============0322249595230589782==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============0322249595230589782==--\n')
+2023-11-09 19:20:27,347 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:20:27,347 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f7e2e804c90>=<order.Order object at 0x7f7e2e804c90>)
+2023-11-09 19:20:27,381 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 19:20:44,402 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f7e2eb06ed0>=<__main__.WashingMachine object at 0x7f7e2eb06ed0>, <order.Order object at 0x7f7e2e804c90>=<order.Order object at 0x7f7e2e804c90>)
+2023-11-09 19:20:44,407 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f7e2e2befd0>=<messenger.EmailSender object at 0x7f7e2e2befd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6240289991161469611=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1009
+
+--===============6240289991161469611==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6240289991161469611==--
+='Content-Type: multipart/mixed; boundary="===============6240289991161469611=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1009\n\n--===============6240289991161469611==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6240289991161469611==--\n')
+2023-11-09 19:20:45,369 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:20:45,369 - INFO - Function order_ready completed successfully
+2023-11-09 19:20:45,421 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:20:45,422 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x1e95a30> returned a result with an exception set
+2023-11-09 19:20:45,422 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:20:45,422 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:20:45,423 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:20:45,423 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:20:45,423 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:20:45,423 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:20:45,423 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:20:45,424 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:30:51,317 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f38bb9247d0>=<order.Order object at 0x7f38bb9247d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-09 19:30:51,317 - INFO - Function add_items completed successfully
+2023-11-09 19:30:51,321 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7f38baa38850>=<__main__.RoomWashing object at 0x7f38baa38850>, <order.Order object at 0x7f38bb9247d0>=<order.Order object at 0x7f38bb9247d0>)
+2023-11-09 19:30:51,322 - INFO - Function start_washing completed successfully
+2023-11-09 19:30:51,323 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f38b98ea710>=<messenger.EmailSender object at 0x7f38b98ea710>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8693582330195369715=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1010
+
+--===============8693582330195369715==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============8693582330195369715==--
+='Content-Type: multipart/mixed; boundary="===============8693582330195369715=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1010\n\n--===============8693582330195369715==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============8693582330195369715==--\n')
+2023-11-09 19:30:52,406 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:30:52,407 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f38bb9247d0>=<order.Order object at 0x7f38bb9247d0>)
+2023-11-09 19:30:52,463 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 19:31:09,322 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f38bb600c50>=<__main__.WashingMachine object at 0x7f38bb600c50>, <order.Order object at 0x7f38bb9247d0>=<order.Order object at 0x7f38bb9247d0>)
+2023-11-09 19:31:09,325 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f38b98ea710>=<messenger.EmailSender object at 0x7f38b98ea710>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4981084061850539737=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1010
+
+--===============4981084061850539737==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============4981084061850539737==--
+='Content-Type: multipart/mixed; boundary="===============4981084061850539737=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1010\n\n--===============4981084061850539737==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============4981084061850539737==--\n')
+2023-11-09 19:31:10,327 - INFO - Function __calling_the_server completed successfully
+2023-11-09 19:31:10,327 - INFO - Function order_ready completed successfully
+2023-11-09 19:31:10,371 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:31:10,372 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x1e8e210> returned a result with an exception set
+2023-11-09 19:31:10,372 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:31:10,373 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:31:10,373 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:31:10,373 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:31:10,373 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:31:10,373 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 19:31:10,374 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 19:31:10,374 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:19:22,564 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f4655eaead0>=<order.Order object at 0x7f4655eaead0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-09 20:19:22,564 - INFO - Function add_items completed successfully
+2023-11-09 20:19:22,568 - INFO - Calling function: RoomWashing.start_washing(<__main__.RoomWashing object at 0x7f4654235650>=<__main__.RoomWashing object at 0x7f4654235650>, <order.Order object at 0x7f4655eaead0>=<order.Order object at 0x7f4655eaead0>)
+2023-11-09 20:19:22,569 - INFO - Function start_washing completed successfully
+2023-11-09 20:19:22,570 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f4654236150>=<messenger.EmailSender object at 0x7f4654236150>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7120067245331218902=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1011
+
+--===============7120067245331218902==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============7120067245331218902==--
+='Content-Type: multipart/mixed; boundary="===============7120067245331218902=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1011\n\n--===============7120067245331218902==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============7120067245331218902==--\n')
+2023-11-09 20:19:23,755 - INFO - Function __calling_the_server completed successfully
+2023-11-09 20:19:23,755 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f4655eaead0>=<order.Order object at 0x7f4655eaead0>)
+2023-11-09 20:19:23,814 - INFO - Function __insert_to_sql completed successfully
+2023-11-09 20:19:40,569 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f465455cd50>=<__main__.WashingMachine object at 0x7f465455cd50>, <order.Order object at 0x7f4655eaead0>=<order.Order object at 0x7f4655eaead0>)
+2023-11-09 20:19:40,574 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f4654236150>=<messenger.EmailSender object at 0x7f4654236150>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============3195225599911521445=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1011
+
+--===============3195225599911521445==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============3195225599911521445==--
+='Content-Type: multipart/mixed; boundary="===============3195225599911521445=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1011\n\n--===============3195225599911521445==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============3195225599911521445==--\n')
+2023-11-09 20:19:41,471 - INFO - Function __calling_the_server completed successfully
+2023-11-09 20:19:41,471 - INFO - Function order_ready completed successfully
+2023-11-09 20:19:41,518 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:19:41,519 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x357e820> returned a result with an exception set
+2023-11-09 20:19:41,520 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:19:41,520 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:19:41,520 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:19:41,520 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:19:41,520 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:19:41,520 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:19:41,521 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:19:41,521 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:22:26,646 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:22:26,647 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x32951a0> returned a result with an exception set
+2023-11-09 20:22:26,648 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:22:26,648 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:22:26,648 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:22:26,648 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:22:26,648 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:22:26,649 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:22:26,649 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:22:26,649 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:24:22,017 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:24:22,023 - INFO - Function adding_material completed successfully
+2023-11-09 20:24:46,157 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:24:46,163 - INFO - Function adding_material completed successfully
+2023-11-09 20:24:46,164 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:24:46,175 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:16,697 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:26:16,704 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:16,704 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:26:16,710 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:25,230 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:26:25,236 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:25,236 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:26:25,242 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:42,177 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:26:42,182 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:42,182 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:26:42,188 - INFO - Function adding_material completed successfully
+2023-11-09 20:26:42,224 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:26:42,226 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x2a407f0> returned a result with an exception set
+2023-11-09 20:26:42,226 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:26:42,226 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:26:42,227 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:26:42,227 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:26:42,227 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:26:42,227 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:26:42,227 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:26:42,227 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:07,493 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:27:07,498 - INFO - Function adding_material completed successfully
+2023-11-09 20:27:07,498 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:27:07,507 - INFO - Function adding_material completed successfully
+2023-11-09 20:27:07,565 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:07,566 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x35087f0> returned a result with an exception set
+2023-11-09 20:27:07,567 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:07,567 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:07,567 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:07,567 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:07,568 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:07,568 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:07,568 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:07,568 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:19,360 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:27:19,366 - INFO - Function adding_material completed successfully
+2023-11-09 20:27:19,367 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-09 20:27:19,373 - INFO - Function adding_material completed successfully
+2023-11-09 20:27:19,409 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:19,411 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x3b23e10> returned a result with an exception set
+2023-11-09 20:27:19,411 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:19,411 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:19,412 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:19,412 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:19,412 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:19,412 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:19,413 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:19,413 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:52,263 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:52,265 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x3793e00> returned a result with an exception set
+2023-11-09 20:27:52,265 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:52,265 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:52,265 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:52,266 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:52,266 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:52,266 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:27:52,266 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:27:52,266 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:28:52,729 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:28:52,731 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x3400d90> returned a result with an exception set
+2023-11-09 20:28:52,731 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:28:52,731 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:28:52,732 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:28:52,732 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:28:52,732 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:28:52,732 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:28:52,733 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 0=0)
+2023-11-09 20:28:52,733 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:03,119 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:03,121 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x2c30cc0> returned a result with an exception set
+2023-11-09 20:29:03,121 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:03,121 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:03,121 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:03,121 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:03,122 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:03,122 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:03,122 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:03,122 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:20,141 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:20,142 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x2fc58c0> returned a result with an exception set
+2023-11-09 20:29:20,143 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:20,143 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:20,143 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:20,143 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:20,144 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:20,144 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:20,144 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:20,144 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:44,695 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:44,697 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x21e0030> returned a result with an exception set
+2023-11-09 20:29:44,697 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:44,697 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:44,698 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:44,698 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:44,698 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:44,698 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:29:44,698 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:29:44,698 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:30:22,365 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:22,371 - INFO - Function adding_material completed successfully
+2023-11-09 20:30:49,004 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:49,006 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x2fcc030> returned a result with an exception set
+2023-11-09 20:30:49,006 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:49,006 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:30:49,007 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:49,007 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:30:49,007 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:49,007 - ERROR - Function adding_material failed: Unread result found
+2023-11-09 20:30:49,008 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-09 20:30:49,008 - ERROR - Function adding_material failed: Unread result found
+2023-11-10 02:20:33,581 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:20:33,583 - ERROR - Function adding_material failed: <built-in method fetch_row of _mysql_connector.MySQL object at 0x315ffa0> returned a result with an exception set
+2023-11-10 02:20:33,583 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:20:33,583 - ERROR - Function adding_material failed: Unread result found
+2023-11-10 02:20:33,583 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:20:33,584 - ERROR - Function adding_material failed: Unread result found
+2023-11-10 02:20:33,584 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:20:33,584 - ERROR - Function adding_material failed: Unread result found
+2023-11-10 02:20:33,584 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:20:33,584 - ERROR - Function adding_material failed: Unread result found
+2023-11-10 02:39:29,357 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:29,363 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,363 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:29,373 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,374 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:29,384 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,384 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:29,395 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,395 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:29,405 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,405 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:29,415 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,416 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:29,426 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,426 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:29,436 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,436 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:29,446 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:29,447 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:29,458 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,002 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:39,008 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,008 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:39,014 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,014 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:39,020 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,020 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:39,025 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,025 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:39,029 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,029 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:39,034 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,034 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:39,039 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,039 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:39,044 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,044 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 20=20)
+2023-11-10 02:39:39,049 - INFO - Function adding_material completed successfully
+2023-11-10 02:39:39,049 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 20=20)
+2023-11-10 02:39:39,055 - INFO - Function adding_material completed successfully
+2023-11-10 02:43:25,774 - INFO - Calling function: MainCommunicator.sign_in_program(t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-10 02:43:25,785 - INFO - Calling function: Client.create_object_client(t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-10 02:43:25,786 - INFO - Function create_object_client completed successfully
+2023-11-10 02:43:28,353 - INFO - Function sign_in_program completed successfully
+2023-11-10 02:45:07,153 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,165 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,166 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,176 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,176 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,186 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,187 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,197 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,197 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,207 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,208 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,218 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,219 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,228 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,228 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,238 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,238 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,248 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,248 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,258 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,258 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,267 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,267 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,277 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,277 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,287 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,287 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,297 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,297 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,307 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,307 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,316 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,317 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,326 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,327 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,337 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,337 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 10=10)
+2023-11-10 02:45:07,346 - INFO - Function adding_material completed successfully
+2023-11-10 02:45:07,346 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 10=10)
+2023-11-10 02:45:07,356 - INFO - Function adding_material completed successfully
+2023-11-10 02:46:28,368 - INFO - Calling function: Order.add_items(<order.Order object at 0x7faade5ec210>=<order.Order object at 0x7faade5ec210>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-10 02:46:28,368 - INFO - Function add_items completed successfully
+2023-11-10 02:46:28,371 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7faac6cf1ed0>=<__main__.WashingRoom object at 0x7faac6cf1ed0>, <order.Order object at 0x7faade5ec210>=<order.Order object at 0x7faade5ec210>)
+2023-11-10 02:46:28,372 - INFO - Function start_washing completed successfully
+2023-11-10 02:46:46,372 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7faac64078d0>=<__main__.WashingMachine object at 0x7faac64078d0>, <order.Order object at 0x7faade5ec210>=<order.Order object at 0x7faade5ec210>)
+2023-11-10 02:46:46,378 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7faac62373d0>=<messenger.EmailSender object at 0x7faac62373d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0877865466196740457=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1012
+
+--===============0877865466196740457==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0877865466196740457==--
+='Content-Type: multipart/mixed; boundary="===============0877865466196740457=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1012\n\n--===============0877865466196740457==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0877865466196740457==--\n')
+2023-11-10 02:46:47,807 - INFO - Function __calling_the_server completed successfully
+2023-11-10 02:46:47,807 - INFO - Function order_ready completed successfully
+2023-11-10 02:47:32,502 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fa4637561d0>=<order.Order object at 0x7fa4637561d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-10 02:47:32,502 - INFO - Function add_items completed successfully
+2023-11-10 02:47:32,506 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7fa4647fa890>=<__main__.WashingRoom object at 0x7fa4647fa890>, <order.Order object at 0x7fa4637561d0>=<order.Order object at 0x7fa4637561d0>)
+2023-11-10 02:47:32,506 - INFO - Calling function: InventoryManager.filling_machine(1=1, powder='powder', 1000=1000, 10=10)
+2023-11-10 02:47:32,507 - INFO - Calling function: SmsSender.send_sms(<messenger.SmsSender object at 0x7fa44c484c10>=<messenger.SmsSender object at 0x7fa44c484c10>, None=None, powder in stock refill alert/nHello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day='powder in stock refill alert/nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day')
+2023-11-10 02:47:32,508 - ERROR - Function send_sms failed: 'NoneType' object is not subscriptable
+2023-11-10 02:47:32,508 - ERROR - Function filling_machine failed: 'NoneType' object is not subscriptable
+2023-11-10 02:47:32,508 - ERROR - Function start_washing failed: 'NoneType' object is not subscriptable

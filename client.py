@@ -1,9 +1,8 @@
 from order import Order
 from messenger import Messenger
 from log import Logger
-import settings
 from mysql_database import MysqlDatabase
-from washing_machine import RoomWashing
+from washing_machine import WashingRoom
 
 from gui import LaundryGui
 from typing import Dict
@@ -23,7 +22,8 @@ class Client:
         self.email = email
         self.orders: Dict[int, Order] = {}
         self.message_type = message_type
-
+    
+    @Logger.log_record
     @staticmethod
     def create_object_client(email: str):
         client_details = MysqlDatabase.get_client_details(email)
@@ -42,7 +42,7 @@ class Client:
 
 
 if __name__ == '__main__':
-    noah = Client("0527194022", "noah", "tzitrenboim", "bet shemesh", "miryam", 12, "t0527184022@gmail.com", "2345")
+    noah = Client("0527184022", "noah", "tzitrenboim", "bet shemesh", "miryam", 12, "t0527184022@gmail.com", "2345")
     noah.open_order()
     MysqlDatabase.print_by_pd("orders")
     MysqlDatabase.print_by_pd("clients")

@@ -17,16 +17,11 @@ class WashingMachine:
     __min_container = {"powder": 100, "softener": 1000}
     def __init__(self, number: int) -> None:
         self.number = number
-        self.inventory = {"powder": 0, "softener": 0}
+        self.inventory = {"powder": 10, "softener": 10}
         self.is_active = False
         self.order: str
         self.check_data()
 
-    # TODO to play on
-    # def __del__(self) -> None:
-    #     for material in self.inventory.keys():
-    #         InventoryManager.adding_material(material, self.inventory[material])
-    #         self.inventory[material] = 0
 
     def check_data(self):
         for material in self.inventory.keys():
@@ -44,9 +39,8 @@ class WashingMachine:
         return self.inventory[material] >= WashingMachine.__min_container[material]
 
     def start(self, order: Type[Order]) -> bool:
-        # TODO to play on
-        # if not self.check_material_machine():
-        #     return False
+        if not self.check_material_machine():
+            return False
         self.is_active = True
         thread_washing = threading.Thread(target= self.washing, args= (order,))
         thread_washing.start()
@@ -63,11 +57,16 @@ class WashingMachine:
         order.is_finished = True
         self.is_full = False
         self.order = {}
-        del RoomWashing.orders[order.ID]
+        del WashingRoom.orders[order.ID]
         Messenger.Your_order_is_ready(order.email_client, order.ID)
 
+    def close_machine(self):
+        for material in self.inventory.keys():
+            InventoryManager.adding_material(material, self.inventory[material])
+            self.inventory[material] = 0
 
-class RoomWashing:
+
+class WashingRoom:
     orders_pending = {}
     orders = {}
     def __init__(self, number: int) -> None:
@@ -82,24 +81,30 @@ class RoomWashing:
             if not machine.is_active:
                 if machine.number == settings.MACHINE_PER_ROOM:
                     self.is_full = True
-                RoomWashing.orders[order.ID] = self.number
+                WashingRoom.orders[order.ID] = self.number
                 if not machine.start(order):
-                    RoomWashing.orders_pending[order] = self.number
+                    WashingRoom.orders_pending[order] = self.number
                     sg.popup("Oh... we're really sorry, there are materials that we currently lack. Please wait until we come to restock our inventory.\nIt may take a little time.\nYou will be notified when your order is ready.")
                 return
-
 
     def order_pickup(self, email: str, ID):
         Messenger.thank_you(email)
 
+    def close_room(self):
+        for _, machine in self.__machines.items():
+            machine.close_machine()
+
 if __name__ == '__main__':
     mysql_database.MysqlDatabase.checks_database()
-    a = Order("t0527184022@gmail.com", {"shirt": 0, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 1, "map": 0})
-    b = RoomWashing(1)
+    a = Order("t0527184022@gmail.com", {"shirt": 3, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 0, "map": 0})
+    b = WashingRoom(1)
     b.start_washing(a)
     a.order_summary()
+    # InventoryManager.adding_material("powder", 10)
+    # InventoryManager.adding_material("softener", 10)
 
-    
+
+
 
 
 

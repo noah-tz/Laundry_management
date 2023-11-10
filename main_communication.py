@@ -1,5 +1,5 @@
 from gui import Window, LaundryGui
-from washing_machine import RoomWashing
+from washing_machine import WashingRoom
 from client import Client
 from mysql_database import MysqlDatabase
 from messenger import Messenger
@@ -13,7 +13,7 @@ from typing import Type
 
 
 class MainCommunicator:
-    __rooms_washing = [RoomWashing(number +1) for number in range(settings.NUMBER_OF_ROOMS)]
+    __rooms_washing: list[WashingRoom] = [WashingRoom(number +1) for number in range(settings.NUMBER_OF_ROOMS)]
     @staticmethod
     def run():
         entry_window = LaundryGui.make_enter_window()
@@ -107,6 +107,8 @@ class MainCommunicator:
     @staticmethod
     def end_of_program() -> None:
         Messenger.email_sender.__del__()
+        for machine in MainCommunicator.__rooms_washing:
+            machine.close_room()
 
 
 

@@ -20,7 +20,7 @@ class InventoryManager:
     @staticmethod
     def adding_material(material: str, amount: int) -> None:
         InventoryManager.check_data_inventory(material)
-        MysqlDatabase.update_variable(f"inventory {material}", MysqlDatabase.get_variable(f"inventory {material}") + amount)
+        MysqlDatabase.update_equipment_value(material, MysqlDatabase.get_equipment_value(material) + amount)
 
     @Logger.log_record
     @staticmethod
