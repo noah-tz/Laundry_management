@@ -18,26 +18,23 @@ class WashingMachine:
     def __init__(self, number_machine: int, number_room) -> None:
         self.number_machine = number_machine
         self.number_room = number_room
-        self.inventory = {"powder": 0, "softener": 0}
+        self.stock = {"powder": 0, "softener": 0}
         self.is_active = False
         self.order: str
-        self.check_data()
 
-
-    def check_data(self):
-        for material in self.inventory.keys():
-            StockManager.check_data_machine(self.number_room ,self.number_machine, material)
 
     def check_material_machine(self):
         result = True
-        for material in self.inventory.keys():
-            if self.inventory[material] < WashingMachine.__min_container[material] and not self.filling_material(material):
+        for material in self.stock.keys():
+            if self.stock[material] < WashingMachine.__min_container[material] and not self.filling_material(material):
                 result = False
         return result
 
     def filling_material(self, material: str) -> bool:
-        self.inventory[material] += StockManager.filling_machine(self.number_room , self.number_machine, material, WashingMachine.__full_container[material], self.inventory[material])
-        return self.inventory[material] >= WashingMachine.__min_container[material]
+        self.stock[material] += StockManager.filling_machine(material, WashingMachine.__full_container[material], self.stock[material])
+        if self.stock[material] < WashingMachine.__full_container[material]:
+            StockManager.material_filling_alert(material)
+        return self.stock[material] >= WashingMachine.__min_container[material]
 
     def start(self, order: Type[Order]) -> bool:
         if not self.check_material_machine():
@@ -48,10 +45,16 @@ class WashingMachine:
         return True
     
     def washing(self, order: Type[Order]) -> None:
+        self.material_reduction(order)
         time.sleep(max((order.calculate_time() * (60 * 60)) / 60 * settings.MINUTE_PER_HOUR, 10))
         print("washing is finished")
         self.order_ready(order)
         self.is_active = False
+
+    def material_reduction(self, order: Type[Order]):
+        for material in self.stock.keys():
+            self.stock[material] -= order.weight * settings.MATERIAL_PER_KILOGRAM[material]
+
 
     @Logger.log_record
     def order_ready(self, order: Type[Order]):
@@ -62,9 +65,9 @@ class WashingMachine:
         Messenger.Your_order_is_ready(order.email_client, order.ID)
 
     def close_machine(self):
-        for material in self.inventory.keys():
-            StockManager.adding_material(material, self.inventory[material])
-            self.inventory[material] = 0
+        for material in self.stock.keys():
+            StockManager.adding_material(material, self.stock[material])
+            self.stock[material] = 0
 
 
 class WashingRoom:
@@ -97,9 +100,10 @@ class WashingRoom:
 
 if __name__ == '__main__':
     mysql_database.MysqlDatabase.checks_database()
-    # mysql_database.MysqlDatabase.update_equipment_value("stock powder", 5000)
-    # mysql_database.MysqlDatabase.update_equipment_value("stock softener", 5000)
-    a = Order("t0527184022@gmail.com", {"shirt": 3, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 0, "map": 0})
+
+    mysql_database.MysqlDatabase.update_equipment_value("stock powder", 5000)
+    mysql_database.MysqlDatabase.update_equipment_value("stock softener", 5000)
+    a = Order("t0527184022@gmail.com", {"shirt": 1, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 0, "map": 0})
     b = WashingRoom(1)
     b.start_washing(a)
     a.order_summary()

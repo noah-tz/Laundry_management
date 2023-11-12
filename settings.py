@@ -7,9 +7,9 @@ MINUTE_PER_HOUR = 1
 MACHINE_PER_ROOM = 5
 NUMBER_OF_ROOMS = 2
 
-INITIAL_STOCK = {"powder": 300, "softener": 300}
 MIN_CONTAINER = {"powder": 100, "softener": 1000}
-FULL_CONTAINER = {"powder": 1000, "softener": 10000}
+FULL_CONTAINER = {"powder": 1000, "softener": 1000}
+MATERIAL_PER_KILOGRAM = {"powder": 50, "softener": 30}
 
 MIN_ORDER = 40
 LENGTH_NO_ORDER = 5

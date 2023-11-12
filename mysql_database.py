@@ -288,11 +288,16 @@ class SqlEquipment:
         
         Returns: None
         """
-        cursor = MysqlDatabase._mysql_connection.cursor()
-        update_query = "UPDATE equipment SET equipment_value = %s WHERE equipment_name = %s"
-        values = (new_value, equipment_name)
-        cursor.execute(update_query, values)
-        MysqlDatabase._mysql_connection.commit()
+        try:
+            cursor = MysqlDatabase._mysql_connection.cursor()
+            update_query = "UPDATE equipment SET equipment_value = %s WHERE equipment_name = %s"
+            values = (new_value, equipment_name)
+            cursor.execute(update_query, values)
+            MysqlDatabase._mysql_connection.commit()
+        except Exception as e:
+            print(f"An error has occurred {e}")
+        finally:
+            cursor.close
 
     @staticmethod
     def check_equipment_execute(name_equipment) -> bool:

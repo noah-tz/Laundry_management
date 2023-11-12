@@ -17,6 +17,7 @@ class Order:
         Order.start_ID += 1
         self.cost = self.calculate_cost()
         self.notes = order_notes
+        self.weight = 0
         if items:
             self.add_items(items)
 
@@ -34,6 +35,7 @@ class Order:
             if item_cut in settings.PRISE_LIST.keys():
                 self.items[item_cut] = items[item]
                 self.amount_items += items[item]
+                self.weight += settings.GARMENT_WEIGHT[item] * items[item]
 
             
     @Logger.log_record
