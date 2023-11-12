@@ -1,4 +1,4 @@
-from inventory import InventoryManager
+from stock import StockManager
 from messenger import Messenger
 import settings
 from order import Order
@@ -13,11 +13,12 @@ from typing import Type
 
 
 class WashingMachine:
-    __full_container = {"powder": 1000, "softener": 10000}
-    __min_container = {"powder": 100, "softener": 1000}
-    def __init__(self, number: int) -> None:
-        self.number = number
-        self.inventory = {"powder": 10, "softener": 10}
+    __min_container = settings.MIN_CONTAINER
+    __full_container = settings.FULL_CONTAINER
+    def __init__(self, number_machine: int, number_room) -> None:
+        self.number_machine = number_machine
+        self.number_room = number_room
+        self.inventory = {"powder": 0, "softener": 0}
         self.is_active = False
         self.order: str
         self.check_data()
@@ -25,7 +26,7 @@ class WashingMachine:
 
     def check_data(self):
         for material in self.inventory.keys():
-            InventoryManager.check_data_machine(self.number, material)
+            StockManager.check_data_machine(self.number_room ,self.number_machine, material)
 
     def check_material_machine(self):
         result = True
@@ -35,7 +36,7 @@ class WashingMachine:
         return result
 
     def filling_material(self, material: str) -> bool:
-        self.inventory[material] += InventoryManager.filling_machine(self.number, material, WashingMachine.__full_container[material], self.inventory[material])
+        self.inventory[material] += StockManager.filling_machine(self.number_room , self.number_machine, material, WashingMachine.__full_container[material], self.inventory[material])
         return self.inventory[material] >= WashingMachine.__min_container[material]
 
     def start(self, order: Type[Order]) -> bool:
@@ -62,16 +63,16 @@ class WashingMachine:
 
     def close_machine(self):
         for material in self.inventory.keys():
-            InventoryManager.adding_material(material, self.inventory[material])
+            StockManager.adding_material(material, self.inventory[material])
             self.inventory[material] = 0
 
 
 class WashingRoom:
     orders_pending = {}
     orders = {}
-    def __init__(self, number: int) -> None:
-        self.number = number
-        self.__machines = {number: WashingMachine(number +1) for number in range(settings.MACHINE_PER_ROOM)}
+    def __init__(self, number_room: int) -> None:
+        self.number_room = number_room
+        self.__machines = {number_machine: WashingMachine(number_machine +1, self.number_room) for number_machine in range(settings.MACHINE_PER_ROOM)}
         self.is_full = False
 
         
@@ -79,11 +80,11 @@ class WashingRoom:
     def start_washing(self, order: Type[Order]):
         for machine in self.__machines.values():
             if not machine.is_active:
-                if machine.number == settings.MACHINE_PER_ROOM:
+                if machine.number_machine == settings.MACHINE_PER_ROOM:
                     self.is_full = True
-                WashingRoom.orders[order.ID] = self.number
+                WashingRoom.orders[order.ID] = self.number_room
                 if not machine.start(order):
-                    WashingRoom.orders_pending[order] = self.number
+                    WashingRoom.orders_pending[order] = self.number_room
                     sg.popup("Oh... we're really sorry, there are materials that we currently lack. Please wait until we come to restock our inventory.\nIt may take a little time.\nYou will be notified when your order is ready.")
                 return
 
@@ -96,12 +97,15 @@ class WashingRoom:
 
 if __name__ == '__main__':
     mysql_database.MysqlDatabase.checks_database()
+    # mysql_database.MysqlDatabase.update_equipment_value("stock powder", 5000)
+    # mysql_database.MysqlDatabase.update_equipment_value("stock softener", 5000)
     a = Order("t0527184022@gmail.com", {"shirt": 3, "pants": 0, "tank top": 0, "underwear": 0, "socks": 0, "coat": 0, "hat": 0, "sweater": 0, "curtain": 0, "map": 0})
     b = WashingRoom(1)
     b.start_washing(a)
     a.order_summary()
-    # InventoryManager.adding_material("powder", 10)
-    # InventoryManager.adding_material("softener", 10)
+    b.close_room()
+
+
 
 
 

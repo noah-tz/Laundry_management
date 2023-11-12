@@ -107,8 +107,8 @@ class MainCommunicator:
     @staticmethod
     def end_of_program() -> None:
         Messenger.email_sender.__del__()
-        for machine in MainCommunicator.__rooms_washing:
-            machine.close_room()
+        for room in MainCommunicator.__rooms_washing:
+            room.close_room()
 
 
 

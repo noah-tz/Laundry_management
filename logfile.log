@@ -5519,3 +5519,764 @@ Greetings and have a wonderful day='powder in stock refill alert/nHello and gree
 2023-11-10 02:47:32,508 - ERROR - Function send_sms failed: 'NoneType' object is not subscriptable
 2023-11-10 02:47:32,508 - ERROR - Function filling_machine failed: 'NoneType' object is not subscriptable
 2023-11-10 02:47:32,508 - ERROR - Function start_washing failed: 'NoneType' object is not subscriptable
+2023-11-12 00:36:41,294 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f21b76fe1d0>=<order.Order object at 0x7f21b76fe1d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 00:36:41,294 - INFO - Function add_items completed successfully
+2023-11-12 00:36:41,299 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f21cfc76910>=<__main__.WashingRoom object at 0x7f21cfc76910>, <order.Order object at 0x7f21b76fe1d0>=<order.Order object at 0x7f21b76fe1d0>)
+2023-11-12 00:36:41,299 - INFO - Calling function: InventoryManager.filling_machine(1=1, powder='powder', 1000=1000, 10=10)
+2023-11-12 00:36:41,301 - INFO - Calling function: SmsSender.send_sms(<messenger.SmsSender object at 0x7f21d0443150>=<messenger.SmsSender object at 0x7f21d0443150>, None=None, powder in stock refill alert/nHello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day='powder in stock refill alert/nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day')
+2023-11-12 00:36:41,301 - ERROR - Function send_sms failed: 'NoneType' object is not subscriptable
+2023-11-12 00:36:41,301 - ERROR - Function filling_machine failed: 'NoneType' object is not subscriptable
+2023-11-12 00:36:41,301 - ERROR - Function start_washing failed: 'NoneType' object is not subscriptable
+2023-11-12 01:01:05,566 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fbb3503f2d0>=<order.Order object at 0x7fbb3503f2d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 01:01:05,566 - INFO - Function add_items completed successfully
+2023-11-12 01:02:59,022 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f5d004115d0>=<order.Order object at 0x7f5d004115d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 01:02:59,022 - INFO - Function add_items completed successfully
+2023-11-12 01:02:59,075 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f5d014a8850>=<__main__.WashingRoom object at 0x7f5d014a8850>, <order.Order object at 0x7f5d004115d0>=<order.Order object at 0x7f5d004115d0>)
+2023-11-12 01:02:59,075 - INFO - Calling function: InventoryManager.filling_machine(1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 01:02:59,075 - ERROR - Function filling_machine failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 01:02:59,076 - ERROR - Function start_washing failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 01:49:16,032 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fe1a1e3bd50>=<order.Order object at 0x7fe1a1e3bd50>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 01:49:16,032 - INFO - Function add_items completed successfully
+2023-11-12 01:49:16,036 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7fe1a0235a90>=<__main__.WashingRoom object at 0x7fe1a0235a90>, <order.Order object at 0x7fe1a1e3bd50>=<order.Order object at 0x7fe1a1e3bd50>)
+2023-11-12 01:49:16,036 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 01:49:16,038 - INFO - Calling function: SmsSender.send_sms(<messenger.SmsSender object at 0x7fe1b710f490>=<messenger.SmsSender object at 0x7fe1b710f490>, None=None, powder in stock refill alert/nHello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day='powder in stock refill alert/nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day')
+2023-11-12 01:49:16,038 - ERROR - Function send_sms failed: 'NoneType' object is not subscriptable
+2023-11-12 01:49:16,038 - ERROR - Function filling_machine failed: 'NoneType' object is not subscriptable
+2023-11-12 01:49:16,039 - ERROR - Function start_washing failed: 'NoneType' object is not subscriptable
+2023-11-12 02:03:47,352 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f309ba55d90>=<order.Order object at 0x7f309ba55d90>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:03:47,352 - INFO - Function add_items completed successfully
+2023-11-12 02:03:47,355 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f309b48d790>=<__main__.WashingRoom object at 0x7f309b48d790>, <order.Order object at 0x7f309ba55d90>=<order.Order object at 0x7f309ba55d90>)
+2023-11-12 02:03:47,356 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:03:47,358 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f309b48d610>=<messenger.EmailSender object at 0x7f309b48d610>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============3088285405801333738=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============3088285405801333738==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============3088285405801333738==--
+='Content-Type: multipart/mixed; boundary="===============3088285405801333738=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============3088285405801333738==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============3088285405801333738==--\n')
+2023-11-12 02:03:48,847 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:03:48,847 - INFO - Function filling_machine completed successfully
+2023-11-12 02:03:48,847 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:03:48,859 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f309b48d610>=<messenger.EmailSender object at 0x7f309b48d610>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============7382749093930130999=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============7382749093930130999==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============7382749093930130999==--
+='Content-Type: multipart/mixed; boundary="===============7382749093930130999=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============7382749093930130999==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============7382749093930130999==--\n')
+2023-11-12 02:03:49,909 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:03:49,909 - INFO - Function filling_machine completed successfully
+2023-11-12 02:03:59,900 - INFO - Function start_washing completed successfully
+2023-11-12 02:03:59,902 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f309b48d610>=<messenger.EmailSender object at 0x7f309b48d610>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6841481392965109943=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1012
+
+--===============6841481392965109943==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============6841481392965109943==--
+='Content-Type: multipart/mixed; boundary="===============6841481392965109943=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1012\n\n--===============6841481392965109943==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============6841481392965109943==--\n')
+2023-11-12 02:04:01,032 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:04:01,033 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f309ba55d90>=<order.Order object at 0x7f309ba55d90>)
+2023-11-12 02:04:01,082 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:06:09,994 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f1d34881250>=<order.Order object at 0x7f1d34881250>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:06:09,995 - INFO - Function add_items completed successfully
+2023-11-12 02:06:09,999 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f1d348819d0>=<__main__.WashingRoom object at 0x7f1d348819d0>, <order.Order object at 0x7f1d34881250>=<order.Order object at 0x7f1d34881250>)
+2023-11-12 02:06:09,999 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:06:10,002 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f1d348824d0>=<messenger.EmailSender object at 0x7f1d348824d0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============5770149152622519181=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============5770149152622519181==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============5770149152622519181==--
+='Content-Type: multipart/mixed; boundary="===============5770149152622519181=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============5770149152622519181==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============5770149152622519181==--\n')
+2023-11-12 02:06:10,980 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:10,981 - INFO - Function filling_machine completed successfully
+2023-11-12 02:06:10,981 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:06:10,993 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f1d348824d0>=<messenger.EmailSender object at 0x7f1d348824d0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============7733471532793298072=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============7733471532793298072==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============7733471532793298072==--
+='Content-Type: multipart/mixed; boundary="===============7733471532793298072=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============7733471532793298072==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============7733471532793298072==--\n')
+2023-11-12 02:06:12,004 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:12,004 - INFO - Function filling_machine completed successfully
+2023-11-12 02:06:15,299 - INFO - Function start_washing completed successfully
+2023-11-12 02:06:15,301 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f1d348824d0>=<messenger.EmailSender object at 0x7f1d348824d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============8172934794916156194=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1013
+
+--===============8172934794916156194==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============8172934794916156194==--
+='Content-Type: multipart/mixed; boundary="===============8172934794916156194=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1013\n\n--===============8172934794916156194==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============8172934794916156194==--\n')
+2023-11-12 02:06:16,306 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:16,306 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f1d34881250>=<order.Order object at 0x7f1d34881250>)
+2023-11-12 02:06:16,339 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:06:18,353 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:06:18,365 - INFO - Function adding_material completed successfully
+2023-11-12 02:06:18,365 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:06:18,376 - INFO - Function adding_material completed successfully
+2023-11-12 02:06:35,902 - INFO - Calling function: Order.add_items(<order.Order object at 0x7effc630d790>=<order.Order object at 0x7effc630d790>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:06:35,902 - INFO - Function add_items completed successfully
+2023-11-12 02:06:35,906 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7effc57805d0>=<__main__.WashingRoom object at 0x7effc57805d0>, <order.Order object at 0x7effc630d790>=<order.Order object at 0x7effc630d790>)
+2023-11-12 02:06:35,906 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:06:35,909 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7effc4612710>=<messenger.EmailSender object at 0x7effc4612710>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============1184430844351417391=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============1184430844351417391==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============1184430844351417391==--
+='Content-Type: multipart/mixed; boundary="===============1184430844351417391=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============1184430844351417391==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============1184430844351417391==--\n')
+2023-11-12 02:06:36,785 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:36,786 - INFO - Function filling_machine completed successfully
+2023-11-12 02:06:36,786 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:06:36,798 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7effc4612710>=<messenger.EmailSender object at 0x7effc4612710>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============2844148113863943284=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============2844148113863943284==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============2844148113863943284==--
+='Content-Type: multipart/mixed; boundary="===============2844148113863943284=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============2844148113863943284==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============2844148113863943284==--\n')
+2023-11-12 02:06:37,810 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:37,810 - INFO - Function filling_machine completed successfully
+2023-11-12 02:06:42,783 - INFO - Function start_washing completed successfully
+2023-11-12 02:06:42,786 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7effc4612710>=<messenger.EmailSender object at 0x7effc4612710>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7393600643411604059=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1014
+
+--===============7393600643411604059==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============7393600643411604059==--
+='Content-Type: multipart/mixed; boundary="===============7393600643411604059=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1014\n\n--===============7393600643411604059==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============7393600643411604059==--\n')
+2023-11-12 02:06:43,749 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:06:43,749 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7effc630d790>=<order.Order object at 0x7effc630d790>)
+2023-11-12 02:06:43,785 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:06:45,728 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:06:45,735 - INFO - Function adding_material completed successfully
+2023-11-12 02:06:45,735 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:06:45,741 - INFO - Function adding_material completed successfully
+2023-11-12 02:07:00,089 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:07:00,095 - INFO - Function adding_material completed successfully
+2023-11-12 02:07:00,095 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:07:00,101 - INFO - Function adding_material completed successfully
+2023-11-12 02:07:21,198 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f52def3dd90>=<order.Order object at 0x7f52def3dd90>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:07:21,198 - INFO - Function add_items completed successfully
+2023-11-12 02:07:21,202 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f52f493e350>=<__main__.WashingRoom object at 0x7f52f493e350>, <order.Order object at 0x7f52def3dd90>=<order.Order object at 0x7f52def3dd90>)
+2023-11-12 02:07:21,202 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:07:21,205 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f52dd2da950>=<messenger.EmailSender object at 0x7f52dd2da950>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============3295065289663102786=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============3295065289663102786==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============3295065289663102786==--
+='Content-Type: multipart/mixed; boundary="===============3295065289663102786=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============3295065289663102786==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============3295065289663102786==--\n')
+2023-11-12 02:07:22,354 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:07:22,355 - INFO - Function filling_machine completed successfully
+2023-11-12 02:07:22,355 - INFO - Calling function: InventoryManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:07:22,366 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f52dd2da950>=<messenger.EmailSender object at 0x7f52dd2da950>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============8881160983410997864=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============8881160983410997864==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============8881160983410997864==--
+='Content-Type: multipart/mixed; boundary="===============8881160983410997864=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============8881160983410997864==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============8881160983410997864==--\n')
+2023-11-12 02:07:23,335 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:07:23,335 - INFO - Function filling_machine completed successfully
+2023-11-12 02:07:26,221 - INFO - Function start_washing completed successfully
+2023-11-12 02:07:26,227 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f52dd2da950>=<messenger.EmailSender object at 0x7f52dd2da950>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7440846107137750133=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1015
+
+--===============7440846107137750133==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============7440846107137750133==--
+='Content-Type: multipart/mixed; boundary="===============7440846107137750133=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1015\n\n--===============7440846107137750133==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============7440846107137750133==--\n')
+2023-11-12 02:07:27,167 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:07:27,167 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f52def3dd90>=<order.Order object at 0x7f52def3dd90>)
+2023-11-12 02:07:27,226 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:07:30,068 - INFO - Calling function: InventoryManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:07:30,075 - INFO - Function adding_material completed successfully
+2023-11-12 02:07:30,075 - INFO - Calling function: InventoryManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:07:30,081 - INFO - Function adding_material completed successfully
+2023-11-12 02:31:00,086 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f3f4e67da50>=<order.Order object at 0x7f3f4e67da50>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:31:00,086 - INFO - Function add_items completed successfully
+2023-11-12 02:31:00,157 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f3f670162d0>=<__main__.WashingRoom object at 0x7f3f670162d0>, <order.Order object at 0x7f3f4e67da50>=<order.Order object at 0x7f3f4e67da50>)
+2023-11-12 02:31:00,158 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:31:00,169 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3f4e67ecd0>=<messenger.EmailSender object at 0x7f3f4e67ecd0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============0916438580536085910=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============0916438580536085910==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============0916438580536085910==--
+='Content-Type: multipart/mixed; boundary="===============0916438580536085910=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============0916438580536085910==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============0916438580536085910==--\n')
+2023-11-12 02:31:01,356 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:01,356 - INFO - Function filling_machine completed successfully
+2023-11-12 02:31:01,356 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:31:01,360 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3f4e67ecd0>=<messenger.EmailSender object at 0x7f3f4e67ecd0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============9163607491981835091=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============9163607491981835091==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============9163607491981835091==--
+='Content-Type: multipart/mixed; boundary="===============9163607491981835091=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============9163607491981835091==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============9163607491981835091==--\n')
+2023-11-12 02:31:02,233 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:02,233 - INFO - Function filling_machine completed successfully
+2023-11-12 02:31:06,068 - INFO - Function start_washing completed successfully
+2023-11-12 02:31:06,071 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f3f4e67ecd0>=<messenger.EmailSender object at 0x7f3f4e67ecd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============1532936593240049624=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1016
+
+--===============1532936593240049624==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============1532936593240049624==--
+='Content-Type: multipart/mixed; boundary="===============1532936593240049624=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1016\n\n--===============1532936593240049624==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============1532936593240049624==--\n')
+2023-11-12 02:31:07,091 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:07,091 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f3f4e67da50>=<order.Order object at 0x7f3f4e67da50>)
+2023-11-12 02:31:07,145 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:31:09,350 - INFO - Calling function: StockManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:31:09,363 - INFO - Function adding_material completed successfully
+2023-11-12 02:31:09,363 - INFO - Calling function: StockManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:31:09,376 - INFO - Function adding_material completed successfully
+2023-11-12 02:31:13,477 - INFO - Calling function: Order.add_items(<order.Order object at 0x7efca4e88c10>=<order.Order object at 0x7efca4e88c10>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:31:13,478 - INFO - Function add_items completed successfully
+2023-11-12 02:31:13,482 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7efca4c0a6d0>=<__main__.WashingRoom object at 0x7efca4c0a6d0>, <order.Order object at 0x7efca4e88c10>=<order.Order object at 0x7efca4e88c10>)
+2023-11-12 02:31:13,482 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:31:13,485 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7efca50e6710>=<messenger.EmailSender object at 0x7efca50e6710>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============3425768711531283793=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============3425768711531283793==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============3425768711531283793==--
+='Content-Type: multipart/mixed; boundary="===============3425768711531283793=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============3425768711531283793==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============3425768711531283793==--\n')
+2023-11-12 02:31:14,426 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:14,426 - INFO - Function filling_machine completed successfully
+2023-11-12 02:31:14,427 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:31:14,438 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7efca50e6710>=<messenger.EmailSender object at 0x7efca50e6710>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============5064051730287207871=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============5064051730287207871==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============5064051730287207871==--
+='Content-Type: multipart/mixed; boundary="===============5064051730287207871=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============5064051730287207871==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============5064051730287207871==--\n')
+2023-11-12 02:31:15,596 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:15,596 - INFO - Function filling_machine completed successfully
+2023-11-12 02:31:18,170 - INFO - Function start_washing completed successfully
+2023-11-12 02:31:18,176 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7efca50e6710>=<messenger.EmailSender object at 0x7efca50e6710>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============2226815806176855824=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1017
+
+--===============2226815806176855824==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============2226815806176855824==--
+='Content-Type: multipart/mixed; boundary="===============2226815806176855824=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1017\n\n--===============2226815806176855824==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============2226815806176855824==--\n')
+2023-11-12 02:31:19,174 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:31:19,175 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7efca4e88c10>=<order.Order object at 0x7efca4e88c10>)
+2023-11-12 02:31:19,226 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:31:22,222 - INFO - Calling function: StockManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:31:22,229 - INFO - Function adding_material completed successfully
+2023-11-12 02:31:22,229 - INFO - Calling function: StockManager.adding_material(softener='softener', 1000=1000)
+2023-11-12 02:31:22,234 - INFO - Function adding_material completed successfully
+2023-11-12 02:43:28,486 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f213eb618d0>=<order.Order object at 0x7f213eb618d0>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:43:28,486 - INFO - Function add_items completed successfully
+2023-11-12 02:43:28,490 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f213eb62090>=<__main__.WashingRoom object at 0x7f213eb62090>, <order.Order object at 0x7f213eb618d0>=<order.Order object at 0x7f213eb618d0>)
+2023-11-12 02:43:28,490 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:43:28,491 - ERROR - Function filling_machine failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 02:43:28,492 - ERROR - Function start_washing failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 02:46:49,355 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f01afb2c790>=<order.Order object at 0x7f01afb2c790>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:46:49,355 - INFO - Function add_items completed successfully
+2023-11-12 02:46:49,359 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f01c2d82210>=<__main__.WashingRoom object at 0x7f01c2d82210>, <order.Order object at 0x7f01afb2c790>=<order.Order object at 0x7f01afb2c790>)
+2023-11-12 02:46:49,359 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:46:49,360 - ERROR - Function filling_machine failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 02:46:49,360 - ERROR - Function start_washing failed: '<' not supported between instances of 'int' and 'NoneType'
+2023-11-12 02:50:27,964 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f222df22810>=<order.Order object at 0x7f222df22810>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:50:27,964 - INFO - Function add_items completed successfully
+2023-11-12 02:50:27,967 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f222dee6390>=<__main__.WashingRoom object at 0x7f222dee6390>, <order.Order object at 0x7f222df22810>=<order.Order object at 0x7f222df22810>)
+2023-11-12 02:50:27,967 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:50:27,969 - ERROR - Function filling_machine failed: SqlEquipment.update_equipment_value() missing 1 required positional argument: 'new_value'
+2023-11-12 02:50:27,969 - ERROR - Function start_washing failed: SqlEquipment.update_equipment_value() missing 1 required positional argument: 'new_value'
+2023-11-12 02:53:00,677 - INFO - Calling function: Order.add_items(<order.Order object at 0x7fa6fcaa7890>=<order.Order object at 0x7fa6fcaa7890>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:53:00,677 - INFO - Function add_items completed successfully
+2023-11-12 02:53:00,692 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7fa715337350>=<__main__.WashingRoom object at 0x7fa715337350>, <order.Order object at 0x7fa6fcaa7890>=<order.Order object at 0x7fa6fcaa7890>)
+2023-11-12 02:53:00,692 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:53:00,713 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa6fc7aadd0>=<messenger.EmailSender object at 0x7fa6fc7aadd0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============5935113998848290165=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: powder in stock refill alert
+
+--===============5935113998848290165==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in powder as soon as possible.
+Greetings and have a wonderful day
+--===============5935113998848290165==--
+='Content-Type: multipart/mixed; boundary="===============5935113998848290165=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: powder in stock refill alert\n\n--===============5935113998848290165==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in powder as soon as possible.\nGreetings and have a wonderful day\n--===============5935113998848290165==--\n')
+2023-11-12 02:53:01,834 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:53:01,834 - INFO - Function filling_machine completed successfully
+2023-11-12 02:53:01,835 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:53:01,856 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa6fc7aadd0>=<messenger.EmailSender object at 0x7fa6fc7aadd0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============8575962427357571860=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============8575962427357571860==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============8575962427357571860==--
+='Content-Type: multipart/mixed; boundary="===============8575962427357571860=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============8575962427357571860==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============8575962427357571860==--\n')
+2023-11-12 02:53:02,803 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:53:02,803 - INFO - Function filling_machine completed successfully
+2023-11-12 02:53:05,669 - INFO - Function start_washing completed successfully
+2023-11-12 02:53:05,674 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7fa6fc7aadd0>=<messenger.EmailSender object at 0x7fa6fc7aadd0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7053078225746866252=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1018
+
+--===============7053078225746866252==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============7053078225746866252==--
+='Content-Type: multipart/mixed; boundary="===============7053078225746866252=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1018\n\n--===============7053078225746866252==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============7053078225746866252==--\n')
+2023-11-12 02:53:06,646 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:53:06,647 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7fa6fcaa7890>=<order.Order object at 0x7fa6fcaa7890>)
+2023-11-12 02:53:06,707 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:53:42,079 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f922f3bd150>=<order.Order object at 0x7f922f3bd150>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:53:42,080 - INFO - Function add_items completed successfully
+2023-11-12 02:53:42,083 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f9230523f10>=<__main__.WashingRoom object at 0x7f9230523f10>, <order.Order object at 0x7f922f3bd150>=<order.Order object at 0x7f922f3bd150>)
+2023-11-12 02:53:42,083 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:53:42,098 - INFO - Function filling_machine completed successfully
+2023-11-12 02:53:42,098 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:53:42,114 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f922f3be3d0>=<messenger.EmailSender object at 0x7f922f3be3d0>, laundrythecity034@gmail.com='laundrythecity034@gmail.com', Content-Type: multipart/mixed; boundary="===============7568669558112558769=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: laundrythecity034@gmail.com
+Subject: softener in stock refill alert
+
+--===============7568669558112558769==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello and greetings
+The system recognized that it is necessary to fill in softener as soon as possible.
+Greetings and have a wonderful day
+--===============7568669558112558769==--
+='Content-Type: multipart/mixed; boundary="===============7568669558112558769=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: laundrythecity034@gmail.com\nSubject: softener in stock refill alert\n\n--===============7568669558112558769==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nHello and greetings\nThe system recognized that it is necessary to fill in softener as soon as possible.\nGreetings and have a wonderful day\n--===============7568669558112558769==--\n')
+2023-11-12 02:53:43,000 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:53:43,000 - INFO - Function filling_machine completed successfully
+2023-11-12 02:53:43,002 - INFO - Function start_washing completed successfully
+2023-11-12 02:53:43,006 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f922f3be3d0>=<messenger.EmailSender object at 0x7f922f3be3d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============4519259325759337493=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1019
+
+--===============4519259325759337493==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============4519259325759337493==--
+='Content-Type: multipart/mixed; boundary="===============4519259325759337493=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1019\n\n--===============4519259325759337493==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============4519259325759337493==--\n')
+2023-11-12 02:53:43,920 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:53:43,921 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f922f3bd150>=<order.Order object at 0x7f922f3bd150>)
+2023-11-12 02:53:43,951 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:54:01,002 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7f922fce5010>=<__main__.WashingMachine object at 0x7f922fce5010>, <order.Order object at 0x7f922f3bd150>=<order.Order object at 0x7f922f3bd150>)
+2023-11-12 02:54:01,007 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f922f3be3d0>=<messenger.EmailSender object at 0x7f922f3be3d0>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============6586622765251785039=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1019
+
+--===============6586622765251785039==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============6586622765251785039==--
+='Content-Type: multipart/mixed; boundary="===============6586622765251785039=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1019\n\n--===============6586622765251785039==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============6586622765251785039==--\n')
+2023-11-12 02:54:01,982 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:54:01,983 - INFO - Function order_ready completed successfully
+2023-11-12 02:57:55,569 - INFO - Calling function: Order.add_items(<order.Order object at 0x7ff01b79f810>=<order.Order object at 0x7ff01b79f810>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:57:55,570 - INFO - Function add_items completed successfully
+2023-11-12 02:57:55,584 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7ff00497e4d0>=<__main__.WashingRoom object at 0x7ff00497e4d0>, <order.Order object at 0x7ff01b79f810>=<order.Order object at 0x7ff01b79f810>)
+2023-11-12 02:57:55,584 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:57:55,604 - INFO - Function filling_machine completed successfully
+2023-11-12 02:57:55,604 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:57:55,625 - INFO - Function filling_machine completed successfully
+2023-11-12 02:57:55,626 - INFO - Function start_washing completed successfully
+2023-11-12 02:57:55,630 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7ff0036a6250>=<messenger.EmailSender object at 0x7ff0036a6250>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============7122630433846464078=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1020
+
+--===============7122630433846464078==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============7122630433846464078==--
+='Content-Type: multipart/mixed; boundary="===============7122630433846464078=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1020\n\n--===============7122630433846464078==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============7122630433846464078==--\n')
+2023-11-12 02:57:56,670 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:57:56,670 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7ff01b79f810>=<order.Order object at 0x7ff01b79f810>)
+2023-11-12 02:57:56,709 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:57:59,428 - INFO - Calling function: StockManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:57:59,435 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,435 - INFO - Calling function: StockManager.adding_material(softener='softener', 5000=Decimal('5000'))
+2023-11-12 02:57:59,442 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,443 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:57:59,444 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,445 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:57:59,447 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,447 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:57:59,448 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,448 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:57:59,450 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,451 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:57:59,453 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,453 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:57:59,454 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,455 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:57:59,456 - INFO - Function adding_material completed successfully
+2023-11-12 02:57:59,456 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:57:59,458 - INFO - Function adding_material completed successfully
+2023-11-12 02:58:13,626 - INFO - Calling function: WashingMachine.order_ready(<__main__.WashingMachine object at 0x7ff005239110>=<__main__.WashingMachine object at 0x7ff005239110>, <order.Order object at 0x7ff01b79f810>=<order.Order object at 0x7ff01b79f810>)
+2023-11-12 02:58:13,628 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7ff0036a6250>=<messenger.EmailSender object at 0x7ff0036a6250>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============0757322867061169091=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1020
+
+--===============0757322867061169091==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============0757322867061169091==--
+='Content-Type: multipart/mixed; boundary="===============0757322867061169091=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1020\n\n--===============0757322867061169091==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============0757322867061169091==--\n')
+2023-11-12 02:58:14,465 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:58:14,465 - INFO - Function order_ready completed successfully
+2023-11-12 02:59:04,802 - INFO - Calling function: Order.add_items(<order.Order object at 0x7f59280e9310>=<order.Order object at 0x7f59280e9310>, {'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0}={'shirt': 3, 'pants': 0, 'tank top': 0, 'underwear': 0, 'socks': 0, 'coat': 0, 'hat': 0, 'sweater': 0, 'curtain': 0, 'map': 0})
+2023-11-12 02:59:04,802 - INFO - Function add_items completed successfully
+2023-11-12 02:59:04,806 - INFO - Calling function: WashingRoom.start_washing(<__main__.WashingRoom object at 0x7f593ed06e50>=<__main__.WashingRoom object at 0x7f593ed06e50>, <order.Order object at 0x7f59280e9310>=<order.Order object at 0x7f59280e9310>)
+2023-11-12 02:59:04,806 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, powder='powder', 1000=1000, 0=0)
+2023-11-12 02:59:04,820 - INFO - Function filling_machine completed successfully
+2023-11-12 02:59:04,820 - INFO - Calling function: StockManager.filling_machine(1=1, 1=1, softener='softener', 10000=10000, 0=0)
+2023-11-12 02:59:04,825 - INFO - Function filling_machine completed successfully
+2023-11-12 02:59:08,311 - INFO - Function start_washing completed successfully
+2023-11-12 02:59:08,313 - INFO - Calling function: EmailSender.__calling_the_server(<messenger.EmailSender object at 0x7f59280ea510>=<messenger.EmailSender object at 0x7f59280ea510>, t0527184022@gmail.com='t0527184022@gmail.com', Content-Type: multipart/mixed; boundary="===============5347058782140740812=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1021
+
+--===============5347058782140740812==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 3.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============5347058782140740812==--
+='Content-Type: multipart/mixed; boundary="===============5347058782140740812=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1021\n\n--===============5347058782140740812==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 3.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============5347058782140740812==--\n')
+2023-11-12 02:59:09,352 - INFO - Function __calling_the_server completed successfully
+2023-11-12 02:59:09,352 - INFO - Calling function: Order.__insert_to_sql(<order.Order object at 0x7f59280e9310>=<order.Order object at 0x7f59280e9310>)
+2023-11-12 02:59:09,377 - INFO - Function __insert_to_sql completed successfully
+2023-11-12 02:59:11,451 - INFO - Calling function: StockManager.adding_material(powder='powder', 1000=1000)
+2023-11-12 02:59:11,458 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,458 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=Decimal('0'))
+2023-11-12 02:59:11,461 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,461 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:59:11,464 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,464 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:59:11,466 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,466 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:59:11,468 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,468 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:59:11,470 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,470 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:59:11,472 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,472 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:59:11,474 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,474 - INFO - Calling function: StockManager.adding_material(powder='powder', 0=0)
+2023-11-12 02:59:11,476 - INFO - Function adding_material completed successfully
+2023-11-12 02:59:11,476 - INFO - Calling function: StockManager.adding_material(softener='softener', 0=0)
+2023-11-12 02:59:11,478 - INFO - Function adding_material completed successfully

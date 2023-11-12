@@ -294,6 +294,13 @@ class SqlEquipment:
         cursor.execute(update_query, values)
         MysqlDatabase._mysql_connection.commit()
 
+    @staticmethod
+    def check_equipment_execute(name_equipment) -> bool:
+        cursor = MysqlDatabase._mysql_connection.cursor()
+        query = "SELECT equipment_name FROM equipment WHERE equipment_name = %s"
+        cursor.execute(query, (name_equipment,))
+        return bool(cursor.fetchone())
+
 
 
 

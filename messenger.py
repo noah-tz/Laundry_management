@@ -67,7 +67,10 @@ class Messenger:
 
     @staticmethod
     def __is_via_email(email_client: str):
-        result = MysqlDatabase.get_value_from_table("clients", "message_type", "email_client", email_client)
+        if email_client == settings.EMAIL_MANAGER:
+            result = settings.MSG_MANAGER
+        else:
+            result = MysqlDatabase.get_value_from_table("clients", "message_type", "email_client", email_client)
         return result  == "email"
 
     @staticmethod
