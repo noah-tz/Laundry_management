@@ -359,10 +359,6 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
             print(f"row = {row}")
 
     @staticmethod
-    def execute():
-        pass
-
-    @staticmethod
     def column_names(table_name: str) -> list:
         """
         Retrieve the column names of a specified table in the MySQL database.

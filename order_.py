@@ -35,7 +35,7 @@ class Order:
             if item_cut in settings.PRISE_LIST.keys():
                 self.items[item_cut] = items[item]
                 self.amount_items += items[item]
-                self.weight += settings.GARMENT_WEIGHT[item] * items[item]
+                self.weight += settings.GARMENT_WEIGHT[item_cut] * items[item]
 
             
     @Logger.log_record

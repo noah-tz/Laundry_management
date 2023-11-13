@@ -68,7 +68,6 @@ class SqlOrders:
         Returns:
             int: The start ID for orders.
         """
-        # MysqlDatabase.checks_database()
         cursor = MysqlDatabase._mysql_connection.cursor()
         cursor.execute("SELECT MAX(order_id) FROM orders")
         result = cursor.fetchone()
@@ -288,11 +287,23 @@ class SqlEquipment:
         
         Returns: None
         """
+        try:
+            cursor = MysqlDatabase._mysql_connection.cursor()
+            update_query = "UPDATE equipment SET equipment_value = %s WHERE equipment_name = %s"
+            values = (new_value, equipment_name)
+            cursor.execute(update_query, values)
+            MysqlDatabase._mysql_connection.commit()
+        except Exception as e:
+            print(f"An error has occurred {e}")
+        finally:
+            cursor.close
+
+    @staticmethod
+    def check_equipment_execute(name_equipment) -> bool:
         cursor = MysqlDatabase._mysql_connection.cursor()
-        update_query = "UPDATE equipment SET equipment_value = %s WHERE equipment_name = %s"
-        values = (new_value, equipment_name)
-        cursor.execute(update_query, values)
-        MysqlDatabase._mysql_connection.commit()
+        query = "SELECT equipment_name FROM equipment WHERE equipment_name = %s"
+        cursor.execute(query, (name_equipment,))
+        return bool(cursor.fetchone())
 
 
 
@@ -345,10 +356,6 @@ class MysqlDatabase(SqlOrders, SqlClients, SqlVariables, SqlEquipment):
         cursor.execute(f"SELECT {command} FROM {table_name}")
         for row in cursor:
             print(f"row = {row}")
-
-    @staticmethod
-    def execute():
-        pass
 
     @staticmethod
     def column_names(table_name: str) -> list:
