@@ -66,9 +66,9 @@ class LaundryGui:
             [sg.Button("OK", key='-OK_TAB_ORDER_PICKUP-')]
         ]
         column_headings = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
-        sql_connector = SqlOrders()
+        sql_client_connector = SqlOrders(email_client)
         layout_tab_order_history = [
-            [sg.Table(values=sql_connector.get_orders(email_client), headings=column_headings, key='-TABLE-')]
+            [sg.Table(values=sql_client_connector.get_orders(email_client), headings=column_headings, key='-TABLE-')]
         ]
         layout_tab_group = [
             [sg.TabGroup([

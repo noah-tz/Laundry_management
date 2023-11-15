@@ -4,12 +4,13 @@ PRISE_LIST = {"shirt": 10, "pants": 10, "tank top": 10, "underwear": 10, "socks"
 GARMENT_WEIGHT = {"shirt": 0.2, "pants": 0.2, "tank top": 0.1, "underwear": 0.05, "socks": 0.05, "coat": 0.7, "hat": 0.1, "sweater": 0.4, "curtain": 5, "tablecloth": 1.5}
 KILOGRAM_PER_HOUR = 0.5
 MINUTE_PER_HOUR = 1
-MACHINE_PER_ROOM = 5
-NUMBER_OF_ROOMS = 2
+NUMBER_OF_MACHINES = 10
 
-MIN_CONTAINER = {"powder": 100, "softener": 1000}
-FULL_CONTAINER = {"powder": 1000, "softener": 1000}
-MATERIAL_PER_KILOGRAM = {"powder": 50, "softener": 30}
+NAMES_MATERIAL = ("powder", "softener")
+MIN_CONTAINER_MACHINE = {"powder": 100, "softener": 100}
+ALERT_MANAGER = {"powder": 800, "softener": 800}
+FULL_CONTAINER_MACHINE = {"powder": 1000, "softener": 1000}
+MATERIAL_PER_KILOGRAM = {"powder": 40, "softener": 30}
 
 MIN_ORDER = 40
 LENGTH_NO_ORDER = 5
@@ -17,11 +18,12 @@ START_ORDERS_ID = 1000
 
 EMAIL_MANAGER = "laundrythecity034@gmail.com"
 EMAIL_MANAGER_PASSWORD = "xrqzlbpruagxljpr"
+NUMBER_PHONE_MANAGER = "0522645540"
 MSG_MANAGER = 'email'
 
 SMS_ACCOUNT_SID_MANAGER = 'AC379722dd0b953fa3103262e6bd42f30b'
 SMS_AUTO_TOKEN_MANAGER = 'd0f9955759c9e53d270999c3f946c4e3'
-SMS_FROM_NUMBER_MANAGER = '+16204008568' 
+SMS_FROM_NUMBER_MANAGER = '+12512764578' 
 
 NAME_DATABASE_SQL = "laundry"
 HOST_SQL = "localhost"

@@ -25,9 +25,21 @@ CREATE TABLE clients (
     message_type ENUM('email','sms')
 );
 
-CREATE TABLE equipment (
-    equipment_name VARCHAR(30) PRIMARY KEY,
-    equipment_value NUMERIC(10,0)
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
 );
 
 CREATE TABLE variables (

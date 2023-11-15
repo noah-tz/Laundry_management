@@ -5,5 +5,6 @@ from main_communication import MainCommunicator
 
 
 if __name__ == "__main__":
-    MainCommunicator.run()
-    MainCommunicator.end_of_program()
+    main_program = MainCommunicator()
+    main_program.run()
+    main_program.end_of_program()
