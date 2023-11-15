@@ -12517,3 +12517,46 @@ Your order will be ready in 0 hours='shirt: 0.\npants: 0.\ntank top: 3.\nunderwe
 2023-11-16 01:24:57,072 - INFO - Calling function: EmailSender._send_msg(<messenger.EmailSender object at 0x7fd1fa9427d0>=<messenger.EmailSender object at 0x7fd1fa9427d0>, The city laundry - order NO 1028='The city laundry - order NO 1028', Your order is ready. You can get to the collection now
 Successfully='Your order is ready. You can get to the collection now\nSuccessfully')
 2023-11-16 01:24:58,003 - INFO - Function _send_msg completed successfully
+2023-11-16 01:27:34,196 - INFO - Calling function: EmailSender._send_msg(<messenger.EmailSender object at 0x7fd1fa93b9d0>=<messenger.EmailSender object at 0x7fd1fa93b9d0>, The city laundry - order NO 1027='The city laundry - order NO 1027', Your order is ready. You can get to the collection now
+Successfully='Your order is ready. You can get to the collection now\nSuccessfully')
+2023-11-16 01:27:35,033 - INFO - Function _send_msg completed successfully
+2023-11-16 01:42:29,703 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,711 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,711 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,717 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,717 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,719 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,719 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,720 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,720 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,721 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,721 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,722 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,723 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,724 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,724 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,725 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,726 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,727 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,727 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,728 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,728 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,730 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,730 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,733 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,733 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,735 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,735 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,736 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,737 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,738 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,738 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,739 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,739 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,740 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,740 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,742 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,742 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb957150>=<mysql_database.SqlMaterial object at 0x7fd1fb957150>, UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 26664 WHERE material_name = 'stock powder'")
+2023-11-16 01:42:29,743 - INFO - Function execute completed successfully
+2023-11-16 01:42:29,743 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
+2023-11-16 01:42:29,744 - INFO - Function execute completed successfully
