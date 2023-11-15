@@ -12560,3 +12560,11 @@ Successfully='Your order is ready. You can get to the collection now\nSuccessful
 2023-11-16 01:42:29,743 - INFO - Function execute completed successfully
 2023-11-16 01:42:29,743 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7fd1fb97f750>=<mysql_database.SqlMaterial object at 0x7fd1fb97f750>, UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26748 WHERE material_name = 'stock softener'")
 2023-11-16 01:42:29,744 - INFO - Function execute completed successfully
+2023-11-16 01:51:12,872 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f8a6d8a9490>=<mysql_database.SqlMaterial object at 0x7f8a6d8a9490>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-16 01:51:12,873 - INFO - Function execute completed successfully
+2023-11-16 01:51:12,873 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f8a6d8a9490>=<mysql_database.SqlMaterial object at 0x7f8a6d8a9490>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-16 01:51:12,873 - INFO - Function execute completed successfully
+2023-11-16 01:51:13,676 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f8a6d8ab590>=<mysql_database.SqlMaterial object at 0x7f8a6d8ab590>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-16 01:51:13,679 - INFO - Function execute completed successfully
+2023-11-16 01:51:13,679 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f8a6d8ab590>=<mysql_database.SqlMaterial object at 0x7f8a6d8ab590>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-16 01:51:13,682 - INFO - Function execute completed successfully
