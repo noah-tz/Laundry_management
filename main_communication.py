@@ -1,4 +1,4 @@
-from gui import Window, LaundryGui
+from gui import LaundryGui
 from laundry import RoomLaundry
 from client import Client
 from mysql_database import SqlClients
@@ -13,19 +13,19 @@ from typing import Type
 
 
 class MainCommunicator:
-    def __init__(self) -> None:
-        self.__room_laundry = RoomLaundry()
+    def __init__(self, name_laundry) -> None:
+        self._name_laundry = name_laundry
+        self._room_laundry = RoomLaundry()
+        self._laundry_gui = LaundryGui(self._name_laundry)
 
     def run(self):
-        entry_window = LaundryGui.make_enter_window()
         while True:
-            event, values = entry_window.window.read()
+            event, values = self._laundry_gui.read_window()
             if event == sg.WIN_CLOSED:
                 break
-            entry_window.window.hide()
             self.handle_event(event, values)
-            LaundryGui.cleaning_boxes(entry_window.window, values)
-            entry_window.window.un_hide()
+            self._laundry_gui.replace_to_enter_window()
+
 
     def handle_event(self, event, values):
         if event == "sign in":
@@ -33,7 +33,8 @@ class MainCommunicator:
         elif event == "sign up":
             self.sign_up()
         elif event == "forgot my password":
-            self.forget_password(values['-email-'])
+            repeater = RepeaterPassword(values['-email-'])
+            repeater.password_recovery()
 
     @Logger.log_record
     def sign_in(self, email: str, password: str):
@@ -48,47 +49,49 @@ class MainCommunicator:
             LaundryGui.popup_window("There is no customer with this email address,\nyou can choose the 'sign up' option", "No customer found")
 
     def sign_in_client(self, client: Type[Client]):
-        main_client_window = LaundryGui.making_client_window(client.get_email())
+        self._laundry_gui.replace_to_client_window(client.get_email())
         while True:
-            event, value = main_client_window.window.read()
+            event, value = self._laundry_gui.read_window()
             if event in [sg.WIN_CLOSED, "close"]:
                 break
             elif event == '-OK_TAB_ORDER_PICKUP-':
                 Order.order_pickup(value['-order number-'], client.get_email())
                 break
             elif event == 'CREATE_IN_TAB_CREATE_ORDER':
-                print(value)
                 new_order = Order(client.get_email(), client.get_phone(), client.get_connect_method(), value)
-                self.__room_laundry.enter_order(new_order)
+                self._room_laundry.enter_order(new_order)
                 break
-        main_client_window.window.close()
 
     @Logger.log_record
     def sign_up(self):
-        registration_window = LaundryGui.making_registration_window()
+        self._laundry_gui.replace_to_registration_window()
         while True:
-            event, values = registration_window.window.read()
+            event, values = self._laundry_gui.read_window()
             sql_client_connector = SqlClients(values['-client_email-'])
             if event == sg.WIN_CLOSED:
-                registration_window.window.close()
                 break
             if sql_client_connector.check_existence():
-                registration_window.window.close()
                 LaundryGui.popup_window("The email address is already registered, try logging in with a username and password or click on I forgot my password", "An existing email address")
                 break
             if AuxiliaryFunctions.is_valid_user_information(values):
                 sql_client_connector.add((values['-name-'], values['-family_name-'], values['-city-'], values['-street-'], values['-house_number-'], values['-phone-'], values['-client_email-'], values['-client_password-'], values['-message_type-']))
-                registration_window.window.close()
                 LaundryGui.popup_window(f"Client named {values['-name-']} {values['-family_name-']} successfully created", "Customer successfully created")
                 break
-        
-    def forget_password(self, email):
-        if AuxiliaryFunctions.is_valid_email(email):
-            sql_client_connector = SqlClients(email)
+    
+    def end_of_program(self) -> None:
+        self._room_laundry.close_room()
+
+class RepeaterPassword:
+    def __init__(self, email_client) -> None:
+        self.email_client = email_client
+
+    def password_recovery(self):
+        if AuxiliaryFunctions.is_valid_email(self.email_client):
+            sql_client_connector = SqlClients(self.email_client)
             if sql_client_connector.check_existence():
-                client = Client(email)
+                client = Client(self.email_client)
                 password = client.get_password()
-                sender = EmailSender(email)
+                sender = EmailSender(self.email_client)
                 sender.password_recovery(password)
                 LaundryGui.popup_window("The password has been sent to your email address", "The password has been sent")
             else:
@@ -96,8 +99,6 @@ class MainCommunicator:
         else:
             LaundryGui.popup_window("invalid email address")
 
-    def end_of_program(self) -> None:
-        self.__room_laundry.close_room()
 
 
 

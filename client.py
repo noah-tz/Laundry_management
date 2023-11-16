@@ -9,24 +9,24 @@ import PySimpleGUI as sg
 class Client:
     clients = {}
     def __init__(self, email: str) -> None:
-        self.__sql_client_connector = SqlClients(email)
-        data_of_person = self.__sql_client_connector.get_details()[0]
-        self.__phone_client = data_of_person[5]
-        self.__email_client = data_of_person[6]
-        self.__password = data_of_person[7]
-        self.__connect_method = data_of_person[8]
+        self._sql_client_connector = SqlClients(email)
+        data_of_person = self._sql_client_connector.get_details()[0]
+        self._phone_client = data_of_person[5]
+        self._email_client = data_of_person[6]
+        self._password = data_of_person[7]
+        self._connect_method = data_of_person[8]
 
     def get_phone(self):
-        return self.__phone_client
+        return self._phone_client
     
     def get_email(self):
-        return self.__email_client
+        return self._email_client
     
     def get_password(self):
-        return self.__password
+        return self._password
     
     def get_connect_method(self):
-        return self.__connect_method
+        return self._connect_method
     
     @Logger.log_record
     @staticmethod

@@ -9,54 +9,53 @@ from gui import LaundryGui
 
 class Order:
     def __init__(self, email_client: str, phone_client: str, contact_method: str, items: dict, order_notes: str = 'NULL') -> None:
-        self.__sql_orders_connector = SqlOrders()
-        self.__email_client = email_client
-        self.__phone_client = phone_client
-        self.__items: dict = {}
-        self.__amount_items = 0
-        self.__ID = self.__sql_orders_connector.new_order_id()
-        self.__cost = self.calculate_cost()
-        self.__notes = order_notes
+        self._sql_orders_connector = SqlOrders()
+        self._email_client = email_client
+        self._phone_client = phone_client
+        self._items: dict = {}
+        self._amount_items = 0
+        self._ID = self._sql_orders_connector.new_order_id()
+        self._cost = self.calculate_cost()
+        self._notes = order_notes
         self.weight = 0
-        self.__set_contact_method(contact_method)
+        self._set_contact_method(contact_method)
         if items:
             self.add_items(items)
-        self.__insert_to_sql()
 
     def __set_contact_method(self, contact_method: str) -> None:
         if contact_method == "email":
-            self.__sender = EmailSender(self.__email_client)
+            self._sender = EmailSender(self._email_client)
         else:
-            self.__sender = SmsSender(self.__phone_client)      
+            self._sender = SmsSender(self._phone_client)      
 
     def calculate_cost(self) -> int:
-        sum_order: int = sum((settings.PRISE_LIST[item] * self.__items[item]) for item in self.__items)
+        sum_order: int = sum((settings.PRISE_LIST[item] * self._items[item]) for item in self._items)
         return (max(settings.MIN_ORDER, sum_order))
     
     def calculate_time(self) -> float:
-        return sum(settings.GARMENT_WEIGHT[item] * self.__items[item] * settings.KILOGRAM_PER_HOUR for item in self.__items.keys())
+        return sum(settings.GARMENT_WEIGHT[item] * self._items[item] * settings.KILOGRAM_PER_HOUR for item in self._items.keys())
     
     @Logger.log_record
     def add_items(self, items:dict) -> None:
         for item in items:
             item_cut = str(item).replace("-", "")
             if item_cut in settings.PRISE_LIST.keys():
-                self.__items[item_cut] = items[item]
-                self.__amount_items += items[item]
+                self._items[item_cut] = items[item]
+                self._amount_items += items[item]
                 self.weight += settings.GARMENT_WEIGHT[item_cut] * items[item]
 
             
     @Logger.log_record
     def __insert_to_sql(self) -> None:
-        self.__sql_orders_connector.add((self.__ID, self.__email_client, self.__phone_client, self.__cost, self.__amount_items, self.__notes, False))
+        self._sql_orders_connector.add((self._ID, self._email_client, self._phone_client, self._cost, self._amount_items, self._notes, False))
     
     def order_summary(self) -> None:
-        self.__sender.order_summary(self.__ID, self.__items, int(self.calculate_cost()), int(self.calculate_time()))
-        self.__insert_to_sql()
+        self._sender.order_summary(self._ID, self._items, int(self.calculate_cost()), int(self.calculate_time()))
+        self._insert_to_sql()
         LaundryGui.popup_window(f"Your order has been successfully received!\nThe washing will be finished in {round(self.calculate_time(), 2)} hours.\nWe will notify you when your order is ready")
 
     def order_ready(self):
-        self.__sender.Your_order_is_ready(self.__ID)
+        self._sender.Your_order_is_ready(self._ID)
 
     @Logger.log_record
     @staticmethod

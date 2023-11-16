@@ -46,23 +46,23 @@ class Sender:
 class EmailSender(Sender):
     def __init__(self, email_client: str) -> None:
         super().__init__(email_client)
-        self.__email_sender = settings.EMAIL_MANAGER # "laundrythecity034@gmail.com"
-        self.__password_sender = settings.EMAIL_MANAGER_PASSWORD # "xrqzlbpruagxljpr"
-        self.__server = smtplib.SMTP('smtp.gmail.com', 587) # very slow
-        self.__server.starttls()
-        self.__server.login(self.__email_sender, self.__password_sender)
+        self._email_sender = settings.EMAIL_MANAGER # "laundrythecity034@gmail.com"
+        self._password_sender = settings.EMAIL_MANAGER_PASSWORD # "xrqzlbpruagxljpr"
+        self._server = smtplib.SMTP('smtp.gmail.com', 587) # very slow
+        self._server.starttls()
+        self._server.login(self._email_sender, self._password_sender)
 
     def __del__(self):
-        if self.__server:
-            self.__server.close()
+        if self._server:
+            self._server.close()
 
     def _calling_the_server(self, data: Any) -> None:
-        self.__server.sendmail(self.__email_sender, self._address, data)
+        self._server.sendmail(self._email_sender, self._address, data)
 
     @Logger.log_record
     def _send_msg(self, subject: str, body: str):
         msg = MIMEMultipart()    
-        msg['From'] = self.__email_sender
+        msg['From'] = self._email_sender
         msg['To'] = self._address
         msg['Subject'] = subject
         msg.attach(MIMEText(body, 'plain'))
@@ -73,16 +73,16 @@ class EmailSender(Sender):
 class SmsSender(Sender):
     def __init__(self, number_phone) -> None:
         super().__init__(number_phone)
-        self.__account_sid = settings.SMS_ACCOUNT_SID_MANAGER
-        self.__auth_token = settings.SMS_AUTO_TOKEN_MANAGER
-        self.__from_number = settings.SMS_FROM_NUMBER_MANAGER
-        self.__url = f'https://api.twilio.com/2010-04-01/Accounts/{self.__account_sid}/Messages.json'
+        self._account_sid = settings.SMS_ACCOUNT_SID_MANAGER
+        self._auth_token = settings.SMS_AUTO_TOKEN_MANAGER
+        self._from_number = settings.SMS_FROM_NUMBER_MANAGER
+        self._url = f'https://api.twilio.com/2010-04-01/Accounts/{self._account_sid}/Messages.json'
 
     def _calling_the_server(self, data: Any):
-        if requests.post(self.__url, data=data, auth=(self.__account_sid, self.__auth_token)).ok:
-            print(f'SMS from {self.__from_number} to {self._address} was successfully sent.\nMessage- "{data}"')
+        if requests.post(self._url, data=data, auth=(self._account_sid, self._auth_token)).ok:
+            print(f'SMS from {self._from_number} to {self._address} was successfully sent.\nMessage- "{data}"')
             return True
-        print(f'SMS from {self.__from_number} to {self._address} was not sent.')
+        print(f'SMS from {self._from_number} to {self._address} was not sent.')
         return False
 
 
@@ -92,7 +92,7 @@ class SmsSender(Sender):
         if phone[0] == "0":
             phone = f"+972{phone[1:]}"
         data = {
-            'From': self.__from_number,
+            'From': self._from_number,
             'To': phone,
             'Body': f"{subject}\n{body}"
         }
