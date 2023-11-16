@@ -1,14 +1,9 @@
-from stock import StockMaterial
-from messenger import EmailSender, SmsSender
 import settings
 from order import Order
 from log import Logger
 
-import PySimpleGUI as sg
 from typing import Type
-import threading
 import time
-import mysql_database
 from typing import Type
 
 
@@ -43,7 +38,7 @@ class WashingMachine:
 
     def material_reduction(self, order: Type[Order]):
         for material in self._stock.keys():
-            self._stock[material] -= order.weight * settings.MATERIAL_PER_KILOGRAM[material]
+            self._stock[material] -= order.get_weight() * settings.MATERIAL_PER_KILOGRAM[material]
 
 
 

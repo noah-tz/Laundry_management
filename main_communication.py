@@ -55,7 +55,7 @@ class MainCommunicator:
             if event in [sg.WIN_CLOSED, "close"]:
                 break
             elif event == '-OK_TAB_ORDER_PICKUP-':
-                Order.order_pickup(value['-order number-'], client.get_email())
+                client.order_pickup(value['-order number-'])
                 break
             elif event == 'CREATE_IN_TAB_CREATE_ORDER':
                 new_order = Order(client.get_email(), client.get_phone(), client.get_connect_method(), value)
@@ -91,7 +91,7 @@ class RepeaterPassword:
             if sql_client_connector.check_existence():
                 client = Client(self.email_client)
                 password = client.get_password()
-                sender = EmailSender(self.email_client)
+                sender = EmailSender(self.email_client) if client.get_connect_method() == "email" else SmsSender(client.get_phone())
                 sender.password_recovery(password)
                 LaundryGui.popup_window("The password has been sent to your email address", "The password has been sent")
             else:

@@ -11,27 +11,20 @@ class StockMaterial:
         self._check_data_material()
         self._amount = amount
         self._update_obj_amount()
-        self._set_messenger()
+        self._messenger = EmailSender(settings.EMAIL_MANAGER) if settings.MSG_MANAGER == "email" else SmsSender(settings.NUMBER_PHONE_MANAGER)
 
-    def __check_data_material(self) -> None:
+    def _check_data_material(self) -> None:
         if not self._sql_material_connector.check_existence():
             self._sql_material_connector.add((f"stock {self._name}", 0))
 
-    def __update_obj_amount(self) -> None:
+    def _update_obj_amount(self) -> None:
         if not self._amount:
             self._amount = self._sql_material_connector.get_value("material_value")
 
-
-    def __set_messenger(self):
-        if settings.MSG_MANAGER == "email":
-            self._messenger = EmailSender(settings.EMAIL_MANAGER)
-        else:
-            self._messenger = SmsSender(settings.NUMBER_PHONE_MANAGER)
-
-    def __update_db_amount(self) -> None:
+    def _update_db_amount(self) -> None:
         self._sql_material_connector.update_value("material_value", self._amount)
     
-    def __alert_manager(self):
+    def _alert_manager(self):
         subject = f"{self._name} in stock refill alert"
         body = f"Hello and greetings\nThe system recognized that it is necessary to fill in {self._name} as soon as possible.\nGreetings and have a wonderful day"
         self._messenger.any_msg(subject, body)
