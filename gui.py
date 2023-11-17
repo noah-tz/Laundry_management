@@ -1,5 +1,5 @@
 import settings
-from mysql_database import SqlOrders
+from mysql_database import SqlOrders, SqlManagers, SqlVariables, SqlClients, SqlMaterial
 
 import PySimpleGUI as sg
 from typing import Callable, Type, Any
@@ -73,15 +73,79 @@ class LaundryGui:
             [sg.Button("OK", key='-OK_TAB_ORDER_PICKUP-')]
         ]
         column_headings = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
-        sql_client_connector = SqlOrders(email_client)
+        sql_orders_connector = SqlOrders(email_client)
         layout_tab_order_history = [
-            [sg.Table(values=sql_client_connector.get_orders(email_client), headings=column_headings, key='-TABLE-')]
+            [sg.Table(values=sql_orders_connector.get_table(("email_client", email_client), "order_entered", settings.LIMIT_TABLES), headings=column_headings, key='-TABLE-')]
         ]
         self._layout = [
             [sg.TabGroup([
                 [sg.Tab("create a new order", layout_tab_create_order, key='-TAB_CREATE_ORDER-')],
                 [sg.Tab("Order pick up", layout_tab_order_pickup, key='-TAB_ORDER_PICKUP-')],
-                [sg.Tab("Order history", layout_tab_order_history, key='-TAB_ORDER_HISTORY-')]
+                [sg.Tab(f"Order history ({settings.LIMIT_TABLES})", layout_tab_order_history, key='-TAB_ORDER_HISTORY-')]
+            ])],
+            [sg.Button("close")]
+        ]
+        self._title = "private area"
+        self._update_window(True)
+
+    def replace_to_manager_window(self, email_client: str):
+        column_headings_data = ['variable_name', 'variable_value']
+        sql_variables_connector = SqlVariables("cash register")
+        layout_tab_view_data = [
+            [sg.Table(values=sql_variables_connector.get_table(), headings=column_headings_data, key='-TABLE_DATA-')]
+        ]
+        column_headings_orders = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
+        sql_orders_connector = SqlOrders()
+        layout_tab_order_history = [
+            [sg.Table(values=sql_orders_connector.get_table(by_sort="order_entered", by_limit=settings.LIMIT_TABLES), headings=column_headings_orders, key='-TABLE_ALL_ORDERS-')]
+        ]
+        column_headings_clients = ['name', 'family name', 'city', 'street', 'house number', 'phone client','email client', 'password', 'message type']
+        sql_clients_connector = SqlClients()
+        layout_tab_clients = [
+            [sg.Table(values=sql_clients_connector.get_table(by_sort="family_name", by_limit=settings.LIMIT_TABLES), headings=column_headings_clients, key='-TABLE_ALL_CLIENTS-')]
+        ]
+        column_headings_stock = ['material name', 'material value']
+        sql_stock_connector = SqlMaterial()
+        layout_tab_stock = [
+            [sg.Table(values=sql_stock_connector.get_table(by_sort="material_name"), headings=column_headings_stock, key='-TABLE_ALL_STOCK-')]
+        ]
+        column_headings_managers = ['name', 'family name', 'city', 'street', 'house number', 'phone manager','email manager', 'password', 'message type']
+        sql_managers_connector = SqlManagers()
+        layout_tab_managers = [
+            [sg.Table(values=sql_managers_connector.get_table(by_sort="family_name"), headings=column_headings_managers, key='-TABLE_ALL_MANAGERS-')]
+        ]
+        layout_tab_add_manager = [
+            [sg.Text("name"), sg.InputText(key= '-name-', justification='center')],
+            [sg.Text("family_name"), sg.InputText(key= '-family_name-', justification='center')],
+            [sg.Text("city"), sg.InputText(key= '-city-', justification='center')],
+            [sg.Text("street"), sg.InputText(key= '-street-', justification='center')],
+            [sg.Text("house_number"), sg.InputText(key= '-house_number-', justification='center')],
+            [sg.Text("phone"), sg.InputText(key= '-phone-', justification='center')],
+            [sg.Text("email"), sg.InputText(key= '-email-', justification='center')],
+            [sg.Text("Choose a strong password"), sg.InputText(key= '-password-', justification='center')],
+            [sg.Text("Choose a preferred method of communication"), sg.DropDown(["email", "sms"], key= '-message_type-')],
+            [sg.Button("add", key= 'ADD_MANAGER')]
+        ]
+        layout_tab_add_material = [
+            [sg.Text("Select a material type"), sg.DropDown(list(settings.NAMES_MATERIAL), key= '-type material to add-')]
+            [sg.Text("Please enter a quantity to add"), sg.InputText(key= '-quantity to add-')],
+            [sg.Button("add", key='-ADD_MATERIAL-')]
+        ]
+        cash_register = sql_variables_connector.get_value("variable_value")
+        layout_tab_cash_withdrawal = [
+            [sg.Text(f"The amount in the cash register is: {cash_register}\n. Please enter an amount to withdraw"), sg.InputText(key= '-Amount to withdraw-')]
+            [sg.Button("withdraw", key='-WITHDRAW_MONEY-')]
+        ]
+        self._layout = [
+            [sg.TabGroup([
+                [sg.Tab("General Information", layout_tab_view_data, key='-TAB_GENERAL_DATA-')],
+                [sg.Tab(f"Orders history ({settings.LIMIT_TABLES})", layout_tab_order_history, key='-TAB_ORDERS_HISTORY-')],
+                [sg.Tab(f"All clients ({settings.LIMIT_TABLES})", layout_tab_clients, key='-TAB_ALL_CLIENTS-')],
+                [sg.Tab("Stock", layout_tab_stock, key='-TAB_ALL_STOCK-')],
+                [sg.Tab("All managers", layout_tab_managers, key='-TAB_ALL_MANAGERS-')],
+                [sg.Tab("Add manager", layout_tab_add_manager, key='-TAB_ADD_MANAGER-')],
+                [sg.Tab("Add material", layout_tab_add_material, key='-TAB_ADD_MATERIAL-')],
+                [sg.Tab("Cash withdrawal", layout_tab_cash_withdrawal, key='-TAB_CASH_WITHDRAWAL-')],
             ])],
             [sg.Button("close")]
         ]

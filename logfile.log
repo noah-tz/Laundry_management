@@ -14077,3 +14077,1576 @@ Have a wonderful day!='We look forward to seeing you using our services again.\n
 2023-11-16 17:52:51,122 - INFO - Function execute completed successfully
 2023-11-16 17:52:51,122 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f1f8f263650>=<mysql_database.SqlMaterial object at 0x7f1f8f263650>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
 2023-11-16 17:52:51,123 - INFO - Function execute completed successfully
+2023-11-17 01:15:22,486 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-17 01:15:22,486 - INFO - Function execute completed successfully
+2023-11-17 01:15:22,486 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-17 01:15:22,487 - INFO - Function execute completed successfully
+2023-11-17 01:15:23,399 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-17 01:15:23,402 - INFO - Function execute completed successfully
+2023-11-17 01:15:23,402 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-17 01:15:23,404 - INFO - Function execute completed successfully
+2023-11-17 01:15:34,444 - INFO - Calling function: MainCommunicator.sign_in(<main_communication.MainCommunicator object at 0x7f79af26b890>=<main_communication.MainCommunicator object at 0x7f79af26b890>, t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-17 01:15:34,460 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f7995724690>=<mysql_database.SqlClients object at 0x7f7995724690>, SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'", False=False)
+2023-11-17 01:15:34,462 - INFO - Function execute completed successfully
+2023-11-17 01:15:34,463 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f7995724690>=<mysql_database.SqlClients object at 0x7f7995724690>, SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'", True=True)
+2023-11-17 01:15:34,465 - INFO - Function execute completed successfully
+2023-11-17 01:15:34,480 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f7995724b10>=<mysql_database.SqlClients object at 0x7f7995724b10>, SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'")
+2023-11-17 01:15:34,482 - INFO - Function execute completed successfully
+2023-11-17 01:15:34,495 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7f7995726790>=<mysql_database.SqlOrders object at 0x7f7995726790>, SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100="SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100", True=True)
+2023-11-17 01:15:34,496 - INFO - Function execute completed successfully
+2023-11-17 01:15:55,977 - INFO - Function sign_in completed successfully
+2023-11-17 01:15:58,562 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,563 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,563 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,564 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,564 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,565 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,565 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,566 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,566 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,567 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,567 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,568 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,569 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,569 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,570 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,571 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,571 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,572 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,572 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,573 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,573 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,574 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,574 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,575 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,575 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,576 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,577 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,578 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,578 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,579 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,579 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,580 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,580 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,581 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,581 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,582 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,582 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7995a44fd0>=<mysql_database.SqlMaterial object at 0x7f7995a44fd0>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:15:58,583 - INFO - Function execute completed successfully
+2023-11-17 01:15:58,584 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7998402410>=<mysql_database.SqlMaterial object at 0x7f7998402410>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:15:58,584 - INFO - Function execute completed successfully
+2023-11-17 01:16:34,988 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-17 01:16:34,989 - INFO - Function execute completed successfully
+2023-11-17 01:16:34,989 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-17 01:16:34,990 - INFO - Function execute completed successfully
+2023-11-17 01:16:35,894 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-17 01:16:35,897 - INFO - Function execute completed successfully
+2023-11-17 01:16:35,897 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-17 01:16:35,899 - INFO - Function execute completed successfully
+2023-11-17 01:17:22,995 - INFO - Calling function: MainCommunicator.sign_in(<main_communication.MainCommunicator object at 0x7f733228b890>=<main_communication.MainCommunicator object at 0x7f733228b890>, isacd1995@gmail.com='isacd1995@gmail.com', Tt0522645540@='Tt0522645540@')
+2023-11-17 01:17:23,011 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f731872f750>=<mysql_database.SqlClients object at 0x7f731872f750>, SELECT email_client FROM clients WHERE email_client = 'isacd1995@gmail.com'="SELECT email_client FROM clients WHERE email_client = 'isacd1995@gmail.com'", False=False)
+2023-11-17 01:17:23,013 - INFO - Function execute completed successfully
+2023-11-17 01:17:23,014 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f731872f750>=<mysql_database.SqlClients object at 0x7f731872f750>, SELECT password_client FROM clients WHERE email_client = 'isacd1995@gmail.com'="SELECT password_client FROM clients WHERE email_client = 'isacd1995@gmail.com'", True=True)
+2023-11-17 01:17:23,016 - INFO - Function execute completed successfully
+2023-11-17 01:17:23,026 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f731872f850>=<mysql_database.SqlClients object at 0x7f731872f850>, SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 'isacd1995@gmail.com'="SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 'isacd1995@gmail.com'")
+2023-11-17 01:17:23,027 - INFO - Function execute completed successfully
+2023-11-17 01:17:23,033 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7f7318761790>=<mysql_database.SqlOrders object at 0x7f7318761790>, SELECT * FROM orders WHERE email_client = 'isacd1995@gmail.com' ORDER BY order_entered DESC LIMIT 100="SELECT * FROM orders WHERE email_client = 'isacd1995@gmail.com' ORDER BY order_entered DESC LIMIT 100", True=True)
+2023-11-17 01:17:23,033 - INFO - Function execute completed successfully
+2023-11-17 01:17:29,409 - INFO - Function sign_in completed successfully
+2023-11-17 01:17:31,797 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,798 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,798 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,799 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,799 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,800 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,801 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,802 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,802 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,803 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,803 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,804 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,804 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,805 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,806 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,807 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,807 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,808 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,808 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,809 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,809 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,811 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,811 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,812 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,812 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,813 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,814 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,815 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,815 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,816 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,816 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,817 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,817 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,818 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,819 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,820 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,820 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a77b10>=<mysql_database.SqlMaterial object at 0x7f7318a77b10>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:17:31,822 - INFO - Function execute completed successfully
+2023-11-17 01:17:31,822 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7318a76e90>=<mysql_database.SqlMaterial object at 0x7f7318a76e90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:17:31,823 - INFO - Function execute completed successfully
+2023-11-17 01:19:02,527 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-17 01:19:02,528 - INFO - Function execute completed successfully
+2023-11-17 01:19:02,528 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-17 01:19:02,529 - INFO - Function execute completed successfully
+2023-11-17 01:19:03,352 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-17 01:19:03,354 - INFO - Function execute completed successfully
+2023-11-17 01:19:03,355 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-17 01:19:03,357 - INFO - Function execute completed successfully
+2023-11-17 01:19:15,881 - INFO - Calling function: MainCommunicator.sign_in(<main_communication.MainCommunicator object at 0x7f6b32e6b890>=<main_communication.MainCommunicator object at 0x7f6b32e6b890>, t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-17 01:19:15,888 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f6b193181d0>=<mysql_database.SqlClients object at 0x7f6b193181d0>, SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'", False=False)
+2023-11-17 01:19:15,889 - INFO - Function execute completed successfully
+2023-11-17 01:19:15,889 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f6b193181d0>=<mysql_database.SqlClients object at 0x7f6b193181d0>, SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'", True=True)
+2023-11-17 01:19:15,890 - INFO - Function execute completed successfully
+2023-11-17 01:19:15,899 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f6b19318690>=<mysql_database.SqlClients object at 0x7f6b19318690>, SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'")
+2023-11-17 01:19:15,900 - INFO - Function execute completed successfully
+2023-11-17 01:19:15,905 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7f6b1931a290>=<mysql_database.SqlOrders object at 0x7f6b1931a290>, SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 10="SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 10", True=True)
+2023-11-17 01:19:15,906 - INFO - Function execute completed successfully
+2023-11-17 01:19:21,616 - INFO - Function sign_in completed successfully
+2023-11-17 01:19:24,658 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,661 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,662 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,665 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,665 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,667 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,667 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,669 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,670 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,671 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,671 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,673 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,673 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,674 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,674 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,676 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,676 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,677 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,677 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,678 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,679 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,679 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,680 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,680 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,681 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,682 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,682 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,683 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,683 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,684 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,684 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,685 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,685 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,686 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,686 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,687 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,687 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944d110>=<mysql_database.SqlMaterial object at 0x7f6b1944d110>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 01:19:24,688 - INFO - Function execute completed successfully
+2023-11-17 01:19:24,688 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6b1944cb90>=<mysql_database.SqlMaterial object at 0x7f6b1944cb90>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 01:19:24,689 - INFO - Function execute completed successfully
+2023-11-17 03:12:47,597 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fcdc6bbbe90>=<__main__.SqlVariables object at 0x7fcdc6bbbe90>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 03:12:47,602 - INFO - Function execute completed successfully
+2023-11-17 03:39:35,588 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-17 03:39:35,588 - INFO - Function execute completed successfully
+2023-11-17 03:39:35,589 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-17 03:39:35,589 - INFO - Function execute completed successfully
+2023-11-17 03:39:36,586 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-17 03:39:36,589 - INFO - Function execute completed successfully
+2023-11-17 03:39:36,589 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-17 03:39:36,591 - INFO - Function execute completed successfully
+2023-11-17 03:39:50,378 - INFO - Calling function: MainCommunicator.sign_in(<main_communication.MainCommunicator object at 0x7f6789ff78d0>=<main_communication.MainCommunicator object at 0x7f6789ff78d0>, t0527184022@gmail.com='t0527184022@gmail.com', 1='1')
+2023-11-17 03:39:50,393 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f67704a4510>=<mysql_database.SqlClients object at 0x7f67704a4510>, SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'", False=False)
+2023-11-17 03:39:50,396 - INFO - Function execute completed successfully
+2023-11-17 03:39:50,396 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f67704a4510>=<mysql_database.SqlClients object at 0x7f67704a4510>, SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT password_client FROM clients WHERE email_client = 't0527184022@gmail.com'", True=True)
+2023-11-17 03:39:50,398 - INFO - Function execute completed successfully
+2023-11-17 03:39:50,417 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7f67704a4950>=<mysql_database.SqlClients object at 0x7f67704a4950>, SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'")
+2023-11-17 03:39:50,419 - INFO - Function execute completed successfully
+2023-11-17 03:39:50,434 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7f67704a6550>=<mysql_database.SqlOrders object at 0x7f67704a6550>, SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100="SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100", True=True)
+2023-11-17 03:39:50,436 - INFO - Function execute completed successfully
+2023-11-17 03:40:00,420 - INFO - Function sign_in completed successfully
+2023-11-17 03:40:02,943 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,944 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,944 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,945 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,945 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,946 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,946 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,947 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,948 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,949 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,949 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,950 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,950 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,951 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,951 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,952 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,952 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,953 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,953 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,954 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,954 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,955 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,955 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,956 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,956 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,957 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,958 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,958 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,959 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,960 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,960 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,961 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,962 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,962 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,963 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,963 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,964 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f67707cdc90>=<mysql_database.SqlMaterial object at 0x7f67707cdc90>, UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 25730 WHERE material_name = 'stock powder'")
+2023-11-17 03:40:02,965 - INFO - Function execute completed successfully
+2023-11-17 03:40:02,965 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f6772b984d0>=<mysql_database.SqlMaterial object at 0x7f6772b984d0>, UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 26047 WHERE material_name = 'stock softener'")
+2023-11-17 03:40:02,966 - INFO - Function execute completed successfully
+2023-11-17 09:06:04,779 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f1396eb7e50>=<__main__.SqlVariables object at 0x7f1396eb7e50>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 09:06:04,917 - INFO - Function execute completed successfully
+2023-11-17 09:06:31,923 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f480f25fa50>=<__main__.SqlVariables object at 0x7f480f25fa50>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 09:06:31,930 - INFO - Function execute completed successfully
+2023-11-17 09:06:31,935 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f480f25fa50>=<__main__.SqlVariables object at 0x7f480f25fa50>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 09:06:31,938 - INFO - Function execute completed successfully
+2023-11-17 09:07:37,721 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fe2a2f978d0>=<__main__.SqlVariables object at 0x7fe2a2f978d0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 09:07:37,797 - INFO - Function execute completed successfully
+2023-11-17 09:07:46,627 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f9e53ec4250>=<__main__.SqlVariables object at 0x7f9e53ec4250>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 09:07:46,635 - INFO - Function execute completed successfully
+2023-11-17 09:12:45,188 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7fc3fadf3b50>=<__main__.SqlClients object at 0x7fc3fadf3b50>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 09:12:45,203 - INFO - Function execute completed successfully
+2023-11-17 09:12:45,225 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7fc3fadf3b50>=<__main__.SqlClients object at 0x7fc3fadf3b50>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 09:12:45,249 - INFO - Function execute completed successfully
+2023-11-17 09:12:45,268 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fc3fc3b0dd0>=<__main__.SqlVariables object at 0x7fc3fc3b0dd0>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 09:12:45,290 - INFO - Function execute completed successfully
+2023-11-17 09:22:33,835 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fedd11f3d90>=<__main__.SqlVariables object at 0x7fedd11f3d90>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 09:22:34,135 - INFO - Function execute completed successfully
+2023-11-17 09:22:34,136 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fedd11f3d90>=<__main__.SqlVariables object at 0x7fedd11f3d90>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 09:22:34,137 - INFO - Function execute completed successfully
+2023-11-17 09:23:23,669 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f5c77f4ff90>=<__main__.SqlVariables object at 0x7f5c77f4ff90>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 09:23:23,695 - INFO - Function execute completed successfully
+2023-11-17 09:23:23,703 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f5c77f4ff90>=<__main__.SqlVariables object at 0x7f5c77f4ff90>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 09:23:23,901 - INFO - Function execute completed successfully
+2023-11-17 09:24:02,273 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fd7b48b7f10>=<__main__.SqlVariables object at 0x7fd7b48b7f10>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 09:24:02,303 - INFO - Function execute completed successfully
+2023-11-17 09:24:02,313 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fd7b48b7f10>=<__main__.SqlVariables object at 0x7fd7b48b7f10>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 09:24:02,324 - INFO - Function execute completed successfully
+2023-11-17 09:24:14,396 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fe4d59dff90>=<__main__.SqlVariables object at 0x7fe4d59dff90>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 09:24:14,418 - INFO - Function execute completed successfully
+2023-11-17 09:24:14,432 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7fe4ee3c7990>=<__main__.SqlClients object at 0x7fe4ee3c7990>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 09:24:14,452 - INFO - Function execute completed successfully
+2023-11-17 09:24:14,465 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7fe4ee3c7990>=<__main__.SqlClients object at 0x7fe4ee3c7990>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 09:24:14,492 - INFO - Function execute completed successfully
+2023-11-17 12:19:26,873 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fb9aaccf9d0>=<__main__.ManagerDatabase object at 0x7fb9aaccf9d0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:19:26,933 - INFO - Function execute completed successfully
+2023-11-17 12:21:33,954 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fdd561a3d90>=<__main__.ManagerDatabase object at 0x7fdd561a3d90>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:21:33,962 - INFO - Function execute completed successfully
+2023-11-17 12:21:33,966 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fdd561a3d90>=<__main__.ManagerDatabase object at 0x7fdd561a3d90>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:21:34,022 - INFO - Function execute completed successfully
+2023-11-17 12:22:44,901 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f813cf13a50>=<__main__.ManagerDatabase object at 0x7f813cf13a50>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:22:44,909 - INFO - Function execute completed successfully
+2023-11-17 12:24:27,736 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fe9e24b7750>=<__main__.ManagerDatabase object at 0x7fe9e24b7750>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:24:27,796 - INFO - Function execute completed successfully
+2023-11-17 12:25:34,008 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlOrders object at 0x7f1090e30350>=<__main__.SqlOrders object at 0x7f1090e30350>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:25:34,016 - INFO - Function execute completed successfully
+2023-11-17 12:25:34,021 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlOrders object at 0x7f1090e30350>=<__main__.SqlOrders object at 0x7f1090e30350>, SELECT order_id FROM orders WHERE order_id = '10'="SELECT order_id FROM orders WHERE order_id = '10'", False=False)
+2023-11-17 12:25:34,049 - INFO - Function execute completed successfully
+2023-11-17 12:26:50,510 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f37f120f9d0>=<__main__.ManagerDatabase object at 0x7f37f120f9d0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:26:50,568 - INFO - Function execute completed successfully
+2023-11-17 12:27:58,555 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f4db11b8210>=<__main__.ManagerDatabase object at 0x7f4db11b8210>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:27:58,563 - INFO - Function execute completed successfully
+2023-11-17 12:27:58,568 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f4db11b8210>=<__main__.ManagerDatabase object at 0x7f4db11b8210>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:27:58,611 - INFO - Function execute completed successfully
+2023-11-17 12:28:21,530 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f118545f410>=<__main__.ManagerDatabase object at 0x7f118545f410>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:28:21,540 - INFO - Function execute completed successfully
+2023-11-17 12:28:21,550 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f118545f410>=<__main__.ManagerDatabase object at 0x7f118545f410>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:28:21,592 - INFO - Function execute completed successfully
+2023-11-17 12:28:41,855 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f8d3960f950>=<__main__.SqlClients object at 0x7f8d3960f950>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:28:41,863 - INFO - Function execute completed successfully
+2023-11-17 12:28:41,868 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f8d3960f950>=<__main__.SqlClients object at 0x7f8d3960f950>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 12:28:41,868 - INFO - Function execute completed successfully
+2023-11-17 12:36:48,761 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fe155b67cd0>=<__main__.ManagerDatabase object at 0x7fe155b67cd0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:36:48,821 - INFO - Function execute completed successfully
+2023-11-17 12:40:44,337 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f2c8e41fb50>=<__main__.ManagerDatabase object at 0x7f2c8e41fb50>, CREATE DATABASE IF NOT EXISTS laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE IF NOT EXISTS laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:40:44,345 - INFO - Function execute completed successfully
+2023-11-17 12:40:44,349 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f2c8e41fb50>=<__main__.ManagerDatabase object at 0x7f2c8e41fb50>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:40:44,387 - INFO - Function execute completed successfully
+2023-11-17 12:59:00,523 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f0b9b1b3c50>=<__main__.ManagerDatabase object at 0x7f0b9b1b3c50>, CREATE DATABASE IF NOT EXISTS laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE IF NOT EXISTS laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 12:59:00,531 - INFO - Function execute completed successfully
+2023-11-17 12:59:00,537 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f0b9b1b3c50>=<__main__.ManagerDatabase object at 0x7f0b9b1b3c50>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 12:59:00,580 - INFO - Function execute completed successfully
+2023-11-17 13:03:06,701 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f823644b7d0>=<__main__.ManagerDatabase object at 0x7f823644b7d0>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:03:06,709 - INFO - Function execute completed successfully
+2023-11-17 13:03:06,714 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f823644b7d0>=<__main__.ManagerDatabase object at 0x7f823644b7d0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:03:06,747 - INFO - Function execute completed successfully
+2023-11-17 13:09:34,775 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f27cc1b7e10>=<__main__.ManagerDatabase object at 0x7f27cc1b7e10>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:09:34,783 - INFO - Function execute completed successfully
+2023-11-17 13:09:34,788 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f27cc1b7e10>=<__main__.ManagerDatabase object at 0x7f27cc1b7e10>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:09:34,827 - INFO - Function execute completed successfully
+2023-11-17 13:10:56,058 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fb9fc10c110>=<__main__.ManagerDatabase object at 0x7fb9fc10c110>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:10:56,065 - INFO - Function execute completed successfully
+2023-11-17 13:10:56,074 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fb9fcbabcd0>=<__main__.SqlVariables object at 0x7fb9fcbabcd0>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:10:56,077 - INFO - Function execute completed successfully
+2023-11-17 13:20:10,736 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f0bfe3f7950>=<__main__.ManagerDatabase object at 0x7f0bfe3f7950>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:20:10,779 - INFO - Function execute completed successfully
+2023-11-17 13:21:59,895 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f830d9df690>=<__main__.ManagerDatabase object at 0x7f830d9df690>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:21:59,903 - INFO - Function execute completed successfully
+2023-11-17 13:21:59,907 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f830d9df690>=<__main__.ManagerDatabase object at 0x7f830d9df690>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:21:59,960 - INFO - Function execute completed successfully
+2023-11-17 13:21:59,966 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f830dd85790>=<__main__.SqlVariables object at 0x7f830dd85790>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:21:59,973 - INFO - Function execute completed successfully
+2023-11-17 13:21:59,979 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f830dd85790>=<__main__.SqlVariables object at 0x7f830dd85790>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:21:59,980 - INFO - Function execute completed successfully
+2023-11-17 13:22:43,663 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f2e987bbf10>=<__main__.ManagerDatabase object at 0x7f2e987bbf10>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:22:43,745 - INFO - Function execute completed successfully
+2023-11-17 13:22:43,766 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f2e98da0990>=<__main__.SqlVariables object at 0x7f2e98da0990>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:22:43,776 - INFO - Function execute completed successfully
+2023-11-17 13:22:43,798 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f2e98da0990>=<__main__.SqlVariables object at 0x7f2e98da0990>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:22:43,801 - INFO - Function execute completed successfully
+2023-11-17 13:23:39,662 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fe4d285f150>=<__main__.ManagerDatabase object at 0x7fe4d285f150>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:23:39,737 - INFO - Function execute completed successfully
+2023-11-17 13:24:20,672 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f39db74ffd0>=<__main__.SqlVariables object at 0x7f39db74ffd0>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:24:20,681 - INFO - Function execute completed successfully
+2023-11-17 13:24:20,699 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f39db74ffd0>=<__main__.SqlVariables object at 0x7f39db74ffd0>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:24:20,701 - INFO - Function execute completed successfully
+2023-11-17 13:24:37,054 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f99f8a33990>=<__main__.ManagerDatabase object at 0x7f99f8a33990>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:24:37,124 - INFO - Function execute completed successfully
+2023-11-17 13:25:40,088 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f676b02be50>=<__main__.SqlVariables object at 0x7f676b02be50>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:25:40,098 - INFO - Function execute completed successfully
+2023-11-17 13:27:38,343 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f1984ddf810>=<__main__.SqlVariables object at 0x7f1984ddf810>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:27:38,351 - INFO - Function execute completed successfully
+2023-11-17 13:27:38,389 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f199af65f90>=<__main__.SqlClients object at 0x7f199af65f90>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 13:27:38,398 - INFO - Function execute completed successfully
+2023-11-17 13:27:38,445 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f199af65f90>=<__main__.SqlClients object at 0x7f199af65f90>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 13:27:38,454 - INFO - Function execute completed successfully
+2023-11-17 13:31:06,254 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7fcd7d917a50>=<__main__.ManagerDatabase object at 0x7fcd7d917a50>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:31:06,355 - INFO - Function execute completed successfully
+2023-11-17 13:31:06,376 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fcd94f40990>=<__main__.SqlVariables object at 0x7fcd94f40990>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:31:06,386 - INFO - Function execute completed successfully
+2023-11-17 13:31:06,403 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7fcd94f40990>=<__main__.SqlVariables object at 0x7fcd94f40990>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:31:06,405 - INFO - Function execute completed successfully
+2023-11-17 13:35:49,853 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f3e7a8e0190>=<__main__.ManagerDatabase object at 0x7f3e7a8e0190>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:35:49,932 - INFO - Function execute completed successfully
+2023-11-17 13:35:49,954 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f3e7c9e8b50>=<__main__.SqlVariables object at 0x7f3e7c9e8b50>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:35:49,967 - INFO - Function execute completed successfully
+2023-11-17 13:35:54,985 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f3e7c9e8b50>=<__main__.SqlVariables object at 0x7f3e7c9e8b50>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:35:54,996 - INFO - Function execute completed successfully
+2023-11-17 13:35:55,038 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f3e7b974750>=<__main__.SqlClients object at 0x7f3e7b974750>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 13:35:55,051 - INFO - Function execute completed successfully
+2023-11-17 13:35:55,093 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f3e7b974750>=<__main__.SqlClients object at 0x7f3e7b974750>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 13:35:55,101 - INFO - Function execute completed successfully
+2023-11-17 13:36:10,958 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f167b44bdd0>=<__main__.ManagerDatabase object at 0x7f167b44bdd0>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:36:11,052 - INFO - Function execute completed successfully
+2023-11-17 13:36:11,073 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f167b44bf90>=<__main__.SqlVariables object at 0x7f167b44bf90>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:36:11,086 - INFO - Function execute completed successfully
+2023-11-17 13:36:13,103 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f167b44bf90>=<__main__.SqlVariables object at 0x7f167b44bf90>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:36:13,112 - INFO - Function execute completed successfully
+2023-11-17 13:36:13,159 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f167cf981d0>=<__main__.SqlClients object at 0x7f167cf981d0>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 13:36:13,170 - INFO - Function execute completed successfully
+2023-11-17 13:36:13,216 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f167cf981d0>=<__main__.SqlClients object at 0x7f167cf981d0>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 13:36:13,225 - INFO - Function execute completed successfully
+2023-11-17 13:36:23,529 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7f4a68a9bf10>=<__main__.ManagerDatabase object at 0x7f4a68a9bf10>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:36:23,612 - INFO - Function execute completed successfully
+2023-11-17 13:36:23,633 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f4a68e91c90>=<__main__.SqlVariables object at 0x7f4a68e91c90>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:36:23,647 - INFO - Function execute completed successfully
+2023-11-17 13:36:24,662 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7f4a68e91c90>=<__main__.SqlVariables object at 0x7f4a68e91c90>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:36:24,672 - INFO - Function execute completed successfully
+2023-11-17 13:36:24,713 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f4a688b20d0>=<__main__.SqlClients object at 0x7f4a688b20d0>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 13:36:24,725 - INFO - Function execute completed successfully
+2023-11-17 13:36:24,771 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7f4a688b20d0>=<__main__.SqlClients object at 0x7f4a688b20d0>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 13:36:24,779 - INFO - Function execute completed successfully
+2023-11-17 13:37:26,634 - INFO - Calling function: ManagerDatabase.execute(<__main__.ManagerDatabase object at 0x7ff64cbf3950>=<__main__.ManagerDatabase object at 0x7ff64cbf3950>, DROP DATABASE IF EXISTS laundry='DROP DATABASE IF EXISTS laundry')
+2023-11-17 13:37:26,709 - INFO - Function execute completed successfully
+2023-11-17 13:37:26,731 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7ff64e69b650>=<__main__.SqlVariables object at 0x7ff64e69b650>, CREATE DATABASE laundry;
+
+USE laundry;
+
+CREATE TABLE orders (
+    order_id real, 
+    email_client varchar(30),
+    phone_client varchar(30),
+    order_cost real,
+    amount_items real,
+    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    order_notes varchar(40),
+    order_collected BOOLEAN
+);
+
+CREATE TABLE clients (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_client VARCHAR(30), 
+    email_client VARCHAR(30),
+    password_client VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE managers (
+    name VARCHAR(30), 
+    family_name VARCHAR(30), 
+    city VARCHAR(30),
+    street VARCHAR(30),
+    house_number real,
+    phone_manager VARCHAR(30), 
+    email_manager VARCHAR(30),
+    password_manager VARCHAR(30),
+    message_type ENUM('email','sms')
+);
+
+CREATE TABLE stock (
+    material_name VARCHAR(30) PRIMARY KEY,
+    material_value NUMERIC(10,0)
+);
+
+CREATE TABLE variables (
+    variable_name VARCHAR(30) PRIMARY KEY,
+    variable_value NUMERIC(10,2)
+);="CREATE DATABASE laundry;\n\nUSE laundry;\n\nCREATE TABLE orders (\n    order_id real, \n    email_client varchar(30),\n    phone_client varchar(30),\n    order_cost real,\n    amount_items real,\n    order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, \n    order_notes varchar(40),\n    order_collected BOOLEAN\n);\n\nCREATE TABLE clients (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_client VARCHAR(30), \n    email_client VARCHAR(30),\n    password_client VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE managers (\n    name VARCHAR(30), \n    family_name VARCHAR(30), \n    city VARCHAR(30),\n    street VARCHAR(30),\n    house_number real,\n    phone_manager VARCHAR(30), \n    email_manager VARCHAR(30),\n    password_manager VARCHAR(30),\n    message_type ENUM('email','sms')\n);\n\nCREATE TABLE stock (\n    material_name VARCHAR(30) PRIMARY KEY,\n    material_value NUMERIC(10,0)\n);\n\nCREATE TABLE variables (\n    variable_name VARCHAR(30) PRIMARY KEY,\n    variable_value NUMERIC(10,2)\n);")
+2023-11-17 13:37:26,744 - INFO - Function execute completed successfully
+2023-11-17 13:37:27,758 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlVariables object at 0x7ff64e69b650>=<__main__.SqlVariables object at 0x7ff64e69b650>, INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)="INSERT INTO variables (variable_name, variable_value) VALUES ('cash register', 0)")
+2023-11-17 13:37:27,768 - INFO - Function execute completed successfully
+2023-11-17 13:37:27,809 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7ff64ca09450>=<__main__.SqlClients object at 0x7ff64ca09450>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('noah', 'tzitrenboim', 'shemesh', 'miryamssss', 3333, '0522645540', 't0527184022@gmail.com', '1', 'email')")
+2023-11-17 13:37:27,821 - INFO - Function execute completed successfully
+2023-11-17 13:37:27,866 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlClients object at 0x7ff64ca09450>=<__main__.SqlClients object at 0x7ff64ca09450>, INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')="INSERT INTO clients (name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type) VALUES ('dina', 'tzitrenboim', 'shemesh', 'miryamssss', 333, '0522645540', 'isacd1995@gmail.com', '1', 'sms')")
+2023-11-17 13:37:27,873 - INFO - Function execute completed successfully
+2023-11-17 13:38:22,089 - INFO - Calling function: ManagerDatabase.execute(<__main__.SqlOrders object at 0x7ff0594a3910>=<__main__.SqlOrders object at 0x7ff0594a3910>, SELECT order_id FROM orders WHERE order_id = '10'="SELECT order_id FROM orders WHERE order_id = '10'", False=False)
+2023-11-17 13:38:22,094 - INFO - Function execute completed successfully

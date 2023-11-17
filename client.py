@@ -3,19 +3,17 @@ from mysql_database import SqlClients, SqlOrders
 from messenger import EmailSender, SmsSender
 
 from gui import LaundryGui
-from typing import Dict
-import PySimpleGUI as sg
 
 
 class Client:
     clients = {}
     def __init__(self, email: str) -> None:
         self._sql_client_connector = SqlClients(email)
-        data_of_person = self._sql_client_connector.get_details()[0]
-        self._phone_client = data_of_person[5]
-        self._email_client = data_of_person[6]
-        self._password = data_of_person[7]
-        self._connect_method = data_of_person[8]
+        data_of_client = self._sql_client_connector.get_details()[0]
+        self._phone_client = data_of_client[5]
+        self._email_client = data_of_client[6]
+        self._password = data_of_client[7]
+        self._connect_method = data_of_client[8]
 
     def get_phone(self):
         return self._phone_client
@@ -28,7 +26,8 @@ class Client:
     
     def get_connect_method(self):
         return self._connect_method
-    
+
+    @Logger.log_record    
     def order_pickup(self, order_ID: int) -> None:
         sql_orders_connector = SqlOrders(order_ID)
         email_client_order = sql_orders_connector.get_value("email_client")
@@ -46,11 +45,6 @@ class Client:
             LaundryGui.popup_window('No order associated with you with this number was found')
     
 
-
-    # def open_order(self, items: dict) -> Order:
-    #     new_order = Order(self.email, items)
-    #     self.orders[new_order.ID] = new_order
-    #     return new_order
 
 
 

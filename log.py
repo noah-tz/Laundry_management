@@ -6,7 +6,6 @@ class Logger:
     """
     A decorator class for logging function calls and exceptions.
     """
-
     _logger = logging.getLogger("Logger laundry")
     _logger.setLevel(logging.INFO)
     _log_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logfile.log")

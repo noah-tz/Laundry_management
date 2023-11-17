@@ -3,12 +3,13 @@ from typing import Any
 import pandas as pd
 from log import Logger
 import settings
+import time
 
 
 
 class ManagerDatabase:
     _data_is_checked = False
-    def __init__(self, key: Any):
+    def __init__(self, key: Any =None):
         self._key = key
         self._key_column: str
         self._table_name: str
@@ -39,7 +40,8 @@ class ManagerDatabase:
         if settings.NAME_DATABASE_SQL not in databases_names:
             with open("build_database.sql", "r") as fd:
                 sql_instructions = fd.read()
-            main_cursor.execute(sql_instructions)
+            self.execute(sql_instructions)
+            time.sleep(1)
         ManagerDatabase._data_is_checked = True
         self._set_connector()
  
@@ -47,7 +49,6 @@ class ManagerDatabase:
         query = f"SELECT * FROM {self._table_name}"
         database = pd.read_sql(query, self._mysql_connection)
         print(database)
-
 
     @Logger.log_record
     def execute(self, query: str, all: bool = True) -> Any:
@@ -61,29 +62,28 @@ class ManagerDatabase:
                 result = cursor.fetchall()
             else:
                 result = cursor.fetchone()
+            cursor.nextset()
             self._mysql_connection.commit()
         except Exception as e:
             print(f"Error executing query: {e}")
+            result = None
         finally:
             if cursor:
                 cursor.close()
             return result
 
-    @Logger.log_record
-    def add_table(self, name_table: str, column_names: tuple) -> None:
-        query = f"CREATE TABLE IF NOT EXISTS {name_table} ({', '.join(column_names)})"
-        self.execute(query)
-
-    @Logger.log_record
     def drop_table(self) -> None:
         query = f"DROP TABLE IF EXISTS {self._table_name}"
         self.execute(query)
 
-    @Logger.log_record
+    def add_table(self, name_table: str, column_names: tuple) -> None:
+        query = f"CREATE TABLE IF NOT EXISTS {name_table} ({', '.join(column_names)})"
+        self.execute(query)
+
     def drop_database(self) -> None:
         query = f"DROP DATABASE IF EXISTS {settings.NAME_DATABASE_SQL}"
         self.execute(query)
-            
+        ManagerDatabase._data_is_checked = False
 
     def check_existence(self) -> bool:
         query = f"SELECT {self._key_column} FROM {self._table_name} WHERE {self._key_column} = '{self._key}'"
@@ -111,6 +111,13 @@ class ManagerDatabase:
         query = f"UPDATE {self._table_name} SET {column_value} = {new_value} WHERE {self._key_column} = '{self._key}'"
         self.execute(query)
 
+    def get_table(self, by_key: tuple = (), by_sort: str = '' , by_limit: int = 0):
+        key_select = '' if not by_key else f"WHERE {by_key[0]} = '{by_key[1]}'"
+        sorted = '' if not by_sort else f"ORDER BY {by_sort}"
+        limited = '' if not by_limit else f"DESC LIMIT {by_limit}"
+        query = f"SELECT * FROM {self._table_name} {key_select} {sorted} {limited}"
+        results = self.execute(query, True)
+        return results
 
 
 
@@ -124,41 +131,35 @@ class SqlOrders(ManagerDatabase):
     def new_order_id(self):
         query = "SELECT MAX(order_id) FROM orders"
         result = self.execute(query)
-        print(result)
         ID = settings.START_ORDERS_ID if result[0][0] is None else int(result[0][0]) +1
         self._key = ID
         return ID
     
-    def get_orders(self, email_client: str) -> list[tuple]:
-        query = f"SELECT * FROM orders WHERE email_client = '{email_client}' ORDER BY order_entered DESC LIMIT 100"
-        results = self.execute(query, True)
-        return results
-
-
 
 
 class SqlClients(ManagerDatabase):
-    def __init__(self, email: str):
+    def __init__(self, email: str = None):
         super().__init__(email)
         self._table_name = "clients"
         self._key_column = "email_client"
         self._column_names = "name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type"
 
-
-
-
+class SqlManagers(ManagerDatabase):
+    def __init__(self, email: str = None):
+        super().__init__(email)
+        self._table_name = "managers"
+        self._key_column = "email_manager"
+        self._column_names = "name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type"
 
 class SqlVariables(ManagerDatabase):
-    def __init__(self, name: str):
+    def __init__(self, name: str = None):
         super().__init__(name)
         self._table_name = "variables"
         self._key_column = "variable_name"
         self._column_names = "variable_name, variable_value"
 
-
-
 class SqlMaterial(ManagerDatabase):
-    def __init__(self, name: str):
+    def __init__(self, name: str = None):
         super().__init__(name)
         self._table_name = "stock"
         self._key_column = "material_name"
@@ -169,19 +170,33 @@ class SqlMaterial(ManagerDatabase):
 
 
 if __name__ == '__main__':
+    # database = ManagerDatabase()
+    # database.drop_database()
+
+    # order_sql = SqlOrders(10)
+    # order_sql.check_existence()
+
+
+    # cash = SqlVariables()
+    # cash.add(("cash register", 0))
+
     # client_sql = SqlClients("t0527184022@gmail.com")
-    # print(client_sql.check_existence())
     # client_sql.add(("noah", "tzitrenboim", "shemesh", "miryamssss", 3333, "0522645540", "t0527184022@gmail.com", "1", "email"))
+    # client_sql.add(("dina", "tzitrenboim", "shemesh", "miryamssss", 333, "0522645540", "isacd1995@gmail.com", "1", "sms"))
+    
+    
+    # print(client_sql.check_existence())
     # print(client_sql.get_details())
-    p = SqlMaterial("stock_powder")
-    s = SqlMaterial("stock_softener")
+    # p = SqlMaterial("stock_powder")
+    # s = SqlMaterial("stock_softener")
     # s.add(("stock powder", 80))
-    print(p.check_existence())
-    print(s.check_existence())
-    print(p.get_value("material_value"))
-    print(s.get_value("material_value"))
-    p.delete()
-    s.delete()
+    # print(p.check_existence())
+    # print(s.check_existence())
+    # print(p.get_value("material_value"))
+    # print(s.get_value("material_value"))
+    # p.delete()
+    # s.delete()
+    pass
     
 
     
