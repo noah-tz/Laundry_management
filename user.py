@@ -1,5 +1,5 @@
 from laundry import LaundryRoom
-from gui import LaundryGui,  sg
+from gui import LaundryGui, sg
 from auxiliary_functions import AuxiliaryFunctions
 from mysql_database import ManagerDatabase, SqlManagers, SqlClients, SqlOrders
 from messenger import EmailSender, SmsSender
@@ -13,9 +13,17 @@ from typing import Type
 
 class User:
     def __init__(self, connector: Type[ManagerDatabase], email: str) -> None:
+        """
+        Initialize a User object.
+
+        Parameters:
+        - connector (Type[ManagerDatabase]): A type of ManagerDatabase for database interaction.
+        - email (str): The user's email address.
+        """
         self._email = email
         if bool(0):
-            self._sql_connector: Type[ManagerDatabase]
+            self._sql_connector: Type[ManagerDatabase]  # Placeholder for the type of ManagerDatabase
+
         if connector.check_existence():
             data_of_manager = connector.get_details()[0]
             self._phone = data_of_manager[5]
@@ -24,24 +32,67 @@ class User:
             self._sender = EmailSender(self._email) if self._connect_method == "email" else SmsSender(self._phone)
 
     def get_phone(self):
+        """
+        Get the user's phone number.
+
+        Returns:
+        - str: The user's phone number.
+        """
         return self._phone
     
     def get_email(self):
+        """
+        Get the user's email address.
+
+        Returns:
+        - str: The user's email address.
+        """
         return self._email
     
     def get_password(self):
+        """
+        Get the user's password.
+
+        Returns:
+        - str: The user's password.
+        """
         return self._password
     
     def get_connect_method(self):
+        """
+        Get the user's preferred communication method.
+
+        Returns:
+        - str: The user's communication method ("email" or "sms").
+        """
         return self._connect_method
 
     def check_existence(self) -> bool:
+        """
+        Check if the user exists in the database.
+
+        Returns:
+        - bool: True if the user exists, False otherwise.
+        """
         return self._sql_connector.check_existence()
 
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
+        """
+        Placeholder for the sign-in method. To be implemented by subclasses.
+
+        Parameters:
+        - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
+        - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
+        """
         raise NotImplementedError
 
     def password_recovery(self):
+        """
+        Recover the user's password and send it to their email or phone.
+
+        This method checks if the email is valid and if the user exists in the database
+        before initiating the password recovery process.
+        """
         if AuxiliaryFunctions.is_valid_email(self._email):
             if self._sql_connector.check_existence():
                 self._sender.password_recovery(self._password)
@@ -49,16 +100,28 @@ class User:
             else:
                 LaundryGui.popup_window("The email address is not yet registered. Please select the 'sign up' option to register", "No email address found")
         else:
-            LaundryGui.popup_window("invalid email address")
-
+            LaundryGui.popup_window("Invalid email address")
 
 
 class Manager(User):
     def __init__(self, email: str) -> None:
+        """
+        Initialize a Manager object.
+
+        Parameters:
+        - email (str): The manager's email address.
+        """
         self._sql_connector = SqlManagers(email)
         super().__init__(self._sql_connector, email)
 
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
+        """
+        Sign in as a manager and interact with the manager window.
+
+        Parameters:
+        - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
+        - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
+        """
         laundry_gui.replace_to_manager_window(self._email)
         while True:
             event, value = laundry_gui.read_window()
@@ -73,6 +136,14 @@ class Manager(User):
                     self._withdraw_money(value['-AMOUNT_TO_WITHDRAW-'])
 
     def _add_manager(self, values: dict):
+        """
+        Add a new manager with administrative privileges.
+
+        This method is restricted to the main manager identified by the email address in settings.EMAIL_MAIN_MANAGER.
+
+        Parameters:
+        - values (dict): A dictionary containing manager information (name, email, etc.).
+        """
         if self._email == settings.EMAIL_MAIN_MANAGER:
             if not AuxiliaryFunctions.is_valid_manager_information(values):
                 return
@@ -100,6 +171,15 @@ class Manager(User):
             LaundryGui.popup_window("You cannot add administrators because you are not a primary administrator")
 
     def _add_material(self, name_material: str, amount: str):
+        """
+        Add material to the stock.
+
+        This method checks if the manager has the necessary privileges and if the entered values are valid.
+
+        Parameters:
+        - name_material (str): The type of material to add.
+        - amount (str): The amount of material to add.
+        """
         if name_material:
             if AuxiliaryFunctions.input_is_number(amount):
                 amount = int(amount)
@@ -113,13 +193,21 @@ class Manager(User):
                 informer_register.change_value(-cost_material)
                 LaundryGui.popup_window(f"You have successfully added a total of {amount} {name_material}\nThe purchase cost is {cost_material}")
             else:
-                LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "enter amount")
+                LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "Enter amount")
         else:
-            LaundryGui.popup_window("No material type selected.\nPlease select from the list", "choose a type")
+            LaundryGui.popup_window("No material type selected.\nPlease select from the list", "Choose a type")
 
     def _withdraw_money(self, amount: int):
+        """
+        Withdraw money from the cash register.
+
+        This method checks if the entered value is valid and if there is sufficient money in the cash register.
+
+        Parameters:
+        - amount (int): The amount of money to withdraw.
+        """
         if not AuxiliaryFunctions.input_is_number(amount):
-            LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "enter amount")
+            LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "Enter amount")
             return
         amount = int(amount)
         informer_register = SystemData("cash register")
@@ -127,16 +215,28 @@ class Manager(User):
             LaundryGui.popup_window(f"The amount in the cash register is less than {amount}")
             return
         informer_register.change_value(-amount)
-        LaundryGui.popup_window(f"Withdrawal of {amount} from the cash register was carried out successfully.\nThe remaining amount is {informer_register.get_value()}.")
-        
-       
-    
+        LaundryGui.popup_window(f"Withdrawal of {amount} from the cash register was carried out successfully.\nThe remaining amount is {informer_register.get_value()}")
+
+
 class Client(User):
     def __init__(self, email: str) -> None:
+        """
+        Initialize a Client object.
+
+        Parameters:
+        - email (str): The client's email address.
+        """
         self._sql_connector = SqlClients(email)
         super().__init__(self._sql_connector, email)
 
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
+        """
+        Sign in as a client and interact with the client window.
+
+        Parameters:
+        - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
+        - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
+        """
         laundry_gui.replace_to_client_window(self._email)
         while True:
             event, value = laundry_gui.read_window()
@@ -152,6 +252,14 @@ class Client(User):
 
     @Logger.log_record
     def _order_pickup(self, order_ID: int) -> None:
+        """
+        Process order pickup for a client.
+
+        This method checks if the order exists, if it belongs to the client, and if it has already been collected.
+
+        Parameters:
+        - order_ID (int): The ID of the order to pick up.
+        """
         sql_orders_connector = SqlOrders(order_ID)
         email_client_order = sql_orders_connector.get_value("email_client")
         if email_client_order == self._email: 
@@ -167,9 +275,5 @@ class Client(User):
                 LaundryGui.popup_window('Your order has already been collected')
         else:
             LaundryGui.popup_window('No order associated with you with this number was found')
-    
 
 
-if __name__ == '__main__':
-    manager = Manager("t0527184022@gmail.com")
-    manager.sign_in(LaundryGui("city_laundry"))

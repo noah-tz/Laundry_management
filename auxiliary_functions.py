@@ -14,7 +14,7 @@ class AuxiliaryFunctions:
         return all(part.isalnum() for part in domain_parts)
     
     @staticmethod
-    def is_valid_password(password) -> bool:
+    def is_valid_password(password: str) -> bool:
         """check if the password is valid"""
         letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         numbers = "1234567890"
@@ -42,6 +42,7 @@ class AuxiliaryFunctions:
     
     @staticmethod
     def is_valid_user_information(values: dict) -> bool:
+        """check if values of user is valid"""
         if len(values['-name_registration-']) < 2:
             sg.popup('"Name" must contain at least two letters')
             return False
@@ -79,6 +80,7 @@ class AuxiliaryFunctions:
     
     @staticmethod
     def is_valid_manager_information(values: dict) -> bool:
+        """check if values of new manager is valid"""
         if len(values['-NAME-']) < 2:
             sg.popup('"Name" must contain at least two letters')
             return False
@@ -114,6 +116,7 @@ class AuxiliaryFunctions:
     
     @staticmethod
     def input_is_number(input: str):
+        """check if input is type int"""
         return all(tag in '0123456789' for tag in input) and input != ''
     
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
 import settings
 from mysql_database import SqlOrders, SqlManagers, SqlSystemData, SqlClients, SqlMaterial
+from log import Logger
 
 import PySimpleGUI as sg
 from typing import Callable, Type, Any
@@ -9,10 +10,26 @@ from typing import Callable, Type, Any
 
 class LaundryGui:
     def __init__(self, name_laundry: str) -> None:
+        """
+        Constructor for the LaundryGui class.
+
+        Parameters:
+        - name_laundry (str): Name of the laundry.
+
+        Returns:
+        None
+        """
         self._name_laundry = name_laundry
         self._initial_window()
 
+    @Logger.log_record
     def _initial_window(self) -> None:
+        """
+        Creates the initial window layout for the LaundryGui.
+
+        Returns:
+        None
+        """
         size_win = sg.Window.get_screen_size()
 
         layout_client_enter = [
@@ -59,10 +76,26 @@ class LaundryGui:
         self._column = sg.Column(self._layout, key='-COLUMN-')
         self._window = sg.Window(self._title, [[self._column]], size=self._size)
 
-    def read_window(self) -> tuple:
+    def read_window(self) -> tuple[str, dict[str, str]]:
+        """
+        Reads the current window and returns the event and values.
+
+        Returns:
+        tuple: Event and values read from the window.
+        """
         return self._window.read()
 
     def _update_window(self, title: str = '', size: tuple = '') -> None:
+        """
+        Updates the window with a new layout.
+
+        Parameters:
+        - title (str): New title for the window.
+        - size (tuple): New size for the window.
+
+        Returns:
+        None
+        """
         # self._window['-COLUMN-'].update(visible=False)
         # self._window['-COLUMN-'](self._layout)
         # self._window['-COLUMN-'].update(visible=True)
@@ -74,7 +107,14 @@ class LaundryGui:
         self._window.close()
         self._window = sg.Window(self._title, self._layout, size=self._size)
 
+    @Logger.log_record
     def replace_to_registration_window(self) -> None:
+        """
+        Replaces the current window layout with the registration window layout.
+
+        Returns:
+        None
+        """
         self._layout = [
             [sg.Text("name"), sg.InputText(key= '-name-', justification='center')],
             [sg.Text("family_name"), sg.InputText(key= '-family_name-', justification='center')],
@@ -90,11 +130,29 @@ class LaundryGui:
         self._title = "registration window"
         self._update_window(True)
 
-    def replace_to_enter_window(self):
+    @Logger.log_record
+    def replace_to_enter_window(self) -> None:
+        """
+        Replaces the current window layout with the initial window layout.
+
+        Returns:
+        None
+        """
         self._window.close()
         self._initial_window()
 
-    def replace_to_client_window(self, email_client: str):
+    @Logger.log_record
+    def replace_to_client_window(self, email_client: str) -> None:
+        """
+        Replaces the current window layout with the client window layout.
+
+        Parameters:
+        - email_client (str): Email of the client.
+
+        Returns:
+        None
+        """
+
         layout_tab_create_order = [
             [sg.Text("Please select a quantity of each product")],
             [sg.Text("shirt"), sg.DropDown([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], key='-shirt-', default_value=0)],
@@ -152,7 +210,17 @@ class LaundryGui:
         self._title = "private area"
         self._update_window(True)
 
-    def replace_to_manager_window(self, email: str):
+    @Logger.log_record
+    def replace_to_manager_window(self, email: str) -> None:
+        """
+        Replaces the current window layout with the manager window layout.
+
+        Parameters:
+        - email (str): Email of the manager.
+
+        Returns:
+        None
+        """
         column_headings_data = ['variable_name', 'variable_value']
         sql_variables_connector = SqlSystemData("cash register")
         layout_tab_view_data = [
@@ -276,12 +344,25 @@ class LaundryGui:
         self._title = f"private area manager {name_manager} {family_manager}, manager."
         self._update_window(True)
 
+    @Logger.log_record
     @staticmethod
     def popup_window(
         text: str,
         title: str = "",
         size: tuple = settings.DEFAULT_SIZE_POPUP,
         font: tuple = settings.DEFAULT_FONT_POPUP) -> None:
+        """
+        Displays a popup window with the given text.
+
+        Parameters:
+        - text (str): Text to be displayed in the popup window.
+        - title (str): Title of the popup window.
+        - size (tuple): Size of the popup window.
+        - font (tuple): Font settings for the popup window.
+
+        Returns:
+        None
+        """
         layout = [
             [sg.Text(text, font=font)],
             [sg.Button('OK')]
