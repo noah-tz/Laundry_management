@@ -34,7 +34,6 @@ class MainCommunicator:
         if 'sign_in' in event:
             password = values['-password_client-'] if "client" in event else values['-password_manager-']
             self.sign_in(user, password)
-            self._laundry_gui.replace_to_enter_window()
             return
         user.password_recovery()
         
@@ -42,6 +41,7 @@ class MainCommunicator:
         if user.check_existence():
             if password == user.get_password():
                 user.sign_in(self._laundry_gui, self._laundry_room)
+                self._laundry_gui.replace_to_enter_window()
             else:
                 LaundryGui.popup_window("The password is incorrect", "password incorrect")
         else:
