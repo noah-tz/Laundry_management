@@ -11,6 +11,7 @@ MIN_CONTAINER_MACHINE = {"powder": 100, "softener": 100}
 ALERT_MANAGER = {"powder": 800, "softener": 800}
 FULL_CONTAINER_MACHINE = {"powder": 1000, "softener": 1000}
 MATERIAL_PER_KILOGRAM = {"powder": 40, "softener": 30}
+COST_MATERIAL_PER_100 = {"powder": 5, "softener": 30}
 
 MIN_ORDER = 40
 LENGTH_NO_ORDER = 5
@@ -20,6 +21,8 @@ EMAIL_MANAGER = "laundrythecity034@gmail.com"
 EMAIL_MANAGER_PASSWORD = "xrqzlbpruagxljpr"
 NUMBER_PHONE_MANAGER = "0522645540"
 MSG_MANAGER = 'email'
+
+EMAIL_MAIN_MANAGER = "t0527184022@gmail.com" # for add managers
 
 SMS_ACCOUNT_SID_MANAGER = 'AC379722dd0b953fa3103262e6bd42f30b'
 SMS_AUTO_TOKEN_MANAGER = 'd0f9955759c9e53d270999c3f946c4e3'

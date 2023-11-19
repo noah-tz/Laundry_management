@@ -38,7 +38,7 @@ class StockMaterial:
             self._alert_manager()
         return amount_get
     
-    def return_material(self, amount: int) -> None:
+    def add_material(self, amount: int) -> None:
         if amount != 0:
             self._amount += int(amount)
             self._update_db_amount()

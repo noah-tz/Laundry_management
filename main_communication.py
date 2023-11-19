@@ -1,11 +1,10 @@
 from gui import LaundryGui
 from laundry import LaundryRoom
-from user import User
-from client import Client
-from manager import Manager
+from user import User, Client, Manager
 from mysql_database import SqlClients
 from auxiliary_functions import AuxiliaryFunctions
 from log import Logger
+from information import SystemData
 import settings
 
 import PySimpleGUI as sg
@@ -30,6 +29,8 @@ class MainCommunicator:
             self.registration(values)
             return
         user = Client(values['-email_client-']) if "client" in event else Manager(values['-email_manager-'])
+        # user.sign_in(self._laundry_gui, self._laundry_room)
+        # return
         if 'sign_in' in event:
             password = values['-password_client-'] if "client" in event else values['-password_manager-']
             self.sign_in(user, password)
@@ -62,6 +63,8 @@ class MainCommunicator:
                 values['-email_registration-'],
                 values['-password_registration-'], 
                 values['-message_type_registration-']))
+            costumer_informed = SystemData("number of costumers")
+            costumer_informed.change_value(1)
             LaundryGui.popup_window(f"Client named {values['-name_registration-']} {values['-family_name_registration-']} successfully created", "Customer successfully created")
     
     def end_of_program(self) -> None:

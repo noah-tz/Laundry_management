@@ -151,7 +151,7 @@ class SqlManagers(ManagerDatabase):
         self._key_column = "email_manager"
         self._column_names = "name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type"
 
-class SqlVariables(ManagerDatabase):
+class SqlSystemData(ManagerDatabase):
     def __init__(self, name: str = None):
         super().__init__(name)
         self._table_name = "variables"
@@ -175,8 +175,8 @@ if __name__ == '__main__':
     # cash = SqlVariables()
     # cash.add(("cash register", 0))
 
-    # client_sql = SqlClients("t0527184022@gmail.com")
-    # client_sql.add(("noah", "tzitrenboim", "shemesh", "miryamssss", 3333, "0522645540", "t0527184022@gmail.com", "1", "email"))
+    client_sql = SqlManagers("t0527184022@gmail.com")
+    client_sql.add(("noah", "tzitrenboim", "shemesh", "miryamssss", 3333, "0522645540", "t0527184022@gmail.com", "1", "email"))
     # client_sql.add(("dina", "tzitrenboim", "shemesh", "miryamssss", 333, "0522645540", "isacd1995@gmail.com", "1", "sms"))
     pass
     

@@ -1,5 +1,5 @@
 import settings
-from mysql_database import SqlOrders, SqlManagers, SqlVariables, SqlClients, SqlMaterial
+from mysql_database import SqlOrders, SqlManagers, SqlSystemData, SqlClients, SqlMaterial
 
 import PySimpleGUI as sg
 from typing import Callable, Type, Any
@@ -110,7 +110,7 @@ class LaundryGui:
             [sg.Button("Create an order", key='CREATE_IN_TAB_CREATE_ORDER')]
         ]
         layout_tab_order_pickup = [
-            [sg.Text("Please enter an order number"), sg.InputText(key= '-order number-')],
+            [sg.Text("Please enter an order number"), sg.InputText(key= '-ORDER_NUMBER-')],
             [sg.Button("OK", key='-OK_TAB_ORDER_PICKUP-')]
         ]
         column_headings = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
@@ -129,9 +129,9 @@ class LaundryGui:
         self._title = "private area"
         self._update_window(True)
 
-    def replace_to_manager_window(self):
+    def replace_to_manager_window(self, email: str):
         column_headings_data = ['variable_name', 'variable_value']
-        sql_variables_connector = SqlVariables("cash register")
+        sql_variables_connector = SqlSystemData("cash register")
         layout_tab_view_data = [
             [sg.Table(values=sql_variables_connector.get_table(), headings=column_headings_data, key='-TABLE_DATA-')]
         ]
@@ -151,30 +151,30 @@ class LaundryGui:
             [sg.Table(values=sql_stock_connector.get_table(by_sort="material_name"), headings=column_headings_stock, key='-TABLE_ALL_STOCK-')]
         ]
         column_headings_managers = ['name', 'family name', 'city', 'street', 'house number', 'phone manager','email manager', 'password', 'message type']
-        sql_managers_connector = SqlManagers()
+        sql_managers_connector = SqlManagers(email)
         layout_tab_managers = [
             [sg.Table(values=sql_managers_connector.get_table(by_sort="family_name"), headings=column_headings_managers, key='-TABLE_ALL_MANAGERS-')]
         ]
         layout_tab_add_manager = [
-            [sg.Text("name"), sg.InputText(key= '-name-', justification='center')],
-            [sg.Text("family_name"), sg.InputText(key= '-family_name-', justification='center')],
-            [sg.Text("city"), sg.InputText(key= '-city-', justification='center')],
-            [sg.Text("street"), sg.InputText(key= '-street-', justification='center')],
-            [sg.Text("house_number"), sg.InputText(key= '-house_number-', justification='center')],
-            [sg.Text("phone"), sg.InputText(key= '-phone-', justification='center')],
-            [sg.Text("email"), sg.InputText(key= '-email-', justification='center')],
-            [sg.Text("Choose a strong password"), sg.InputText(key= '-password-', justification='center')],
-            [sg.Text("Choose a preferred method of communication"), sg.DropDown(["email", "sms"], key= '-message_type-')],
-            [sg.Button("add", key= 'ADD_MANAGER')]
+            [sg.Text("name"), sg.InputText(key= '-NAME-', justification='center')],
+            [sg.Text("family_name"), sg.InputText(key= '-FAMILY_NAME-', justification='center')],
+            [sg.Text("city"), sg.InputText(key= '-CITY-', justification='center')],
+            [sg.Text("street"), sg.InputText(key= '-STREET-', justification='center')],
+            [sg.Text("house_number"), sg.InputText(key= '-HOUSE_NUMBER-', justification='center')],
+            [sg.Text("phone"), sg.InputText(key= '-PHONE-', justification='center')],
+            [sg.Text("email"), sg.InputText(key= '-EMAIL-', justification='center')],
+            [sg.Text("Choose a strong password"), sg.InputText(key= '-PASSWORD-', justification='center')],
+            [sg.Text("Choose a preferred method of communication"), sg.DropDown(["email", "sms"], key= '-MESSAGE_TYPE-')],
+            [sg.Button("add", key= '-ADD_MANAGER-')]
         ]
         layout_tab_add_material = [
-            [sg.Text("Select a material type"), sg.DropDown(list(settings.NAMES_MATERIAL), key= '-type material to add-')],
-            [sg.Text("Please enter a quantity to add"), sg.InputText(key= '-quantity to add-')],
+            [sg.Text("Select a material type"), sg.DropDown(list(settings.NAMES_MATERIAL), key= '-TYPE_MATERIAL_TO_ADD-')],
+            [sg.Text("Please enter a quantity to add"), sg.InputText(key= '-AMOUNT_TO_ADD-')],
             [sg.Button("add", key='-ADD_MATERIAL-')]
         ]
-        cash_register = sql_variables_connector.get_value("variable_value")
-        layout_tab_cash_withdrawal = [
-            [sg.Text(f"The amount in the cash register is: {cash_register}\n. Please enter an amount to withdraw"), sg.InputText(key= '-Amount to withdraw-')],
+        withdraw_amount = sql_variables_connector.get_value("variable_value")
+        layout_tab_money_withdrawal = [
+            [sg.Text(f"The Withdraw amount is: {withdraw_amount}\n. Please enter an amount to withdraw"), sg.InputText(key= '-AMOUNT_TO_WITHDRAW-')],
             [sg.Button("withdraw", key='-WITHDRAW_MONEY-')]
         ]
         self._layout = [
@@ -186,11 +186,13 @@ class LaundryGui:
                 [sg.Tab("All managers", layout_tab_managers, key='-TAB_ALL_MANAGERS-')],
                 [sg.Tab("Add manager", layout_tab_add_manager, key='-TAB_ADD_MANAGER-')],
                 [sg.Tab("Add material", layout_tab_add_material, key='-TAB_ADD_MATERIAL-')],
-                [sg.Tab("Cash withdrawal", layout_tab_cash_withdrawal, key='-TAB_CASH_WITHDRAWAL-')]
+                [sg.Tab("Withdraw money", layout_tab_money_withdrawal, key='-TAB_WITHDRAW_MONEY-')]
             ])],
             [sg.Button("close")]
         ]
-        self._title = "private area"
+        name_manager = sql_managers_connector.get_value("name")
+        family_manager = sql_managers_connector.get_value("family_name")
+        self._title = f"private area manager {name_manager} {family_manager}, manager."
         self._update_window(True)
 
     @staticmethod

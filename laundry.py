@@ -1,5 +1,5 @@
 from order import Order
-from stock import StockMaterial
+from information import StockMaterial
 from washing_machine import WashingMachine
 import settings
 from gui import LaundryGui
@@ -48,7 +48,7 @@ class LaundryRoom:
 
     def _empty_machine_material(self, number_machine: int) -> None:
         for material in settings.NAMES_MATERIAL:
-            self._stock[material].return_material(self._machines[number_machine].material_emptying(material))
+            self._stock[material].add_material(self._machines[number_machine].material_emptying(material))
 
     def _set_thread(self, number_machine: int, order: Type[Order]):
         thread_washing = threading.Thread(target= self._start_washing, args= (number_machine, order))

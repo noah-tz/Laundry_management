@@ -1,7 +1,4 @@
 import PySimpleGUI as sg
-# from validate_email_address import validate_email
-
-
 
 
 class AuxiliaryFunctions:
@@ -70,6 +67,37 @@ class AuxiliaryFunctions:
             sg.popup("The selected password is incorrect. The password must contain at least 8 characters (letters, numbers and special characters), including at least one digit, one number, and one special character (`~!@#$%^&*?><:;,./)")
             return False
         if values['-message_type_registration-'] not in ['sms', 'email']:
+            sg.popup("Please select preferred method of communication")
+            return False
+        return True
+    
+    @staticmethod
+    def is_valid_manager_information(values: dict) -> bool:
+        if len(values['-NAME-']) < 2:
+            sg.popup('"Name" must contain at least two letters')
+            return False
+        if len(values['-FAMILY_NAME-']) < 2:
+            sg.popup('"family_name" must contain at least two letters')
+            return False
+        if len(values['-CITY-']) < 2:
+            sg.popup('"city" must contain at least two letters')
+            return False
+        if len(values['-STREET-']) < 2:
+            sg.popup('"street" must contain at least two letters')
+            return False
+        if (len(values['-HOUSE_NUMBER-']) == 0 or any(figure not in "01234567890" for figure in values['-HOUSE_NUMBER-']) or int(values['-HOUSE_NUMBER-']) <= 0):
+            sg.popup("invalid house_number")
+            return False
+        if len(values['-PHONE-']) < 9 or any(figure not in "0123456789" for figure in values['-PHONE-']) or values['-PHONE-'][0] not in ['0', '+']:
+            sg.popup("invalid phone number")
+            return False
+        if not AuxiliaryFunctions.is_valid_email(values['-EMAIL-']):
+            sg.popup("invalid Email address")
+            return False
+        if not AuxiliaryFunctions.is_valid_password(values['-PASSWORD-']):
+            sg.popup("The selected password is incorrect. The password must contain at least 8 characters (letters, numbers and special characters), including at least one digit, one number, and one special character (`~!@#$%^&*?><:;,./)")
+            return False
+        if values['-MESSAGE_TYPE-'] not in ['sms', 'email']:
             sg.popup("Please select preferred method of communication")
             return False
         return True
