@@ -102,4 +102,13 @@ class AuxiliaryFunctions:
             return False
         return True
     
+    @staticmethod
+    def input_is_number(input: str):
+        return all(tag in '0123456789' for tag in input) and input != ''
+    
+if __name__ == '__main__':
+    print(AuxiliaryFunctions.input_is_number("22"))
+
+
+    
 

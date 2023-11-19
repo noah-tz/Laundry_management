@@ -101,7 +101,7 @@ class Manager(User):
 
     def _add_material(self, name_material: str, amount: str):
         if name_material:
-            if amount:
+            if AuxiliaryFunctions.input_is_number(amount):
                 amount = int(amount)
                 cost_material = amount / 100 * settings.COST_MATERIAL_PER_100[name_material]
                 informer_register = SystemData("cash register")
@@ -113,13 +113,13 @@ class Manager(User):
                 informer_register.change_value(-cost_material)
                 LaundryGui.popup_window(f"You have successfully added a total of {amount} {name_material}\nThe purchase cost is {cost_material}")
             else:
-                LaundryGui.popup_window("No amount was entered.\nPlease enter a valid amount", "enter amount")
+                LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "enter amount")
         else:
             LaundryGui.popup_window("No material type selected.\nPlease select from the list", "choose a type")
 
     def _withdraw_money(self, amount: int):
-        if not amount:
-            LaundryGui.popup_window("No amount was entered.\nPlease enter a valid amount", "enter amount")
+        if not AuxiliaryFunctions.input_is_number(amount):
+            LaundryGui.popup_window("No valid value was entered.\nPlease enter a whole number", "enter amount")
             return
         amount = int(amount)
         informer_register = SystemData("cash register")
