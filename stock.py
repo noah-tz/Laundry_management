@@ -31,7 +31,6 @@ class StockMaterial:
 
     def get_material(self, remainder: int) -> int:
         to_fill = settings.FULL_CONTAINER_MACHINE[self._name] - remainder
-        print(self._amount)
         amount_get = max(0, min(to_fill, self._amount))
         self._amount -= amount_get
         self._update_db_amount()
@@ -40,8 +39,9 @@ class StockMaterial:
         return amount_get
     
     def return_material(self, amount: int) -> None:
-        self._amount += int(amount)
-        self._update_db_amount()
+        if amount != 0:
+            self._amount += int(amount)
+            self._update_db_amount()
 
 
 

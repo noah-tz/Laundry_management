@@ -6,30 +6,71 @@ from typing import Callable, Type, Any
 
 
 
+
 class LaundryGui:
     def __init__(self, name_laundry: str) -> None:
         self._name_laundry = name_laundry
         self._initial_window()
 
     def _initial_window(self) -> None:
-        self._layout = [[sg.Text("enter your email")],
-                              [sg.Input(key= '-email-', justification='center')],
-                              [sg.Text("enter your password")],
-                              [sg.Input(key= '-password-', justification='center')],
-                              [sg.Button("sign in"), sg.Button("sign up"), sg.Button("forgot my password")]]
+        size_win = sg.Window.get_screen_size()
+
+        layout_client_enter = [
+            [sg.Text("enter your email")],
+            [sg.Input(key= '-email_client-', justification='center')],
+            [sg.Text("enter your password")],
+            [sg.Input(key= '-password_client-', justification='center')],
+            [sg.Button("sign in", key='-sign_in_client-'), sg.Button("forgot my password", key='-forgot_my_password_client-')]
+        ]
+        layout_manager_enter = [
+            [sg.Text("enter your email")],
+            [sg.Input(key= '-email_manager-', justification='center')],
+            [sg.Text("enter your password")],
+            [sg.Input(key= '-password_manager-', justification='center')],
+            [sg.Button("sign in", key='-sign_in_manager-'), sg.Button("forgot my password", key='-forgot_my_password_manager-')]
+        ]
+        layout_registration = [
+            [sg.Text("name"), sg.InputText(key= '-name_registration-', justification='center')],
+            [sg.Text("family_name"), sg.InputText(key= '-family_name_registration-', justification='center')],
+            [sg.Text("city"), sg.InputText(key= '-city_registration-', justification='center')],
+            [sg.Text("street"), sg.InputText(key= '-street_registration-', justification='center')],
+            [sg.Text("house_number"), sg.InputText(key= '-house_number_registration-', justification='center')],
+            [sg.Text("phone"), sg.InputText(key= '-phone_registration-', justification='center')],
+            [sg.Text("email"), sg.InputText(key= '-email_registration-', justification='center')],
+            [sg.Text("Choose a strong password"), sg.InputText(key= '-password_registration-', justification='center')],
+            [sg.Text("Choose a preferred method of communication"), sg.DropDown(["email", "sms"], key= '-message_type_registration-')],
+            [sg.Button("Sign up", key='-registration-')]
+        ]
+        self._layout = [
+            [
+                sg.TabGroup(
+                    [
+                        [sg.Tab("client enter", layout_client_enter, key='-CLIENT ENTER-')],
+                        [sg.Tab("manager enter", layout_manager_enter, key='-MANAGER ENTER-')],
+                        [sg.Tab("Sign up", layout_registration, key='-REGISTRATION-')]
+                    ],
+                    size=size_win
+                )
+            ],
+            [sg.Button("close")]
+        ]
         self._title = f"welcome to {self._name_laundry}"
         self._size = settings.DEFAULT_SIZE_WINDOW
-        self._window = sg.Window(self._title, self._layout, size=self._size)
+        self._column = sg.Column(self._layout, key='-COLUMN-')
+        self._window = sg.Window(self._title, [[self._column]], size=self._size)
 
     def read_window(self) -> tuple:
         return self._window.read()
 
-    def _update_window(self, title: bool = False, size: bool = False) -> None:
-        # self._window.Element("_BODY_").update(self._layout)#("_BODY_").Update(self._layout)
-        # if title:
-        #     self._window.set_title(self._title)
-        # if size:
-        #     self._window.TKroot.geometry(self._size)
+    def _update_window(self, title: str = '', size: tuple = '') -> None:
+        # self._window['-COLUMN-'].update(visible=False)
+        # self._window['-COLUMN-'](self._layout)
+        # self._window['-COLUMN-'].update(visible=True)
+        # self._window.refresh()
+        # self._column.update(self._layout)
+        # self._window.Layout(self._layout)
+        # self._window.refresh()
+        # self._window
         self._window.close()
         self._window = sg.Window(self._title, self._layout, size=self._size)
 
@@ -88,7 +129,7 @@ class LaundryGui:
         self._title = "private area"
         self._update_window(True)
 
-    def replace_to_manager_window(self, email_client: str):
+    def replace_to_manager_window(self):
         column_headings_data = ['variable_name', 'variable_value']
         sql_variables_connector = SqlVariables("cash register")
         layout_tab_view_data = [
@@ -127,13 +168,13 @@ class LaundryGui:
             [sg.Button("add", key= 'ADD_MANAGER')]
         ]
         layout_tab_add_material = [
-            [sg.Text("Select a material type"), sg.DropDown(list(settings.NAMES_MATERIAL), key= '-type material to add-')]
+            [sg.Text("Select a material type"), sg.DropDown(list(settings.NAMES_MATERIAL), key= '-type material to add-')],
             [sg.Text("Please enter a quantity to add"), sg.InputText(key= '-quantity to add-')],
             [sg.Button("add", key='-ADD_MATERIAL-')]
         ]
         cash_register = sql_variables_connector.get_value("variable_value")
         layout_tab_cash_withdrawal = [
-            [sg.Text(f"The amount in the cash register is: {cash_register}\n. Please enter an amount to withdraw"), sg.InputText(key= '-Amount to withdraw-')]
+            [sg.Text(f"The amount in the cash register is: {cash_register}\n. Please enter an amount to withdraw"), sg.InputText(key= '-Amount to withdraw-')],
             [sg.Button("withdraw", key='-WITHDRAW_MONEY-')]
         ]
         self._layout = [
@@ -145,7 +186,7 @@ class LaundryGui:
                 [sg.Tab("All managers", layout_tab_managers, key='-TAB_ALL_MANAGERS-')],
                 [sg.Tab("Add manager", layout_tab_add_manager, key='-TAB_ADD_MANAGER-')],
                 [sg.Tab("Add material", layout_tab_add_material, key='-TAB_ADD_MATERIAL-')],
-                [sg.Tab("Cash withdrawal", layout_tab_cash_withdrawal, key='-TAB_CASH_WITHDRAWAL-')],
+                [sg.Tab("Cash withdrawal", layout_tab_cash_withdrawal, key='-TAB_CASH_WITHDRAWAL-')]
             ])],
             [sg.Button("close")]
         ]
@@ -167,13 +208,12 @@ class LaundryGui:
 
 
 if __name__ == '__main__':
-    laundry_gui = LaundryGui("My Laundry")
-    laundry_gui._initial_window()
-
-    while True:
-        event, values = laundry_gui.read_window()
-
-        if event == sg.WIN_CLOSED:
-            break
-        else:
-            laundry_gui.replace_to_client_window("t0527184022@gmail.com")
+    layout1 = [[sg.Text("enter your email")],
+                              [sg.Input(key= '-email-', justification='center')],
+                              [sg.Text("enter your password")],
+                              [sg.Input(key= '-password-', justification='center')],
+                              [sg.Button("sign in"), sg.Button("sign up"), sg.Button("forgot my password")]]
+    name = "laundry city"
+    title = f"welcome to {name}"
+    # size = settings.DEFAULT_SIZE_WINDOW
+    # window = sg.Window(title, layout1, size=(1000, 500))

@@ -170,11 +170,6 @@ class SqlMaterial(ManagerDatabase):
 
 
 if __name__ == '__main__':
-    # database = ManagerDatabase()
-    # database.drop_database()
-
-    # order_sql = SqlOrders(10)
-    # order_sql.check_existence()
 
 
     # cash = SqlVariables()
@@ -183,20 +178,9 @@ if __name__ == '__main__':
     # client_sql = SqlClients("t0527184022@gmail.com")
     # client_sql.add(("noah", "tzitrenboim", "shemesh", "miryamssss", 3333, "0522645540", "t0527184022@gmail.com", "1", "email"))
     # client_sql.add(("dina", "tzitrenboim", "shemesh", "miryamssss", 333, "0522645540", "isacd1995@gmail.com", "1", "sms"))
-    
-    
-    # print(client_sql.check_existence())
-    # print(client_sql.get_details())
-    # p = SqlMaterial("stock_powder")
-    # s = SqlMaterial("stock_softener")
-    # s.add(("stock powder", 80))
-    # print(p.check_existence())
-    # print(s.check_existence())
-    # print(p.get_value("material_value"))
-    # print(s.get_value("material_value"))
-    # p.delete()
-    # s.delete()
     pass
+    
+    
     
 
     

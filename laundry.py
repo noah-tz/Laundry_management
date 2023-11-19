@@ -8,7 +8,7 @@ from typing import Type
 import threading
 
 
-class RoomLaundry:
+class LaundryRoom:
     def __init__(self) -> None:
         self._machines: dict[int, WashingMachine] = {number_machine: WashingMachine() for number_machine in range(1, settings.NUMBER_OF_MACHINES +1)}
         self._stock: dict[str, StockMaterial] = {name_material: StockMaterial(name_material) for name_material in settings.NAMES_MATERIAL}
@@ -79,6 +79,6 @@ class RoomLaundry:
 
 if __name__ == '__main__':
     order = Order("t0527184022@gmail.com", "0522645540", "email", {'-shirt-': 0, '-pants-': 6, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
-    laundry_room = RoomLaundry()
+    laundry_room = LaundryRoom()
     laundry_room.enter_order(order)
     laundry_room.close_room()

@@ -45,31 +45,31 @@ class AuxiliaryFunctions:
     
     @staticmethod
     def is_valid_user_information(values: dict) -> bool:
-        if len(values['-name-']) < 2:
+        if len(values['-name_registration-']) < 2:
             sg.popup('"Name" must contain at least two letters')
             return False
-        if len(values['-family_name-']) < 2:
+        if len(values['-family_name_registration-']) < 2:
             sg.popup('"family_name" must contain at least two letters')
             return False
-        if len(values['-city-']) < 2:
+        if len(values['-city_registration-']) < 2:
             sg.popup('"city" must contain at least two letters')
             return False
-        if len(values['-street-']) < 2:
+        if len(values['-street_registration-']) < 2:
             sg.popup('"street" must contain at least two letters')
             return False
-        if (len(values['-house_number-']) == 0 or any(figure not in "01234567890" for figure in values['-house_number-']) or int(values['-house_number-']) <= 0):
+        if (len(values['-house_number_registration-']) == 0 or any(figure not in "01234567890" for figure in values['-house_number_registration-']) or int(values['-house_number_registration-']) <= 0):
             sg.popup("invalid house_number")
             return False
-        if len(values['-phone-']) < 9 or any(figure not in "0123456789" for figure in values['-phone-']) or values['-phone-'][0] not in ['0', '+']:
+        if len(values['-phone_registration-']) < 9 or any(figure not in "0123456789" for figure in values['-phone_registration-']) or values['-phone_registration-'][0] not in ['0', '+']:
             sg.popup("invalid phone number")
             return False
-        if not AuxiliaryFunctions.is_valid_email(values['-client_email-']):
+        if not AuxiliaryFunctions.is_valid_email(values['-email_registration-']):
             sg.popup("invalid Email address")
             return False
-        if not AuxiliaryFunctions.is_valid_password(values['-client_password-']):
+        if not AuxiliaryFunctions.is_valid_password(values['-password_registration-']):
             sg.popup("The selected password is incorrect. The password must contain at least 8 characters (letters, numbers and special characters), including at least one digit, one number, and one special character (`~!@#$%^&*?><:;,./)")
             return False
-        if values['-message_type-'] not in ['sms', 'email']:
+        if values['-message_type_registration-'] not in ['sms', 'email']:
             sg.popup("Please select preferred method of communication")
             return False
         return True

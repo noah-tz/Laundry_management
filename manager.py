@@ -1,19 +1,23 @@
 from log import Logger
 from mysql_database import SqlClients
+from user import User
 
 from typing import Type
 
 
-class Manager:
+class Manager(User):
     def __init__(self, email: str) -> None:
-        self._sql_manager_connector = SqlClients(email)
-        data_of_manager = self._sql_manager_connector.get_details()[0]
-        self._phone_manager = data_of_manager[5]
-        self._email_manager = data_of_manager[6]
-        self._password = data_of_manager[7]
-        self._connect_method = data_of_manager[8]
+        self._email_manager = email
+        self._sql_manager_connector = SqlClients(self._email_manager)
+        if self._sql_manager_connector.check_existence():
+            data_of_manager = self._sql_manager_connector.get_details()[0]
+            self._phone_manager = data_of_manager[5]
+            self._password = data_of_manager[7]
+            self._connect_method = data_of_manager[8]
 
-    def add_manager()
+    def add_manager(values: dict):
+        return False
+
 
     def get_phone(self):
         return self._phone_manager

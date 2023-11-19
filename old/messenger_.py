@@ -45,8 +45,6 @@ class SmsSender:
 
     @Logger.log_record
     def send_sms(self, phone: str, message: str) -> bool:
-        for _ in range(10):
-            print(phone)
         if phone[0] == "0":
             phone = f"+972{phone[1:]}"
         data = {
