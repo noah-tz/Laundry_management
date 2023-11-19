@@ -113,17 +113,40 @@ class LaundryGui:
             [sg.Text("Please enter an order number"), sg.InputText(key= '-ORDER_NUMBER-')],
             [sg.Button("OK", key='-OK_TAB_ORDER_PICKUP-')]
         ]
-        column_headings = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
+        column_headings = [
+            'order ID',
+            'email client',
+            'phone client',
+            'order amount',
+            'amount items',
+            'order entered',
+            'order notes',
+            'order collected'
+        ]
         sql_orders_connector = SqlOrders(email_client)
         layout_tab_order_history = [
-            [sg.Table(values=sql_orders_connector.get_table(("email_client", email_client), "order_entered", settings.LIMIT_TABLES), headings=column_headings, key='-TABLE-')]
+            [
+                sg.Table(
+                    values=sql_orders_connector.get_table(
+                        ("email_client", email_client),
+                        "order_entered",
+                        settings.LIMIT_TABLES
+                    ),
+                    headings=column_headings,
+                    key='-TABLE-'
+                )
+            ]
         ]
         self._layout = [
-            [sg.TabGroup([
-                [sg.Tab("create a new order", layout_tab_create_order, key='-TAB_CREATE_ORDER-')],
-                [sg.Tab("Order pick up", layout_tab_order_pickup, key='-TAB_ORDER_PICKUP-')],
-                [sg.Tab(f"Order history ({settings.LIMIT_TABLES})", layout_tab_order_history, key='-TAB_ORDER_HISTORY-')]
-            ])],
+            [
+                sg.TabGroup(
+                    [
+                        [sg.Tab("create a new order", layout_tab_create_order, key='-TAB_CREATE_ORDER-')],
+                        [sg.Tab("Order pick up", layout_tab_order_pickup, key='-TAB_ORDER_PICKUP-')],
+                        [sg.Tab(f"Order history ({settings.LIMIT_TABLES})", layout_tab_order_history, key='-TAB_ORDER_HISTORY-')]
+                    ]
+                )
+            ],
             [sg.Button("close")]
         ]
         self._title = "private area"
@@ -135,25 +158,83 @@ class LaundryGui:
         layout_tab_view_data = [
             [sg.Table(values=sql_variables_connector.get_table(), headings=column_headings_data, key='-TABLE_DATA-')]
         ]
-        column_headings_orders = ['order ID', 'email client', 'phone client', 'order amount', 'amount items', 'order entered','order notes', 'order collected']
+        column_headings_orders = [
+            'order ID',
+            'email client',
+            'phone client',
+            'order amount',
+            'amount items',
+            'order entered',
+            'order notes',
+            'order collected'
+        ]
         sql_orders_connector = SqlOrders()
         layout_tab_order_history = [
-            [sg.Table(values=sql_orders_connector.get_table(by_sort="order_entered", by_limit=settings.LIMIT_TABLES), headings=column_headings_orders, key='-TABLE_ALL_ORDERS-')]
+            [
+                sg.Table(
+                    values=sql_orders_connector.get_table(
+                        by_sort="order_entered",
+                        by_limit=settings.LIMIT_TABLES
+                    ),
+                    headings=column_headings_orders,
+                    key='-TABLE_ALL_ORDERS-'
+                )
+            ]
         ]
-        column_headings_clients = ['name', 'family name', 'city', 'street', 'house number', 'phone client','email client', 'password', 'message type']
+        column_headings_clients = [
+            'name',
+            'family name',
+            'city',
+            'street',
+            'house number',
+            'phone client',
+            'email client',
+            'password',
+            'message type'
+        ]
         sql_clients_connector = SqlClients()
         layout_tab_clients = [
-            [sg.Table(values=sql_clients_connector.get_table(by_sort="family_name", by_limit=settings.LIMIT_TABLES), headings=column_headings_clients, key='-TABLE_ALL_CLIENTS-')]
+            [
+                sg.Table(
+                    values=sql_clients_connector.get_table(
+                        by_sort="family_name",
+                        by_limit=settings.LIMIT_TABLES
+                    ),
+                    headings=column_headings_clients,
+                    key='-TABLE_ALL_CLIENTS-'
+                )
+            ]
         ]
         column_headings_stock = ['material name', 'material value']
         sql_stock_connector = SqlMaterial()
         layout_tab_stock = [
-            [sg.Table(values=sql_stock_connector.get_table(by_sort="material_name"), headings=column_headings_stock, key='-TABLE_ALL_STOCK-')]
+            [
+                sg.Table(
+                    values=sql_stock_connector.get_table(by_sort="material_name"),
+                    headings=column_headings_stock,
+                    key='-TABLE_ALL_STOCK-'
+                )
+            ]
         ]
-        column_headings_managers = ['name', 'family name', 'city', 'street', 'house number', 'phone manager','email manager', 'password', 'message type']
+        column_headings_managers = [
+            'name',
+            'family name',
+            'city',
+            'street',
+            'house number',
+            'phone manager',
+            'email manager',
+            'password',
+            'message type'
+        ]
         sql_managers_connector = SqlManagers(email)
         layout_tab_managers = [
-            [sg.Table(values=sql_managers_connector.get_table(by_sort="family_name"), headings=column_headings_managers, key='-TABLE_ALL_MANAGERS-')]
+            [
+                sg.Table(
+                    values=sql_managers_connector.get_table(by_sort="family_name"),
+                    headings=column_headings_managers, key='-TABLE_ALL_MANAGERS-'
+                )
+            ]
         ]
         layout_tab_add_manager = [
             [sg.Text("name"), sg.InputText(key= '-NAME-', justification='center')],
@@ -196,7 +277,11 @@ class LaundryGui:
         self._update_window(True)
 
     @staticmethod
-    def popup_window(text: str, title: str = "", size: tuple = settings.DEFAULT_SIZE_POPUP, font: tuple = settings.DEFAULT_FONT_POPUP) -> None:
+    def popup_window(
+        text: str,
+        title: str = "",
+        size: tuple = settings.DEFAULT_SIZE_POPUP,
+        font: tuple = settings.DEFAULT_FONT_POPUP) -> None:
         layout = [
             [sg.Text(text, font=font)],
             [sg.Button('OK')]

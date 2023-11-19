@@ -54,10 +54,16 @@ class AuxiliaryFunctions:
         if len(values['-street_registration-']) < 2:
             sg.popup('"street" must contain at least two letters')
             return False
-        if (len(values['-house_number_registration-']) == 0 or any(figure not in "01234567890" for figure in values['-house_number_registration-']) or int(values['-house_number_registration-']) <= 0):
+        if (len(values['-house_number_registration-']) == 0
+            or any(
+                figure not in "01234567890"
+                for figure in values['-house_number_registration-'])
+            or int(values['-house_number_registration-']) <= 0):
             sg.popup("invalid house_number")
             return False
-        if len(values['-phone_registration-']) < 9 or any(figure not in "0123456789" for figure in values['-phone_registration-']) or values['-phone_registration-'][0] not in ['0', '+']:
+        if (len(values['-phone_registration-']) < 9
+            or any(figure not in "0123456789" for figure in values['-phone_registration-'])
+            or values['-phone_registration-'][0] not in ['0', '+']):
             sg.popup("invalid phone number")
             return False
         if not AuxiliaryFunctions.is_valid_email(values['-email_registration-']):
@@ -85,10 +91,14 @@ class AuxiliaryFunctions:
         if len(values['-STREET-']) < 2:
             sg.popup('"street" must contain at least two letters')
             return False
-        if (len(values['-HOUSE_NUMBER-']) == 0 or any(figure not in "01234567890" for figure in values['-HOUSE_NUMBER-']) or int(values['-HOUSE_NUMBER-']) <= 0):
+        if (len(values['-HOUSE_NUMBER-']) == 0
+            or any(figure not in "01234567890" for figure in values['-HOUSE_NUMBER-'])
+            or int(values['-HOUSE_NUMBER-']) <= 0):
             sg.popup("invalid house_number")
             return False
-        if len(values['-PHONE-']) < 9 or any(figure not in "0123456789" for figure in values['-PHONE-']) or values['-PHONE-'][0] not in ['0', '+']:
+        if (len(values['-PHONE-']) < 9
+            or any(figure not in "0123456789" for figure in values['-PHONE-'])
+            or values['-PHONE-'][0] not in ['0', '+']):
             sg.popup("invalid phone number")
             return False
         if not AuxiliaryFunctions.is_valid_email(values['-EMAIL-']):

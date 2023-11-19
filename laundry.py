@@ -10,8 +10,10 @@ import threading
 
 class LaundryRoom:
     def __init__(self) -> None:
-        self._machines: dict[int, WashingMachine] = {number_machine: WashingMachine() for number_machine in range(1, settings.NUMBER_OF_MACHINES +1)}
-        self._stock: dict[str, StockMaterial] = {name_material: StockMaterial(name_material) for name_material in settings.NAMES_MATERIAL}
+        self._machines: dict[int, WashingMachine] = {number_machine: WashingMachine()
+                                                     for number_machine in range(1, settings.NUMBER_OF_MACHINES +1)}
+        self._stock: dict[str, StockMaterial] = {name_material: StockMaterial(name_material)
+                                                 for name_material in settings.NAMES_MATERIAL}
         self._full = False
         self._orders_pending: list[Order] = []
 
@@ -42,7 +44,9 @@ class LaundryRoom:
         result = True
         for material in settings.NAMES_MATERIAL:
             amount_material_of_machine = self._machines[number_machine].get_amount_material(material)
-            if amount_material_of_machine < settings.MIN_CONTAINER_MACHINE[material] and not self._machines[number_machine].filling_material(material, self._stock[material].get_material(amount_material_of_machine)):
+            if (amount_material_of_machine < settings.MIN_CONTAINER_MACHINE[material]
+                and not self._machines[number_machine].filling_material(material, self._stock[material].get_material(amount_material_of_machine))
+                ):
                 result = False
         return result
 
@@ -78,7 +82,9 @@ class LaundryRoom:
             self._empty_machine_material(number_machine)
 
 if __name__ == '__main__':
-    order = Order("t0527184022@gmail.com", "0522645540", "email", {'-shirt-': 0, '-pants-': 6, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+    order = Order(
+        "t0527184022@gmail.com",
+        "0522645540", "email",{'-shirt-': 0, '-pants-': 6, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
     laundry_room = LaundryRoom()
     laundry_room.enter_order(order)
     laundry_room.close_room()
