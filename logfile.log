@@ -18835,3 +18835,61 @@ The remaining amount is 199.00='Withdrawal of 66 from the cash register was carr
 2023-11-20 01:40:13,128 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
 2023-11-20 01:40:13,128 - INFO - Function add_material completed successfully
 2023-11-20 01:40:13,128 - INFO - Function close_room completed successfully
+2023-11-20 03:01:44,240 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7c2d9711d0>=<mysql_database.SqlMaterial object at 0x7f7c2d9711d0>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-20 03:01:44,240 - INFO - Function execute completed successfully
+2023-11-20 03:01:44,240 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>)
+2023-11-20 03:01:44,241 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7c2d9711d0>=<mysql_database.SqlMaterial object at 0x7f7c2d9711d0>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-20 03:01:44,241 - INFO - Function execute completed successfully
+2023-11-20 03:01:44,241 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 03:01:45,119 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7c2d971550>=<mysql_database.SqlMaterial object at 0x7f7c2d971550>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-20 03:01:45,121 - INFO - Function execute completed successfully
+2023-11-20 03:01:45,122 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>)
+2023-11-20 03:01:45,122 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7f7c2d971550>=<mysql_database.SqlMaterial object at 0x7f7c2d971550>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-20 03:01:45,124 - INFO - Function execute completed successfully
+2023-11-20 03:01:45,125 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 03:01:45,923 - INFO - Calling function: LaundryGui._initial_window(<gui.LaundryGui object at 0x7f7c2d972110>=<gui.LaundryGui object at 0x7f7c2d972110>)
+2023-11-20 03:01:46,163 - INFO - Function _initial_window completed successfully
+2023-11-20 03:01:46,163 - INFO - Calling function: MainCommunicator.run(<main_communication.MainCommunicator object at 0x7f7c4732f8d0>=<main_communication.MainCommunicator object at 0x7f7c4732f8d0>)
+2023-11-20 03:01:54,087 - INFO - Function run completed successfully
+2023-11-20 03:01:54,087 - INFO - Calling function: LaundryRoom.close_room(<laundry.LaundryRoom object at 0x7f7c4732fa50>=<laundry.LaundryRoom object at 0x7f7c4732fa50>)
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,088 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,088 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,089 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,089 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2d971250>=<information.StockMaterial object at 0x7f7c2d971250>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,090 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f7c2efaa6d0>=<information.StockMaterial object at 0x7f7c2efaa6d0>, 0=0)
+2023-11-20 03:01:54,090 - INFO - Function add_material completed successfully
+2023-11-20 03:01:54,091 - INFO - Function close_room completed successfully
