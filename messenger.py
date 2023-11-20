@@ -113,7 +113,7 @@ class EmailSender(Sender):
         super().__init__(email_client)
         self._email_sender = settings.EMAIL_MANAGER
         self._password_sender = settings.EMAIL_MANAGER_PASSWORD
-        self._server = smtplib.SMTP('smtp.gmail.com', 587)  # very slow
+        self._server = smtplib.SMTP('smtp.gmail.com', 587)
         self._server.starttls()
         self._server.login(self._email_sender, self._password_sender)
 
