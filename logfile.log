@@ -18477,3 +18477,361 @@ Successfully='Your order is ready. You can get to the collection now\nSuccessful
 2023-11-20 01:07:29,850 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7f07dbdea150>=<information.StockMaterial object at 0x7f07dbdea150>, 0=0)
 2023-11-20 01:07:29,850 - INFO - Function add_material completed successfully
 2023-11-20 01:07:29,850 - INFO - Function close_room completed successfully
+2023-11-20 01:36:07,634 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012b90>=<mysql_database.SqlMaterial object at 0x7efdbb012b90>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-20 01:36:07,635 - INFO - Function execute completed successfully
+2023-11-20 01:36:07,635 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>)
+2023-11-20 01:36:07,635 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012b90>=<mysql_database.SqlMaterial object at 0x7efdbb012b90>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-20 01:36:07,635 - INFO - Function execute completed successfully
+2023-11-20 01:36:07,635 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:36:08,538 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012f10>=<mysql_database.SqlMaterial object at 0x7efdbb012f10>, SELECT material_name FROM stock WHERE material_name = 'stock softener'="SELECT material_name FROM stock WHERE material_name = 'stock softener'", False=False)
+2023-11-20 01:36:08,538 - INFO - Function execute completed successfully
+2023-11-20 01:36:08,538 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>)
+2023-11-20 01:36:08,538 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012f10>=<mysql_database.SqlMaterial object at 0x7efdbb012f10>, SELECT material_value FROM stock WHERE material_name = 'stock softener'="SELECT material_value FROM stock WHERE material_name = 'stock softener'", True=True)
+2023-11-20 01:36:08,539 - INFO - Function execute completed successfully
+2023-11-20 01:36:08,539 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:36:09,358 - INFO - Calling function: LaundryGui._initial_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>)
+2023-11-20 01:36:09,548 - INFO - Function _initial_window completed successfully
+2023-11-20 01:36:09,549 - INFO - Calling function: MainCommunicator.run(<main_communication.MainCommunicator object at 0x7efdd482b890>=<main_communication.MainCommunicator object at 0x7efdd482b890>)
+2023-11-20 01:36:22,026 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7efdba9a2610>=<mysql_database.SqlClients object at 0x7efdba9a2610>, SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'", False=False)
+2023-11-20 01:36:22,027 - INFO - Function execute completed successfully
+2023-11-20 01:36:22,027 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7efdba9a2610>=<mysql_database.SqlClients object at 0x7efdba9a2610>, SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT name, family_name, city, street, house_number, phone_client, email_client, password_client, message_type FROM clients WHERE email_client = 't0527184022@gmail.com'")
+2023-11-20 01:36:22,028 - INFO - Function execute completed successfully
+2023-11-20 01:36:22,768 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7efdba9a2610>=<mysql_database.SqlClients object at 0x7efdba9a2610>, SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'="SELECT email_client FROM clients WHERE email_client = 't0527184022@gmail.com'", False=False)
+2023-11-20 01:36:22,769 - INFO - Function execute completed successfully
+2023-11-20 01:36:22,769 - INFO - Calling function: LaundryGui.replace_to_client_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>, t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-20 01:36:22,773 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9a4b10>=<mysql_database.SqlOrders object at 0x7efdba9a4b10>, SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100="SELECT * FROM orders WHERE email_client = 't0527184022@gmail.com' ORDER BY order_entered DESC LIMIT 100", True=True)
+2023-11-20 01:36:22,774 - INFO - Function execute completed successfully
+2023-11-20 01:36:22,799 - INFO - Function replace_to_client_window completed successfully
+2023-11-20 01:36:27,937 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9b5cd0>=<mysql_database.SqlOrders object at 0x7efdba9b5cd0>, SELECT MAX(order_id) FROM orders='SELECT MAX(order_id) FROM orders')
+2023-11-20 01:36:27,937 - INFO - Function execute completed successfully
+2023-11-20 01:36:28,707 - INFO - Calling function: Order._add_items(<order.Order object at 0x7efdba9b5ed0>=<order.Order object at 0x7efdba9b5ed0>, {'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-ORDER_NUMBER-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'}={'-shirt-': 4, '-pants-': 0, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0, '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-ORDER_NUMBER-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
+2023-11-20 01:36:28,708 - INFO - Function _add_items completed successfully
+2023-11-20 01:36:28,708 - INFO - Calling function: LaundryRoom.enter_order(<laundry.LaundryRoom object at 0x7efdd482ba10>=<laundry.LaundryRoom object at 0x7efdd482ba10>, <order.Order object at 0x7efdba9b5ed0>=<order.Order object at 0x7efdba9b5ed0>)
+2023-11-20 01:36:28,708 - INFO - Calling function: StockMaterial.get_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:36:28,708 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>)
+2023-11-20 01:36:28,708 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012b90>=<mysql_database.SqlMaterial object at 0x7efdbb012b90>, UPDATE stock SET material_value = 17888 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 17888 WHERE material_name = 'stock powder'")
+2023-11-20 01:36:28,712 - INFO - Function execute completed successfully
+2023-11-20 01:36:28,712 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:36:28,712 - INFO - Function get_material completed successfully
+2023-11-20 01:36:28,712 - INFO - Calling function: StockMaterial.get_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:36:28,712 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>)
+2023-11-20 01:36:28,712 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012f10>=<mysql_database.SqlMaterial object at 0x7efdbb012f10>, UPDATE stock SET material_value = 16916 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 16916 WHERE material_name = 'stock softener'")
+2023-11-20 01:36:28,716 - INFO - Function execute completed successfully
+2023-11-20 01:36:28,716 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:36:28,716 - INFO - Function get_material completed successfully
+2023-11-20 01:36:28,716 - INFO - Calling function: EmailSender._send_msg(<messenger.EmailSender object at 0x7efdba9b4c10>=<messenger.EmailSender object at 0x7efdba9b4c10>, order summary NO 1009='order summary NO 1009', shirt: 4.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 0 hours='shirt: 4.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours')
+2023-11-20 01:36:28,717 - INFO - Calling function: EmailSender._calling_the_server(<messenger.EmailSender object at 0x7efdba9b4c10>=<messenger.EmailSender object at 0x7efdba9b4c10>, Content-Type: multipart/mixed; boundary="===============8252266745621696180=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: order summary NO 1009
+
+--===============8252266745621696180==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+shirt: 4.
+pants: 0.
+tank top: 0.
+underwear: 0.
+socks: 0.
+coat: 0.
+hat: 0.
+sweater: 0.
+curtain: 0.
+tablecloth: 0.
+
+total order cost 40
+Your order will be ready in 0 hours
+--===============8252266745621696180==--
+='Content-Type: multipart/mixed; boundary="===============8252266745621696180=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: order summary NO 1009\n\n--===============8252266745621696180==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nshirt: 4.\npants: 0.\ntank top: 0.\nunderwear: 0.\nsocks: 0.\ncoat: 0.\nhat: 0.\nsweater: 0.\ncurtain: 0.\ntablecloth: 0.\n\ntotal order cost 40\nYour order will be ready in 0 hours\n--===============8252266745621696180==--\n')
+2023-11-20 01:36:30,141 - INFO - Function _calling_the_server completed successfully
+2023-11-20 01:36:30,141 - INFO - Function _send_msg completed successfully
+2023-11-20 01:36:30,141 - INFO - Calling function: Order._insert_to_sql(<order.Order object at 0x7efdba9b5ed0>=<order.Order object at 0x7efdba9b5ed0>)
+2023-11-20 01:36:30,141 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9b5cd0>=<mysql_database.SqlOrders object at 0x7efdba9b5cd0>, INSERT INTO orders (order_id, email_client, phone_client, order_cost, amount_items, order_notes, order_collected) VALUES (1009, 't0527184022@gmail.com', '0522645540', 40, 4, 'NULL', False)="INSERT INTO orders (order_id, email_client, phone_client, order_cost, amount_items, order_notes, order_collected) VALUES (1009, 't0527184022@gmail.com', '0522645540', 40, 4, 'NULL', False)")
+2023-11-20 01:36:30,146 - INFO - Function execute completed successfully
+2023-11-20 01:36:30,159 - INFO - Function _insert_to_sql completed successfully
+2023-11-20 01:36:30,160 - INFO - Calling function: LaundryGui.popup_window(Your order has been successfully received!
+The washing will be finished in 0.4 hours.
+We will notify you when your order is ready='Your order has been successfully received!\nThe washing will be finished in 0.4 hours.\nWe will notify you when your order is ready')
+2023-11-20 01:36:33,580 - INFO - Function popup_window completed successfully
+2023-11-20 01:36:33,580 - INFO - Function enter_order completed successfully
+2023-11-20 01:36:33,584 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>=<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>, SELECT variable_name FROM variables WHERE variable_name = 'number of orders'="SELECT variable_name FROM variables WHERE variable_name = 'number of orders'", False=False)
+2023-11-20 01:36:33,585 - INFO - Function execute completed successfully
+2023-11-20 01:36:33,585 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdba9b6310>=<information.SystemData object at 0x7efdba9b6310>)
+2023-11-20 01:36:33,585 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>=<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>, SELECT variable_value FROM variables WHERE variable_name = 'number of orders'="SELECT variable_value FROM variables WHERE variable_name = 'number of orders'", True=True)
+2023-11-20 01:36:33,586 - INFO - Function execute completed successfully
+2023-11-20 01:36:33,586 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:36:34,337 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdba9b6310>=<information.SystemData object at 0x7efdba9b6310>, 1=1)
+2023-11-20 01:36:34,338 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdba9b6310>=<information.SystemData object at 0x7efdba9b6310>)
+2023-11-20 01:36:34,338 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>=<mysql_database.SqlSystemData object at 0x7efdbddd6cd0>, UPDATE variables SET variable_value = 10.00 WHERE variable_name = 'number of orders'="UPDATE variables SET variable_value = 10.00 WHERE variable_name = 'number of orders'")
+2023-11-20 01:36:34,342 - INFO - Function execute completed successfully
+2023-11-20 01:36:34,342 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:36:34,342 - INFO - Function change_value completed successfully
+2023-11-20 01:36:50,218 - INFO - Calling function: Client._order_pickup(<user.Client object at 0x7efdba9a2390>=<user.Client object at 0x7efdba9a2390>, 1008='1008')
+2023-11-20 01:36:50,222 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9bc4d0>=<mysql_database.SqlOrders object at 0x7efdba9bc4d0>, SELECT email_client FROM orders WHERE order_id = '1008'="SELECT email_client FROM orders WHERE order_id = '1008'", True=True)
+2023-11-20 01:36:50,222 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,223 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9bc4d0>=<mysql_database.SqlOrders object at 0x7efdba9bc4d0>, SELECT order_collected FROM orders WHERE order_id = '1008'="SELECT order_collected FROM orders WHERE order_id = '1008'", True=True)
+2023-11-20 01:36:50,223 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,223 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9bc4d0>=<mysql_database.SqlOrders object at 0x7efdba9bc4d0>, UPDATE orders SET order_collected = True WHERE order_id = '1008'="UPDATE orders SET order_collected = True WHERE order_id = '1008'")
+2023-11-20 01:36:50,227 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,227 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9bc4d0>=<mysql_database.SqlOrders object at 0x7efdba9bc4d0>, SELECT order_cost FROM orders WHERE order_id = '1008'="SELECT order_cost FROM orders WHERE order_id = '1008'", True=True)
+2023-11-20 01:36:50,227 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,231 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9c1550>=<mysql_database.SqlSystemData object at 0x7efdba9c1550>, SELECT variable_name FROM variables WHERE variable_name = 'cash register'="SELECT variable_name FROM variables WHERE variable_name = 'cash register'", False=False)
+2023-11-20 01:36:50,231 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,232 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdbb07db90>=<information.SystemData object at 0x7efdbb07db90>)
+2023-11-20 01:36:50,232 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9c1550>=<mysql_database.SqlSystemData object at 0x7efdba9c1550>, SELECT variable_value FROM variables WHERE variable_name = 'cash register'="SELECT variable_value FROM variables WHERE variable_name = 'cash register'", True=True)
+2023-11-20 01:36:50,232 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,232 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:36:50,942 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdbb07db90>=<information.SystemData object at 0x7efdbb07db90>, 40.0=40.0)
+2023-11-20 01:36:50,943 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdbb07db90>=<information.SystemData object at 0x7efdbb07db90>)
+2023-11-20 01:36:50,943 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9c1550>=<mysql_database.SqlSystemData object at 0x7efdba9c1550>, UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'="UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'")
+2023-11-20 01:36:50,947 - INFO - Function execute completed successfully
+2023-11-20 01:36:50,947 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:36:50,947 - INFO - Function change_value completed successfully
+2023-11-20 01:36:50,947 - INFO - Calling function: LaundryGui.popup_window(Please complete the payment of 40.0
+Click OK to pay.='Please complete the payment of 40.0\nClick OK to pay.')
+2023-11-20 01:36:52,660 - INFO - Function popup_window completed successfully
+2023-11-20 01:36:52,661 - INFO - Calling function: LaundryGui.popup_window(The payment was successful.
+Order number 1008 has been collected.
+Thank you!='The payment was successful.\nOrder number 1008 has been collected.\nThank you!')
+2023-11-20 01:36:52,716 - INFO - Calling function: EmailSender._send_msg(<messenger.EmailSender object at 0x7efdba9b4c10>=<messenger.EmailSender object at 0x7efdba9b4c10>, The city laundry - order NO 1009='The city laundry - order NO 1009', Your order is ready. You can get to the collection now
+Successfully='Your order is ready. You can get to the collection now\nSuccessfully')
+2023-11-20 01:36:52,718 - INFO - Calling function: EmailSender._calling_the_server(<messenger.EmailSender object at 0x7efdba9b4c10>=<messenger.EmailSender object at 0x7efdba9b4c10>, Content-Type: multipart/mixed; boundary="===============1337103902867975154=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: The city laundry - order NO 1009
+
+--===============1337103902867975154==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Your order is ready. You can get to the collection now
+Successfully
+--===============1337103902867975154==--
+='Content-Type: multipart/mixed; boundary="===============1337103902867975154=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: The city laundry - order NO 1009\n\n--===============1337103902867975154==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nYour order is ready. You can get to the collection now\nSuccessfully\n--===============1337103902867975154==--\n')
+2023-11-20 01:36:53,693 - INFO - Function _calling_the_server completed successfully
+2023-11-20 01:36:53,693 - INFO - Function _send_msg completed successfully
+2023-11-20 01:36:54,154 - INFO - Function popup_window completed successfully
+2023-11-20 01:36:54,154 - INFO - Calling function: EmailSender._send_msg(<messenger.EmailSender object at 0x7efdba9a2750>=<messenger.EmailSender object at 0x7efdba9a2750>, Thank you for using our service!='Thank you for using our service!', We look forward to seeing you using our services again.
+Have a wonderful day!='We look forward to seeing you using our services again.\nHave a wonderful day!')
+2023-11-20 01:36:54,155 - INFO - Calling function: EmailSender._calling_the_server(<messenger.EmailSender object at 0x7efdba9a2750>=<messenger.EmailSender object at 0x7efdba9a2750>, Content-Type: multipart/mixed; boundary="===============1854847238888019528=="
+MIME-Version: 1.0
+From: laundrythecity034@gmail.com
+To: t0527184022@gmail.com
+Subject: Thank you for using our service!
+
+--===============1854847238888019528==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+We look forward to seeing you using our services again.
+Have a wonderful day!
+--===============1854847238888019528==--
+='Content-Type: multipart/mixed; boundary="===============1854847238888019528=="\nMIME-Version: 1.0\nFrom: laundrythecity034@gmail.com\nTo: t0527184022@gmail.com\nSubject: Thank you for using our service!\n\n--===============1854847238888019528==\nContent-Type: text/plain; charset="us-ascii"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\n\nWe look forward to seeing you using our services again.\nHave a wonderful day!\n--===============1854847238888019528==--\n')
+2023-11-20 01:36:55,127 - INFO - Function _calling_the_server completed successfully
+2023-11-20 01:36:55,127 - INFO - Function _send_msg completed successfully
+2023-11-20 01:36:55,128 - INFO - Function _order_pickup completed successfully
+2023-11-20 01:36:58,401 - INFO - Calling function: LaundryGui.replace_to_enter_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>)
+2023-11-20 01:36:58,462 - INFO - Calling function: LaundryGui._initial_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>)
+2023-11-20 01:36:58,463 - INFO - Function _initial_window completed successfully
+2023-11-20 01:36:58,463 - INFO - Function replace_to_enter_window completed successfully
+2023-11-20 01:37:11,479 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9effd0>=<mysql_database.SqlManagers object at 0x7efdba9effd0>, SELECT email_manager FROM managers WHERE email_manager = 't0527184022@gmail.com'="SELECT email_manager FROM managers WHERE email_manager = 't0527184022@gmail.com'", False=False)
+2023-11-20 01:37:11,480 - INFO - Function execute completed successfully
+2023-11-20 01:37:11,480 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9effd0>=<mysql_database.SqlManagers object at 0x7efdba9effd0>, SELECT name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type FROM managers WHERE email_manager = 't0527184022@gmail.com'="SELECT name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type FROM managers WHERE email_manager = 't0527184022@gmail.com'")
+2023-11-20 01:37:11,481 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,228 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9effd0>=<mysql_database.SqlManagers object at 0x7efdba9effd0>, SELECT email_manager FROM managers WHERE email_manager = 't0527184022@gmail.com'="SELECT email_manager FROM managers WHERE email_manager = 't0527184022@gmail.com'", False=False)
+2023-11-20 01:37:12,229 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,229 - INFO - Calling function: LaundryGui.replace_to_manager_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>, t0527184022@gmail.com='t0527184022@gmail.com')
+2023-11-20 01:37:12,233 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9f0510>=<mysql_database.SqlSystemData object at 0x7efdba9f0510>, SELECT * FROM variables   ='SELECT * FROM variables   ', True=True)
+2023-11-20 01:37:12,233 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,238 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlOrders object at 0x7efdba9f07d0>=<mysql_database.SqlOrders object at 0x7efdba9f07d0>, SELECT * FROM orders  ORDER BY order_entered DESC LIMIT 100='SELECT * FROM orders  ORDER BY order_entered DESC LIMIT 100', True=True)
+2023-11-20 01:37:12,238 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,242 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlClients object at 0x7efdba9f08d0>=<mysql_database.SqlClients object at 0x7efdba9f08d0>, SELECT * FROM clients  ORDER BY family_name DESC LIMIT 100='SELECT * FROM clients  ORDER BY family_name DESC LIMIT 100', True=True)
+2023-11-20 01:37:12,243 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,246 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdba9f1f50>=<mysql_database.SqlMaterial object at 0x7efdba9f1f50>, SELECT * FROM stock  ORDER BY material_name ='SELECT * FROM stock  ORDER BY material_name ', True=True)
+2023-11-20 01:37:12,247 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,251 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9f14d0>=<mysql_database.SqlManagers object at 0x7efdba9f14d0>, SELECT * FROM managers  ORDER BY family_name ='SELECT * FROM managers  ORDER BY family_name ', True=True)
+2023-11-20 01:37:12,252 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,253 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9f0510>=<mysql_database.SqlSystemData object at 0x7efdba9f0510>, SELECT variable_value FROM variables WHERE variable_name = 'cash register'="SELECT variable_value FROM variables WHERE variable_name = 'cash register'", True=True)
+2023-11-20 01:37:12,254 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,254 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9f14d0>=<mysql_database.SqlManagers object at 0x7efdba9f14d0>, SELECT name FROM managers WHERE email_manager = 't0527184022@gmail.com'="SELECT name FROM managers WHERE email_manager = 't0527184022@gmail.com'", True=True)
+2023-11-20 01:37:12,255 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,255 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9f14d0>=<mysql_database.SqlManagers object at 0x7efdba9f14d0>, SELECT family_name FROM managers WHERE email_manager = 't0527184022@gmail.com'="SELECT family_name FROM managers WHERE email_manager = 't0527184022@gmail.com'", True=True)
+2023-11-20 01:37:12,256 - INFO - Function execute completed successfully
+2023-11-20 01:37:12,292 - INFO - Function replace_to_manager_window completed successfully
+2023-11-20 01:39:09,840 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdbd409890>=<mysql_database.SqlManagers object at 0x7efdbd409890>, SELECT email_manager FROM managers WHERE email_manager = 'd0527184022@gmail.com'="SELECT email_manager FROM managers WHERE email_manager = 'd0527184022@gmail.com'", False=False)
+2023-11-20 01:39:09,841 - INFO - Function execute completed successfully
+2023-11-20 01:39:09,841 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlManagers object at 0x7efdba9effd0>=<mysql_database.SqlManagers object at 0x7efdba9effd0>, INSERT INTO managers (name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type) VALUES ('yy', 'ee', 'ee', 'ee', '33', '0500000000', 'd0527184022@gmail.com', 'Tt0527184022@!#', 'email')="INSERT INTO managers (name, family_name, city, street, house_number, phone_manager, email_manager, password_manager, message_type) VALUES ('yy', 'ee', 'ee', 'ee', '33', '0500000000', 'd0527184022@gmail.com', 'Tt0527184022@!#', 'email')")
+2023-11-20 01:39:09,846 - INFO - Function execute completed successfully
+2023-11-20 01:39:09,864 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9de990>=<mysql_database.SqlSystemData object at 0x7efdba9de990>, SELECT variable_name FROM variables WHERE variable_name = 'number of managers'="SELECT variable_name FROM variables WHERE variable_name = 'number of managers'", False=False)
+2023-11-20 01:39:09,865 - INFO - Function execute completed successfully
+2023-11-20 01:39:09,865 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:39:09,865 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9de990>=<mysql_database.SqlSystemData object at 0x7efdba9de990>, SELECT variable_value FROM variables WHERE variable_name = 'number of managers'="SELECT variable_value FROM variables WHERE variable_name = 'number of managers'", True=True)
+2023-11-20 01:39:09,865 - INFO - Function execute completed successfully
+2023-11-20 01:39:09,866 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:39:10,605 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>, 1=1)
+2023-11-20 01:39:10,605 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:39:10,605 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9de990>=<mysql_database.SqlSystemData object at 0x7efdba9de990>, UPDATE variables SET variable_value = 7.00 WHERE variable_name = 'number of managers'="UPDATE variables SET variable_value = 7.00 WHERE variable_name = 'number of managers'")
+2023-11-20 01:39:10,609 - INFO - Function execute completed successfully
+2023-11-20 01:39:10,609 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:39:10,610 - INFO - Function change_value completed successfully
+2023-11-20 01:39:10,610 - INFO - Calling function: LaundryGui.popup_window(You have successfully added access privileges to yy ee system management='You have successfully added access privileges to yy ee system management')
+2023-11-20 01:39:13,038 - INFO - Function popup_window completed successfully
+2023-11-20 01:39:18,640 - INFO - Calling function: LaundryGui.popup_window(No material type selected.
+Please select from the list='No material type selected.\nPlease select from the list', Choose a type='Choose a type')
+2023-11-20 01:39:21,609 - INFO - Function popup_window completed successfully
+2023-11-20 01:39:25,917 - INFO - Calling function: LaundryGui.popup_window(No valid value was entered.
+Please enter a whole number='No valid value was entered.\nPlease enter a whole number', Enter amount='Enter amount')
+2023-11-20 01:39:27,348 - INFO - Function popup_window completed successfully
+2023-11-20 01:39:31,265 - INFO - Calling function: LaundryGui.popup_window(No valid value was entered.
+Please enter a whole number='No valid value was entered.\nPlease enter a whole number', Enter amount='Enter amount')
+2023-11-20 01:39:33,332 - INFO - Function popup_window completed successfully
+2023-11-20 01:39:37,657 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9dde50>=<mysql_database.SqlSystemData object at 0x7efdba9dde50>, SELECT variable_name FROM variables WHERE variable_name = 'cash register'="SELECT variable_name FROM variables WHERE variable_name = 'cash register'", False=False)
+2023-11-20 01:39:37,657 - INFO - Function execute completed successfully
+2023-11-20 01:39:37,657 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdbd409890>=<information.SystemData object at 0x7efdbd409890>)
+2023-11-20 01:39:37,657 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9dde50>=<mysql_database.SqlSystemData object at 0x7efdba9dde50>, SELECT variable_value FROM variables WHERE variable_name = 'cash register'="SELECT variable_value FROM variables WHERE variable_name = 'cash register'", True=True)
+2023-11-20 01:39:37,658 - INFO - Function execute completed successfully
+2023-11-20 01:39:37,658 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:39:38,459 - INFO - Calling function: SystemData.get_value(<information.SystemData object at 0x7efdbd409890>=<information.SystemData object at 0x7efdbd409890>)
+2023-11-20 01:39:38,459 - INFO - Function get_value completed successfully
+2023-11-20 01:39:38,463 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1f610>=<mysql_database.SqlMaterial object at 0x7efdbaa1f610>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-20 01:39:38,463 - INFO - Function execute completed successfully
+2023-11-20 01:39:38,463 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7efdbaa1fa90>=<information.StockMaterial object at 0x7efdbaa1fa90>)
+2023-11-20 01:39:38,463 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1f610>=<mysql_database.SqlMaterial object at 0x7efdbaa1f610>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-20 01:39:38,464 - INFO - Function execute completed successfully
+2023-11-20 01:39:38,464 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:39:39,175 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbaa1fa90>=<information.StockMaterial object at 0x7efdbaa1fa90>, 5=5)
+2023-11-20 01:39:39,175 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbaa1fa90>=<information.StockMaterial object at 0x7efdbaa1fa90>)
+2023-11-20 01:39:39,175 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1f610>=<mysql_database.SqlMaterial object at 0x7efdbaa1f610>, UPDATE stock SET material_value = 17893 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 17893 WHERE material_name = 'stock powder'")
+2023-11-20 01:39:39,180 - INFO - Function execute completed successfully
+2023-11-20 01:39:39,180 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:39:39,180 - INFO - Function add_material completed successfully
+2023-11-20 01:39:39,180 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdbd409890>=<information.SystemData object at 0x7efdbd409890>, -0.25=-0.25)
+2023-11-20 01:39:39,180 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdbd409890>=<information.SystemData object at 0x7efdbd409890>)
+2023-11-20 01:39:39,180 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdba9dde50>=<mysql_database.SqlSystemData object at 0x7efdba9dde50>, UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'="UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'")
+2023-11-20 01:39:39,181 - INFO - Function execute completed successfully
+2023-11-20 01:39:39,181 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:39:39,181 - INFO - Function change_value completed successfully
+2023-11-20 01:39:39,181 - INFO - Calling function: LaundryGui.popup_window(You have successfully added a total of 5 powder
+The purchase cost is 0.25='You have successfully added a total of 5 powder\nThe purchase cost is 0.25')
+2023-11-20 01:39:42,243 - INFO - Function popup_window completed successfully
+2023-11-20 01:39:44,451 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdcff6d310>=<mysql_database.SqlSystemData object at 0x7efdcff6d310>, SELECT variable_name FROM variables WHERE variable_name = 'cash register'="SELECT variable_name FROM variables WHERE variable_name = 'cash register'", False=False)
+2023-11-20 01:39:44,452 - INFO - Function execute completed successfully
+2023-11-20 01:39:44,452 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdbda1e690>=<information.SystemData object at 0x7efdbda1e690>)
+2023-11-20 01:39:44,452 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdcff6d310>=<mysql_database.SqlSystemData object at 0x7efdcff6d310>, SELECT variable_value FROM variables WHERE variable_name = 'cash register'="SELECT variable_value FROM variables WHERE variable_name = 'cash register'", True=True)
+2023-11-20 01:39:44,452 - INFO - Function execute completed successfully
+2023-11-20 01:39:44,453 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:39:45,157 - INFO - Calling function: SystemData.get_value(<information.SystemData object at 0x7efdbda1e690>=<information.SystemData object at 0x7efdbda1e690>)
+2023-11-20 01:39:45,157 - INFO - Function get_value completed successfully
+2023-11-20 01:39:45,161 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>=<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>, SELECT material_name FROM stock WHERE material_name = 'stock powder'="SELECT material_name FROM stock WHERE material_name = 'stock powder'", False=False)
+2023-11-20 01:39:45,162 - INFO - Function execute completed successfully
+2023-11-20 01:39:45,162 - INFO - Calling function: Informer._update_obj_amount(<information.StockMaterial object at 0x7efdbaa12590>=<information.StockMaterial object at 0x7efdbaa12590>)
+2023-11-20 01:39:45,162 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>=<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>, SELECT material_value FROM stock WHERE material_name = 'stock powder'="SELECT material_value FROM stock WHERE material_name = 'stock powder'", True=True)
+2023-11-20 01:39:45,163 - INFO - Function execute completed successfully
+2023-11-20 01:39:45,163 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:39:45,864 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbaa12590>=<information.StockMaterial object at 0x7efdbaa12590>, 5=5)
+2023-11-20 01:39:45,864 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbaa12590>=<information.StockMaterial object at 0x7efdbaa12590>)
+2023-11-20 01:39:45,864 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>=<mysql_database.SqlMaterial object at 0x7efdbaa1ef10>, UPDATE stock SET material_value = 17898 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 17898 WHERE material_name = 'stock powder'")
+2023-11-20 01:39:45,868 - INFO - Function execute completed successfully
+2023-11-20 01:39:45,868 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:39:45,868 - INFO - Function add_material completed successfully
+2023-11-20 01:39:45,868 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdbda1e690>=<information.SystemData object at 0x7efdbda1e690>, -0.25=-0.25)
+2023-11-20 01:39:45,869 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdbda1e690>=<information.SystemData object at 0x7efdbda1e690>)
+2023-11-20 01:39:45,869 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdcff6d310>=<mysql_database.SqlSystemData object at 0x7efdcff6d310>, UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'="UPDATE variables SET variable_value = 265.00 WHERE variable_name = 'cash register'")
+2023-11-20 01:39:45,869 - INFO - Function execute completed successfully
+2023-11-20 01:39:45,869 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:39:45,869 - INFO - Function change_value completed successfully
+2023-11-20 01:39:45,869 - INFO - Calling function: LaundryGui.popup_window(You have successfully added a total of 5 powder
+The purchase cost is 0.25='You have successfully added a total of 5 powder\nThe purchase cost is 0.25')
+2023-11-20 01:39:51,066 - INFO - Function popup_window completed successfully
+2023-11-20 01:40:01,405 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbd409890>=<mysql_database.SqlSystemData object at 0x7efdbd409890>, SELECT variable_name FROM variables WHERE variable_name = 'cash register'="SELECT variable_name FROM variables WHERE variable_name = 'cash register'", False=False)
+2023-11-20 01:40:01,405 - INFO - Function execute completed successfully
+2023-11-20 01:40:01,405 - INFO - Calling function: Informer._update_obj_amount(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:40:01,405 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbd409890>=<mysql_database.SqlSystemData object at 0x7efdbd409890>, SELECT variable_value FROM variables WHERE variable_name = 'cash register'="SELECT variable_value FROM variables WHERE variable_name = 'cash register'", True=True)
+2023-11-20 01:40:01,406 - INFO - Function execute completed successfully
+2023-11-20 01:40:01,406 - INFO - Function _update_obj_amount completed successfully
+2023-11-20 01:40:02,216 - INFO - Calling function: SystemData.get_value(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:40:02,216 - INFO - Function get_value completed successfully
+2023-11-20 01:40:02,216 - INFO - Calling function: SystemData.change_value(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>, -66=-66)
+2023-11-20 01:40:02,216 - INFO - Calling function: Informer._update_db_amount(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:40:02,216 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlSystemData object at 0x7efdbd409890>=<mysql_database.SqlSystemData object at 0x7efdbd409890>, UPDATE variables SET variable_value = 199.00 WHERE variable_name = 'cash register'="UPDATE variables SET variable_value = 199.00 WHERE variable_name = 'cash register'")
+2023-11-20 01:40:02,220 - INFO - Function execute completed successfully
+2023-11-20 01:40:02,220 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:40:02,220 - INFO - Function change_value completed successfully
+2023-11-20 01:40:02,220 - INFO - Calling function: SystemData.get_value(<information.SystemData object at 0x7efdba9f0c90>=<information.SystemData object at 0x7efdba9f0c90>)
+2023-11-20 01:40:02,220 - INFO - Function get_value completed successfully
+2023-11-20 01:40:02,220 - INFO - Calling function: LaundryGui.popup_window(Withdrawal of 66 from the cash register was carried out successfully.
+The remaining amount is 199.00='Withdrawal of 66 from the cash register was carried out successfully.\nThe remaining amount is 199.00')
+2023-11-20 01:40:04,913 - INFO - Function popup_window completed successfully
+2023-11-20 01:40:07,208 - INFO - Calling function: LaundryGui.replace_to_enter_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>)
+2023-11-20 01:40:07,259 - INFO - Calling function: LaundryGui._initial_window(<gui.LaundryGui object at 0x7efdbb0136d0>=<gui.LaundryGui object at 0x7efdbb0136d0>)
+2023-11-20 01:40:07,260 - INFO - Function _initial_window completed successfully
+2023-11-20 01:40:07,261 - INFO - Function replace_to_enter_window completed successfully
+2023-11-20 01:40:13,112 - INFO - Function run completed successfully
+2023-11-20 01:40:13,112 - INFO - Calling function: LaundryRoom.close_room(<laundry.LaundryRoom object at 0x7efdd482ba10>=<laundry.LaundryRoom object at 0x7efdd482ba10>)
+2023-11-20 01:40:13,113 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 968.0=968.0)
+2023-11-20 01:40:13,113 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>)
+2023-11-20 01:40:13,113 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012b90>=<mysql_database.SqlMaterial object at 0x7efdbb012b90>, UPDATE stock SET material_value = 18856 WHERE material_name = 'stock powder'="UPDATE stock SET material_value = 18856 WHERE material_name = 'stock powder'")
+2023-11-20 01:40:13,118 - INFO - Function execute completed successfully
+2023-11-20 01:40:13,119 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:40:13,119 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,119 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 976.0=976.0)
+2023-11-20 01:40:13,119 - INFO - Calling function: Informer._update_db_amount(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>)
+2023-11-20 01:40:13,119 - INFO - Calling function: ManagerDatabase.execute(<mysql_database.SqlMaterial object at 0x7efdbb012f10>=<mysql_database.SqlMaterial object at 0x7efdbb012f10>, UPDATE stock SET material_value = 17892 WHERE material_name = 'stock softener'="UPDATE stock SET material_value = 17892 WHERE material_name = 'stock softener'")
+2023-11-20 01:40:13,124 - INFO - Function execute completed successfully
+2023-11-20 01:40:13,125 - INFO - Function _update_db_amount completed successfully
+2023-11-20 01:40:13,125 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,125 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,125 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,125 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,125 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,125 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,125 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,125 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,125 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,126 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,126 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,126 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,126 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,126 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,126 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,127 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb012a10>=<information.StockMaterial object at 0x7efdbb012a10>, 0=0)
+2023-11-20 01:40:13,127 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,128 - INFO - Calling function: StockMaterial.add_material(<information.StockMaterial object at 0x7efdbb0131d0>=<information.StockMaterial object at 0x7efdbb0131d0>, 0=0)
+2023-11-20 01:40:13,128 - INFO - Function add_material completed successfully
+2023-11-20 01:40:13,128 - INFO - Function close_room completed successfully
