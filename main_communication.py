@@ -5,7 +5,7 @@ from mysql_database import SqlClients
 from auxiliary_functions import AuxiliaryFunctions
 from log import Logger
 from information import SystemData
-import settings
+from messenger import EmailSender
 
 import PySimpleGUI as sg
 from typing import Type
@@ -108,6 +108,7 @@ class MainCommunicator:
         Close the laundry room at the end of the program.
         """
         self._laundry_room.close_room()
+        EmailSender.close_server()
 
 
 if __name__ == "__main__":

@@ -102,7 +102,11 @@ class EmailSender(Sender):
     """
     Class for sending messages via email.
     """
-
+    _email_sender = settings.EMAIL_MANAGER
+    _password_sender = settings.EMAIL_MANAGER_PASSWORD
+    _server = smtplib.SMTP('smtp.gmail.com', 587)
+    _server.starttls()
+    _server.login(_email_sender, _password_sender)
     def __init__(self, email_client: str) -> None:
         """
         Initialize the EmailSender object.
@@ -111,15 +115,6 @@ class EmailSender(Sender):
             email_client (str): The email client's address.
         """
         super().__init__(email_client)
-        self._email_sender = settings.EMAIL_MANAGER
-        self._password_sender = settings.EMAIL_MANAGER_PASSWORD
-        self._server = smtplib.SMTP('smtp.gmail.com', 587)
-        self._server.starttls()
-        self._server.login(self._email_sender, self._password_sender)
-
-    def __del__(self):
-        if self._server:
-            self._server.close()
 
     @Logger.log_record
     def _calling_the_server(self, data: Any) -> None:
@@ -129,9 +124,8 @@ class EmailSender(Sender):
         Parameters:
             data (Any): The data to be sent to the server.
         """
-        self._server.sendmail(self._email_sender, self._address, data)
+        EmailSender._server.sendmail(EmailSender._email_sender, self._address, data)
 
-    @Logger.log_record
     def _send_msg(self, subject: str, body: str):
         """
         Send an email message.
@@ -148,6 +142,12 @@ class EmailSender(Sender):
         text = msg.as_string()
         self._calling_the_server(text)
 
+    @staticmethod
+    def close_server() -> None:
+        """in end program, closing server
+        """
+        if EmailSender._server:
+            EmailSender._server.close()
 
 class SmsSender(Sender):
     """
