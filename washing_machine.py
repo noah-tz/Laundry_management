@@ -1,6 +1,5 @@
 import settings
 from order import Order
-from log import Logger
 
 from typing import Type
 import time
