@@ -96,14 +96,6 @@ class LaundryGui:
         Returns:
         None
         """
-        # self._window['-COLUMN-'].update(visible=False)
-        # self._window['-COLUMN-'](self._layout)
-        # self._window['-COLUMN-'].update(visible=True)
-        # self._window.refresh()
-        # self._column.update(self._layout)
-        # self._window.Layout(self._layout)
-        # self._window.refresh()
-        # self._window
         self._window.close()
         self._window = sg.Window(self._title, self._layout, size=self._size)
 
@@ -134,7 +126,6 @@ class LaundryGui:
     def replace_to_enter_window(self) -> None:
         """
         Replaces the current window layout with the initial window layout.
-
         Returns:
         None
         """
@@ -145,7 +136,6 @@ class LaundryGui:
     def replace_to_client_window(self, email_client: str) -> None:
         """
         Replaces the current window layout with the client window layout.
-
         Parameters:
         - email_client (str): Email of the client.
 
@@ -353,7 +343,6 @@ class LaundryGui:
         font: tuple = settings.DEFAULT_FONT_POPUP) -> None:
         """
         Displays a popup window with the given text.
-
         Parameters:
         - text (str): Text to be displayed in the popup window.
         - title (str): Title of the popup window.
@@ -375,13 +364,5 @@ class LaundryGui:
         window.close()
 
 
-if __name__ == '__main__':
-    layout1 = [[sg.Text("enter your email")],
-                              [sg.Input(key= '-email-', justification='center')],
-                              [sg.Text("enter your password")],
-                              [sg.Input(key= '-password-', justification='center')],
-                              [sg.Button("sign in"), sg.Button("sign up"), sg.Button("forgot my password")]]
-    name = "laundry city"
-    title = f"welcome to {name}"
-    # size = settings.DEFAULT_SIZE_WINDOW
-    # window = sg.Window(title, layout1, size=(1000, 500))
+
+

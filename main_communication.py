@@ -15,7 +15,6 @@ class MainCommunicator:
     def __init__(self, name_laundry) -> None:
         """
         MainCommunicator constructor.
-
         Args:
         - name_laundry (str): The name of the laundry.
         """
@@ -27,7 +26,6 @@ class MainCommunicator:
     def run(self):
         """
         Run the main program loop.
-
         This function continuously reads events from the GUI and handles them until the window is closed.
         """
         while True:
@@ -39,7 +37,6 @@ class MainCommunicator:
     def handle_event(self, event, values):
         """
         Handle GUI events.
-
         Args:
         - event (str): The event triggered in the GUI.
         - values (dict): The values associated with the GUI elements.
@@ -59,11 +56,9 @@ class MainCommunicator:
     def sign_in(self, user: Type[User], password: str):
         """
         Handle the sign-in process.
-
         Args:
         - user (Type[User]): An instance of the User class.
         - password (str): The password entered by the user.
-
         This function checks the existence of the user and verifies the password for sign-in.
         """
         if user.check_existence():
@@ -79,10 +74,8 @@ class MainCommunicator:
     def registration(self, values):
         """
         Handle the user registration process.
-
         Args:
         - values (dict): The values entered by the user in the registration form.
-
         This function performs user registration and updates the number of customers in the system.
         """
         sql_client_connector = SqlClients(values['-email_registration-'])

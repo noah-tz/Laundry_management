@@ -18,10 +18,8 @@ class WashingMachine:
     def get_amount_material(self, material: str) -> int:
         """
         Retrieves the amount of a specific material in the machine's stock.
-
         Parameters:
         - material (str): The type of material to check.
-
         Returns:
         - int: The amount of the specified material in the stock.
         """
@@ -30,11 +28,9 @@ class WashingMachine:
     def filling_material(self, material: str, amount: int) -> bool:
         """
         Fills a specified material into the machine's stock.
-
         Parameters:
         - material (str): The type of material to fill.
         - amount (int): The amount of the material to fill.
-
         Returns:
         - bool: True if the material has reached or exceeded the minimum container limit, False otherwise.
         """
@@ -44,10 +40,8 @@ class WashingMachine:
     def material_emptying(self, material: str) -> int:
         """
         Empties a specified material from the machine's stock.
-
         Parameters:
         - material (str): The type of material to empty.
-
         Returns:
         - int: The amount of the material emptied from the stock.
         """
@@ -58,7 +52,6 @@ class WashingMachine:
     def check_material_machine(self) -> bool:
         """
         Checks if all materials in the machine's stock meet the minimum container requirements.
-
         Returns:
         - bool: True if all materials meet the minimum container requirements, False otherwise.
         """
@@ -71,7 +64,6 @@ class WashingMachine:
     def washing(self, order: Type[Order]) -> None:
         """
         Performs the washing process for a given order.
-
         Parameters:
         - order (Type[Order]): The order to be washed.
         """
@@ -82,7 +74,6 @@ class WashingMachine:
     def material_reduction(self, order: Type[Order]) -> None:
         """
         Reduces the amount of materials in the machine's stock based on the given order.
-
         Parameters:
         - order (Type[Order]): The order for which materials are to be reduced.
         """

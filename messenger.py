@@ -14,20 +14,17 @@ class Sender:
     def __init__(self, address) -> None:
         """
         Initialize the Sender object with the recipient's address.
-
         Parameters:
             address (str): The recipient's address (email or phone number).
         """
         self._address = address
 
-    def _send_msg(self, subject: str, body: str, to_email: str):
+    def _send_msg(self, subject: str, body: str):
         """
         Abstract method for sending messages. Must be implemented by subclasses.
-
         Parameters:
             subject (str): The subject of the message.
             body (str): The body of the message.
-            to_email (str): The recipient's email address.
         """
         raise NotImplementedError
 
@@ -44,7 +41,6 @@ class Sender:
     def password_recovery(self, password) -> None:
         """
         Send a password recovery message.
-
         Parameters:
             password (str): The recovered password.
         """
@@ -55,7 +51,6 @@ class Sender:
     def order_summary(self, order_ID: str, items_order: dict, amount: int, time: int) -> None:
         """
         Send an order summary message.
-
         Parameters:
             order_ID (str): The order ID.
             items_order (dict): A dictionary containing items in the order.
@@ -71,7 +66,6 @@ class Sender:
     def Your_order_is_ready(self, order_ID: str) -> None:
         """
         Send a notification that the order is ready for pickup.
-
         Parameters:
             order_ID (str): The order ID.
         """
@@ -90,7 +84,6 @@ class Sender:
     def any_msg(self, subject: str, body: str):
         """
         Send a generic message with the given subject and body.
-
         Parameters:
             subject (str): The subject of the message.
             body (str): The body of the message.
@@ -110,7 +103,6 @@ class EmailSender(Sender):
     def __init__(self, email_client: str) -> None:
         """
         Initialize the EmailSender object.
-
         Parameters:
             email_client (str): The email client's address.
         """
@@ -129,7 +121,6 @@ class EmailSender(Sender):
     def _send_msg(self, subject: str, body: str):
         """
         Send an email message.
-
         Parameters:
             subject (str): The subject of the email.
             body (str): The body of the email.
@@ -138,8 +129,9 @@ class EmailSender(Sender):
         msg['From'] = self._email_sender
         msg['To'] = self._address
         msg['Subject'] = subject
-        msg.attach(MIMEText(body, 'plain'))
+        msg.attach(MIMEText(body))
         text = msg.as_string()
+        print(text)
         self._calling_the_server(text)
 
     @staticmethod
@@ -153,11 +145,9 @@ class SmsSender(Sender):
     """
     Class for sending messages via SMS.
     """
-
     def __init__(self, number_phone) -> None:
         """
         Initialize the SmsSender object.
-
         Parameters:
             number_phone (str): The phone number to send SMS to.
         """
@@ -171,12 +161,10 @@ class SmsSender(Sender):
     def _calling_the_server(self, data: Any):
         """
         Call the Twilio server to send the SMS.
-
         Parameters:
             data (Any): The data to be sent to the server.
         """
         if requests.post(self._url, data=data, auth=(self._account_sid, self._auth_token)).ok:
-            print(f'SMS from {self._from_number} to {self._address} was successfully sent.\nMessage- "{data}"')
             return True
         print(f'SMS from {self._from_number} to {self._address} was not sent.')
         return False
@@ -184,7 +172,6 @@ class SmsSender(Sender):
     def _send_msg(self, subject: str, body: str):
         """
         Send an SMS message.
-
         Parameters:
             subject (str): The subject of the SMS.
             body (str): The body of the SMS.

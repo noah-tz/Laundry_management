@@ -25,11 +25,9 @@ class LaundryRoom:
     def enter_order(self, order: Type[Order], notes: bool = True) -> None:
         """
         Attempt to enter a new order into the laundry room.
-
         Parameters:
         - order (Type[Order]): The order to be processed.
         - notes (bool): Flag indicating whether to display notes to the user.
-
         Returns:
         - None
         """
@@ -40,15 +38,14 @@ class LaundryRoom:
             return False
         else:
             self._find_machine(order, notes)
-
+        return True
+            
     def _find_machine(self, order: Order, notes: bool) -> None:
         """
         Find an available washing machine for the given order.
-
         Parameters:
         - order (Order): The order to be processed.
         - notes (bool): Flag indicating whether to display notes to the user.
-
         Returns:
         - None
         """
@@ -90,10 +87,8 @@ class LaundryRoom:
     def _empty_machine_material(self, number_machine: int) -> None:
         """
         Empty the materials from the washing machine back into the stock.
-
         Parameters:
         - number_machine (int): The number of the washing machine to be emptied.
-
         Returns:
         - None
         """
@@ -103,11 +98,9 @@ class LaundryRoom:
     def _set_thread(self, number_machine: int, order: Type[Order]):
         """
         Start a new thread for washing and process the order.
-
         Parameters:
         - number_machine (int): The number of the washing machine.
         - order (Type[Order]): The order to be processed.
-
         Returns:
         - None
         """
@@ -118,11 +111,9 @@ class LaundryRoom:
     def _start_washing(self, number_machine: int, order: Type[Order]) -> None:
         """
         Start the washing process for the given order.
-
         Parameters:
         - number_machine (int): The number of the washing machine.
         - order (Type[Order]): The order to be processed.
-
         Returns:
         - None
         """
@@ -132,22 +123,20 @@ class LaundryRoom:
     def _finish_washing(self, order: Type[Order]):
         """
         Finish the washing process and mark the laundry room as not full.
-
         Parameters:
         - order (Type[Order]): The order that has been processed.
-
         Returns:
         - None
         """
         print("Washing is finished")
         self._full = False
         order.order_ready()
+        self.initialize_pending_orders()
 
     @Logger.log_record
     def initialize_pending_orders(self) -> bool:
         """
         Initialize pending orders when the laundry room is not full.
-
         Returns:
         - bool: True if all pending orders are successfully processed, False otherwise.
         """
@@ -162,21 +151,9 @@ class LaundryRoom:
     def close_room(self):
         """
         Close the laundry room and empty materials from all washing machines.
-
         Returns:
         - None
         """
         for number_machine, _ in self._machines.items():
             self._empty_machine_material(number_machine)
 
-
-if __name__ == '__main__':
-    # Example usage
-    order = Order(
-        "t0527184022@gmail.com",
-        "0522645540", "email",
-        {'-shirt-': 0, '-pants-': 6, '-tank top-': 0, '-underwear-': 0, '-socks-': 0, '-coat-': 0, '-hat-': 0,
-         '-sweater-': 0, '-curtain-': 0, '-tablecloth-': 0, '-order number-': '', '-TABLE-': [], 0: '-TAB_CREATE_ORDER-'})
-    laundry_room = LaundryRoom()
-    laundry_room.enter_order(order)
-    laundry_room.close_room()

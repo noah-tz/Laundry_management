@@ -17,10 +17,8 @@ class Logger:
     def log_record(func: Callable[..., Any]) -> Callable[..., Any]:
         """
         Decorator function for logging function calls and exceptions.
-
         Args:
             func: The function to be decorated.
-
         Returns:
             The decorated function.
         """
@@ -53,18 +51,3 @@ class Logger:
                 raise
         return wrapper
 
-
-
-
-if __name__ == "__main__":
-    import sys
-    @Logger.log_record
-    def my_function():
-        print("This is my function")
-
-    @Logger.log_record
-    def another_function():
-        print("This is another function")
-
-    my_function()
-    another_function()

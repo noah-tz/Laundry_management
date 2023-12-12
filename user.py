@@ -15,7 +15,6 @@ class User:
     def __init__(self, connector: Type[ManagerDatabase], email: str) -> None:
         """
         Initialize a User object.
-
         Parameters:
         - connector (Type[ManagerDatabase]): A type of ManagerDatabase for database interaction.
         - email (str): The user's email address.
@@ -34,7 +33,6 @@ class User:
     def get_phone(self):
         """
         Get the user's phone number.
-
         Returns:
         - str: The user's phone number.
         """
@@ -43,7 +41,6 @@ class User:
     def get_email(self):
         """
         Get the user's email address.
-
         Returns:
         - str: The user's email address.
         """
@@ -52,7 +49,6 @@ class User:
     def get_password(self):
         """
         Get the user's password.
-
         Returns:
         - str: The user's password.
         """
@@ -61,7 +57,6 @@ class User:
     def get_connect_method(self):
         """
         Get the user's preferred communication method.
-
         Returns:
         - str: The user's communication method ("email" or "sms").
         """
@@ -70,7 +65,6 @@ class User:
     def check_existence(self) -> bool:
         """
         Check if the user exists in the database.
-
         Returns:
         - bool: True if the user exists, False otherwise.
         """
@@ -79,7 +73,6 @@ class User:
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
         """
         Placeholder for the sign-in method. To be implemented by subclasses.
-
         Parameters:
         - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
         - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
@@ -89,7 +82,6 @@ class User:
     def password_recovery(self):
         """
         Recover the user's password and send it to their email or phone.
-
         This method checks if the email is valid and if the user exists in the database
         before initiating the password recovery process.
         """
@@ -107,7 +99,6 @@ class Manager(User):
     def __init__(self, email: str) -> None:
         """
         Initialize a Manager object.
-
         Parameters:
         - email (str): The manager's email address.
         """
@@ -117,7 +108,6 @@ class Manager(User):
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
         """
         Sign in as a manager and interact with the manager window.
-
         Parameters:
         - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
         - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
@@ -138,9 +128,7 @@ class Manager(User):
     def _add_manager(self, values: dict):
         """
         Add a new manager with administrative privileges.
-
         This method is restricted to the main manager identified by the email address in settings.EMAIL_MAIN_MANAGER.
-
         Parameters:
         - values (dict): A dictionary containing manager information (name, email, etc.).
         """
@@ -173,9 +161,7 @@ class Manager(User):
     def _add_material(self, name_material: str, amount: str):
         """
         Add material to the stock.
-
         This method checks if the manager has the necessary privileges and if the entered values are valid.
-
         Parameters:
         - name_material (str): The type of material to add.
         - amount (str): The amount of material to add.
@@ -200,9 +186,7 @@ class Manager(User):
     def _withdraw_money(self, amount: int):
         """
         Withdraw money from the cash register.
-
         This method checks if the entered value is valid and if there is sufficient money in the cash register.
-
         Parameters:
         - amount (int): The amount of money to withdraw.
         """
@@ -222,7 +206,6 @@ class Client(User):
     def __init__(self, email: str) -> None:
         """
         Initialize a Client object.
-
         Parameters:
         - email (str): The client's email address.
         """
@@ -232,7 +215,6 @@ class Client(User):
     def sign_in(self, laundry_gui: Type[LaundryGui], laundry_room: Type[LaundryRoom] = None):
         """
         Sign in as a client and interact with the client window.
-
         Parameters:
         - laundry_gui (Type[LaundryGui]): An instance of LaundryGui for GUI interaction.
         - laundry_room (Type[LaundryRoom]): An instance of LaundryRoom for laundry room interaction (optional).
@@ -254,9 +236,7 @@ class Client(User):
     def _order_pickup(self, order_ID: int) -> None:
         """
         Process order pickup for a client.
-
         This method checks if the order exists, if it belongs to the client, and if it has already been collected.
-
         Parameters:
         - order_ID (int): The ID of the order to pick up.
         """
@@ -266,10 +246,10 @@ class Client(User):
             if not sql_orders_connector.get_value('order_collected'):
                 sql_orders_connector.update_value("order_collected", True)
                 order_cost = sql_orders_connector.get_value('order_cost')
-                informer_register = SystemData("cash register")
-                informer_register.change_value(order_cost)
                 LaundryGui.popup_window(f'Please complete the payment of {order_cost}\nClick OK to pay.')
                 LaundryGui.popup_window(f'The payment was successful.\nOrder number {order_ID} has been collected.\nThank you!')
+                informer_register = SystemData("cash register")
+                informer_register.change_value(order_cost)
                 self._sender.thank_you()
             else:
                 LaundryGui.popup_window('Your order has already been collected')

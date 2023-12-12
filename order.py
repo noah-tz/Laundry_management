@@ -33,7 +33,6 @@ class Order:
     def get_weight(self) -> int:
         """
         Get the total weight of items in the order.
-
         Returns:
         - int: Total weight of items in the order.
         """
@@ -42,7 +41,6 @@ class Order:
     def calculate_cost(self) -> int:
         """
         Calculate the total cost of the order.
-
         Returns:
         - int: Total cost of the order.
         """
@@ -52,7 +50,6 @@ class Order:
     def calculate_time(self) -> float:
         """
         Calculate the estimated time required to complete the order.
-
         Returns:
         - float: Estimated time in hours.
         """
@@ -62,7 +59,6 @@ class Order:
     def _add_items(self, items:dict) -> None:
         """
         Add items to the order, updating quantities, weight, and amount of items.
-
         Parameters:
         - items (dict): Dictionary of items and their quantities.
         """

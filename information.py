@@ -9,15 +9,13 @@ class Informer:
     def __init__(self, name: str, amount: int = None) -> None:
         """
         Constructor for the Informer class.
-
         Parameters:
         - name (str): The name of the informer.
         - amount (int, optional): The initial amount. Defaults to None.
         """
-        if 0:
-            self._connector: Type[ManagerDatabase]
-            self._name_in_data: str
-            self._name_column_value: str
+        self._connector: Type[ManagerDatabase] # init in subclass
+        self._name_in_data: str # init in subclass
+        self._name_column_value: str # init in subclass
         self._name = name
         self._check_data()
         self._amount = amount
@@ -73,10 +71,8 @@ class StockMaterial(Informer):
     def get_material(self, remainder: int) -> int:
         """
         Retrieves a specified amount of material from stock.
-
         Parameters:
         - remainder (int): The remaining space in the machine's container.
-
         Returns:
         - int: The amount of material retrieved.
         """
@@ -92,7 +88,6 @@ class StockMaterial(Informer):
     def add_material(self, amount: int) -> None:
         """
         Adds a specified amount of material to stock.
-
         Parameters:
         - amount (int): The amount of material to add.
         """
@@ -104,7 +99,6 @@ class SystemData(Informer):
     def __init__(self, name: str, amount: int = None) -> None:
         """
         Constructor for the SystemData class.
-
         Parameters:
         - name (str): The name of the system data.
         - amount (int, optional): The initial amount. Defaults to None.
@@ -118,7 +112,6 @@ class SystemData(Informer):
     def get_value(self) -> int:
         """
         Retrieves the current value of the system data.
-
         Returns:
         - int: The current value.
         """
@@ -128,7 +121,6 @@ class SystemData(Informer):
     def change_value(self, amount_to_add: int) -> None:
         """
         Changes the value of the system data by adding a specified amount.
-
         Parameters:
         - amount_to_add (int): The amount to add to the current value.
         """

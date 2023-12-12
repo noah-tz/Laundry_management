@@ -42,7 +42,6 @@ class ManagerDatabase:
     def __init__(self, key: Any = None):
         """
         Constructor method to initialize the ManagerDatabase instance.
-
         Args:
             key (Any): A key parameter for database operations.
         """
@@ -83,7 +82,7 @@ class ManagerDatabase:
             with open("build_database.sql", "r") as fd:
                 sql_instructions = fd.read()
             self.execute(sql_instructions)
-            time.sleep(1)
+            time.sleep(1) # laundry database created
         ManagerDatabase._data_is_checked = True
         self._set_connector()
 
@@ -99,11 +98,9 @@ class ManagerDatabase:
     def execute(self, query: str, all: bool = True) -> Any:
         """
         Execute a SQL query on the database.
-
         Args:
             query (str): The SQL query to execute.
             all (bool): Flag to fetch all results or only the first one.
-
         Returns:
             Any: The result of the query.
         """
@@ -137,7 +134,6 @@ class ManagerDatabase:
     def add_table(self, name_table: str, column_names: tuple) -> None:
         """
         Create a new database table.
-
         Args:
             name_table (str): The name of the new table.
             column_names (tuple): Tuple of column names for the new table.
@@ -156,7 +152,6 @@ class ManagerDatabase:
     def check_existence(self) -> bool:
         """
         Check if a record with the specified key exists.
-
         Returns:
             bool: True if the record exists, False otherwise.
         """
@@ -166,7 +161,6 @@ class ManagerDatabase:
     def add(self, values: tuple) -> None:
         """
         Insert a new record into the database.
-
         Args:
             values (tuple): Tuple of values to be inserted.
         """
@@ -184,9 +178,8 @@ class ManagerDatabase:
     def get_details(self) -> tuple[str, str, str, str, str, int, str]:
         """
         Retrieve details of a specific record.
-
         Returns:
-            tuple[str, str, str, str, str, int, str]: Details of the record.
+            tuple: Details of the record.
         """
         query = f"SELECT {self._column_names} FROM {self._table_name} WHERE {self._key_column} = '{self._key}'"
         return self.execute(query)
@@ -194,10 +187,8 @@ class ManagerDatabase:
     def get_value(self, column_value: str) -> str:
         """
         Get a specific value from the database for the given key.
-
         Args:
             column_value (str): The column for which to retrieve the value.
-
         Returns:
             str: The value of the specified column for the given key.
         """
@@ -208,7 +199,6 @@ class ManagerDatabase:
     def update_value(self, column_value: str, new_value) -> None:
         """
         Update a specific value in the database.
-
         Args:
             column_value (str): The column to be updated.
             new_value: The new value for the specified column.
@@ -219,7 +209,6 @@ class ManagerDatabase:
     def get_table(self, by_key: tuple = (), by_sort: str = '', by_limit: int = 0):
         """
         Retrieve records from the database table.
-
         Args:
             by_key (tuple): A tuple containing the key column and its value for filtering.
             by_sort (str): The column by which to sort the results.
@@ -239,10 +228,8 @@ class ManagerDatabase:
 class SqlOrders(ManagerDatabase):
     """
     A class for managing orders in the database, inheriting from ManagerDatabase.
-
     Attributes:
         (Inherited attributes from ManagerDatabase)
-
     Methods:
         __init__(self, ID: int = None): Constructor method to initialize the SqlOrders instance.
         new_order_id(self): Get a new order ID.
@@ -251,7 +238,6 @@ class SqlOrders(ManagerDatabase):
     def __init__(self, ID: int = None):
         """
         Constructor method to initialize the SqlOrders instance.
-
         Args:
             ID (int): The order ID.
         """
@@ -263,7 +249,6 @@ class SqlOrders(ManagerDatabase):
     def new_order_id(self):
         """
         Get a new order ID.
-
         Returns:
             int: The new order ID.
         """
@@ -276,10 +261,8 @@ class SqlOrders(ManagerDatabase):
 class SqlClients(ManagerDatabase):
     """
     A class for managing clients in the database, inheriting from ManagerDatabase.
-
     Attributes:
         (Inherited attributes from ManagerDatabase)
-
     Methods:
         __init__(self, email: str = None): Constructor method to initialize the SqlClients instance.
     """
@@ -287,7 +270,6 @@ class SqlClients(ManagerDatabase):
     def __init__(self, email: str = None):
         """
         Constructor method to initialize the SqlClients instance.
-
         Args:
             email (str): The email of the client.
         """
@@ -300,10 +282,8 @@ class SqlClients(ManagerDatabase):
 class SqlManagers(ManagerDatabase):
     """
     A class for managing managers in the database, inheriting from ManagerDatabase.
-
     Attributes:
         (Inherited attributes from ManagerDatabase)
-
     Methods:
         __init__(self, email: str = None): Constructor method to initialize the SqlManagers instance.
     """
@@ -311,7 +291,6 @@ class SqlManagers(ManagerDatabase):
     def __init__(self, email: str = None):
         """
         Constructor method to initialize the SqlManagers instance.
-
         Args:
             email (str): The email of the manager.
         """
@@ -324,10 +303,8 @@ class SqlManagers(ManagerDatabase):
 class SqlSystemData(ManagerDatabase):
     """
     A class for managing system data in the database, inheriting from ManagerDatabase.
-
     Attributes:
         (Inherited attributes from ManagerDatabase)
-
     Methods:
         __init__(self, name: str = None): Constructor method to initialize the SqlSystemData instance.
     """
@@ -335,7 +312,6 @@ class SqlSystemData(ManagerDatabase):
     def __init__(self, name: str = None):
         """
         Constructor method to initialize the SqlSystemData instance.
-
         Args:
             name (str): The name of the system data.
         """
@@ -348,10 +324,8 @@ class SqlSystemData(ManagerDatabase):
 class SqlMaterial(ManagerDatabase):
     """
     A class for managing materials in the database, inheriting from ManagerDatabase.
-
     Attributes:
         (Inherited attributes from ManagerDatabase)
-
     Methods:
         __init__(self, name: str = None): Constructor method to initialize the SqlMaterial instance.
     """
@@ -359,7 +333,6 @@ class SqlMaterial(ManagerDatabase):
     def __init__(self, name: str = None):
         """
         Constructor method to initialize the SqlMaterial instance.
-
         Args:
             name (str): The name of the material.
         """
