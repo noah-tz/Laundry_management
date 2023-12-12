@@ -3,7 +3,6 @@ from order import Order
 
 from typing import Type
 import time
-from typing import Type
 
 
 class WashingMachine:
