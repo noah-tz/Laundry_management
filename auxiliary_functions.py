@@ -31,7 +31,7 @@ class AuxiliaryFunctions:
                 from_signs = True
         return (
             all(
-                char in letters or char in numbers or char in signs
+                char.isalnum() or char in signs
                 for char in password
             )
             and len(password) >= 8
