@@ -133,7 +133,7 @@ class Manager(User):
                     values['-HOUSE_NUMBER-'],
                     values['-PHONE-'],
                     values['-EMAIL-'],
-                    values['-PASSWORD-'],
+                    ManagerDatabase.hash_password(values['-PASSWORD-']),
                     values['-MESSAGE_TYPE-']
                 )
             )

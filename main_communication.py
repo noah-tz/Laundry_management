@@ -44,6 +44,7 @@ class MainCommunicator:
         This function delegates the handling of specific events to corresponding methods.
         """
         if event == '-registration-':
+            values['-password_registration-'] = ManagerDatabase.hash_password(values['-password_registration-'])
             self.registration(values)
             return
         user = Client(values['-email_client-']) if "client" in event else Manager(values['-email_manager-'])
@@ -90,7 +91,7 @@ class MainCommunicator:
                 values['-house_number_registration-'],
                 values['-phone_registration-'],
                 values['-email_registration-'],
-                ManagerDatabase.hash_password(values['-password_registration-']), 
+                values['-password_registration-'],
                 values['-message_type_registration-']))
             costumer_informed = SystemData("number of customers")
             costumer_informed.change_value(1)
