@@ -78,11 +78,11 @@ class StockMaterial(Informer):
         """
         to_fill = settings.FULL_CONTAINER_MACHINE[self._name] - remainder
         amount_get = max(0, min(to_fill, self._amount))
-        self._amount -= amount_get
+        self._amount -= int(amount_get)
         self._update_db_amount()
         if self._amount < self._alert:
             self._alert_manager()
-        return amount_get
+        return int(amount_get)
 
     @Logger.log_record
     def add_material(self, amount: int) -> None:

@@ -121,7 +121,6 @@ class EmailSender(Sender):
         msg['Subject'] = subject
         msg.attach(MIMEText(body))
         text = msg.as_string()
-        print(text)
         self._calling_the_server(text)
 
     @staticmethod
