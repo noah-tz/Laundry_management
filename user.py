@@ -79,21 +79,6 @@ class User:
         """
         raise NotImplementedError
 
-    def password_recovery(self):
-        """
-        Recover the user's password and send it to their email or phone.
-        This method checks if the email is valid and if the user exists in the database
-        before initiating the password recovery process.
-        """
-        if AuxiliaryFunctions.is_valid_email(self._email):
-            if self._sql_connector.check_existence():
-                self._sender.password_recovery(self._password)
-                LaundryGui.popup_window("The password has been sent to your email address", "The password has been sent")
-            else:
-                LaundryGui.popup_window("The email address is not yet registered. Please select the 'sign up' option to register", "No email address found")
-        else:
-            LaundryGui.popup_window("Invalid email address")
-
 
 class Manager(User):
     def __init__(self, email: str) -> None:

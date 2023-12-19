@@ -1,7 +1,7 @@
 from gui import LaundryGui
 from laundry import LaundryRoom
 from user import User, Client, Manager
-from mysql_database import SqlClients
+from mysql_database import ManagerDatabase, SqlClients
 from auxiliary_functions import AuxiliaryFunctions
 from log import Logger
 from information import SystemData
@@ -48,10 +48,10 @@ class MainCommunicator:
             return
         user = Client(values['-email_client-']) if "client" in event else Manager(values['-email_manager-'])
         if 'sign_in' in event:
-            password = values['-password_client-'] if "client" in event else values['-password_manager-']
+            password_entered = values['-password_client-'] if "client" in event else values['-password_manager-']
+            password = ManagerDatabase.hash_password(password_entered)
             self.sign_in(user, password)
             return
-        user.password_recovery()
 
     def sign_in(self, user: Type[User], password: str):
         """
@@ -90,7 +90,7 @@ class MainCommunicator:
                 values['-house_number_registration-'],
                 values['-phone_registration-'],
                 values['-email_registration-'],
-                values['-password_registration-'], 
+                ManagerDatabase.hash_password(values['-password_registration-']), 
                 values['-message_type_registration-']))
             costumer_informed = SystemData("number of customers")
             costumer_informed.change_value(1)

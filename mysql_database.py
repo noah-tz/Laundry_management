@@ -1,4 +1,5 @@
 import mysql.connector
+import hashlib
 from typing import Any
 import pandas as pd
 from log import Logger
@@ -223,6 +224,22 @@ class ManagerDatabase:
         query = f"SELECT * FROM {self._table_name} {key_select} {sorted} {limited}"
         results = self.execute(query, True)
         return results
+    
+    @staticmethod    
+    def hash_password(password):
+        """
+        Hashes a password using the SHA-256 algorithm.
+
+        Args:
+            password: The password to hash.
+
+        Returns:
+            The hashed password.
+        """
+
+        hash_object = hashlib.sha256()
+        hash_object.update(password.encode())
+        return hash_object.hexdigest()
 
 
 class SqlOrders(ManagerDatabase):
@@ -340,4 +357,6 @@ class SqlMaterial(ManagerDatabase):
         self._table_name = "stock"
         self._key_column = "material_name"
         self._column_names = "material_name, material_value"
+
+
 

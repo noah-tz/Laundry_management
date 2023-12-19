@@ -9,7 +9,7 @@ CREATE TABLE orders (
     order_cost real,
     amount_items real,
     order_entered DATETIME DEFAULT CURRENT_TIMESTAMP, 
-    order_notes varchar(40),
+    order_notes varchar(100),
     order_collected BOOLEAN
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE clients (
     house_number real,
     phone_client VARCHAR(30), 
     email_client VARCHAR(30),
-    password_client VARCHAR(30),
+    password_client VARCHAR(64),
     message_type ENUM('email','sms')
 );
 
@@ -33,7 +33,7 @@ CREATE TABLE managers (
     house_number real,
     phone_manager VARCHAR(30), 
     email_manager VARCHAR(30),
-    password_manager VARCHAR(30),
+    password_manager VARCHAR(64),
     message_type ENUM('email','sms')
 );
 

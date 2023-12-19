@@ -38,16 +38,6 @@ class Sender:
         """
         raise NotImplementedError
 
-    def password_recovery(self, password) -> None:
-        """
-        Send a password recovery message.
-        Parameters:
-            password (str): The recovered password.
-        """
-        subject = "The city laundry - reset password for your account"
-        body = f"The password for your account is-\n{password}\nSuccessfully"
-        self._send_msg(subject, body)
-
     def order_summary(self, order_ID: str, items_order: dict, amount: int, time: int) -> None:
         """
         Send an order summary message.

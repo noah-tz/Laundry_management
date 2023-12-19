@@ -37,14 +37,14 @@ class LaundryGui:
             [sg.Input(key= '-email_client-', justification='center')],
             [sg.Text("enter your password")],
             [sg.Input(key= '-password_client-', justification='center')],
-            [sg.Button("sign in", key='-sign_in_client-'), sg.Button("forgot my password", key='-forgot_my_password_client-')]
+            [sg.Button("sign in", key='-sign_in_client-')]
         ]
         layout_manager_enter = [
             [sg.Text("enter your email")],
             [sg.Input(key= '-email_manager-', justification='center')],
             [sg.Text("enter your password")],
             [sg.Input(key= '-password_manager-', justification='center')],
-            [sg.Button("sign in", key='-sign_in_manager-'), sg.Button("forgot my password", key='-forgot_my_password_manager-')]
+            [sg.Button("sign in", key='-sign_in_manager-')]
         ]
         layout_registration = [
             [sg.Text("name"), sg.InputText(key= '-name_registration-', justification='center')],
