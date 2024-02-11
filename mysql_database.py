@@ -47,9 +47,9 @@ class ManagerDatabase:
             key (Any): A key parameter for database operations.
         """
         self._key = key
-        self._key_column: str
-        self._table_name: str
-        self._column_names: tuple
+        self._key_column: str # Initial in sub class
+        self._table_name: str # Initial in sub class
+        self._column_names: tuple # Initial in sub class
         self._set_connector()
 
     def _set_connector(self):

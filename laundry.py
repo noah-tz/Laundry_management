@@ -34,7 +34,7 @@ class LaundryRoom:
         if self._full:
             self._orders_pending.append(order)
             if notes:
-                LaundryGui.popup_window("All laundry rooms are occupied. Please try again later.")
+                LaundryGui.popup_window("All laundry rooms are occupied. We will enter your order later.")
             return False
         else:
             self._find_machine(order, notes)

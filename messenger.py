@@ -134,6 +134,10 @@ class SmsSender(Sender):
     """
     Class for sending messages via SMS.
     """
+    _account_sid = settings.SMS_ACCOUNT_SID_MANAGER
+    _auth_token = settings.SMS_AUTO_TOKEN_MANAGER
+    _from_number = settings.SMS_FROM_NUMBER_MANAGER
+    _url = f'https://api.twilio.com/2010-04-01/Accounts/{_account_sid}/Messages.json'
     def __init__(self, number_phone) -> None:
         """
         Initialize the SmsSender object.
@@ -141,10 +145,7 @@ class SmsSender(Sender):
             number_phone (str): The phone number to send SMS to.
         """
         super().__init__(number_phone)
-        self._account_sid = settings.SMS_ACCOUNT_SID_MANAGER
-        self._auth_token = settings.SMS_AUTO_TOKEN_MANAGER
-        self._from_number = settings.SMS_FROM_NUMBER_MANAGER
-        self._url = f'https://api.twilio.com/2010-04-01/Accounts/{self._account_sid}/Messages.json'
+        
 
     @Logger.log_record
     def _calling_the_server(self, data: Any):
@@ -153,9 +154,9 @@ class SmsSender(Sender):
         Parameters:
             data (Any): The data to be sent to the server.
         """
-        if requests.post(self._url, data=data, auth=(self._account_sid, self._auth_token)).ok:
+        if requests.post(self._url, data=data, auth=(SmsSender._account_sid, SmsSender._auth_token)).ok:
             return True
-        print(f'SMS from {self._from_number} to {self._address} was not sent.')
+        print(f'SMS from {SmsSender._from_number} to {self._address} was not sent.')
         return False
 
     def _send_msg(self, subject: str, body: str):

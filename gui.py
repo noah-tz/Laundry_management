@@ -3,7 +3,6 @@ from mysql_database import SqlOrders, SqlManagers, SqlSystemData, SqlClients, Sq
 from log import Logger
 
 import PySimpleGUI as sg
-from typing import Callable, Type, Any
 
 
 
